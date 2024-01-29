@@ -12,15 +12,17 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="nav">
-        <p className="nav__logo">Flist</p>
-        <img
-          onClick={handleMenu}
-          className="nav__menu"
-          src={menuIcon}
-          alt="menu-icon"
-        />
-      </nav>
+      <section className="nav__container">
+        <nav className="nav">
+          <p className="nav__logo">Flist</p>
+          <img
+            onClick={handleMenu}
+            className="nav__menu"
+            src={menuIcon}
+            alt="menu-icon"
+          />
+        </nav>
+      </section>
 
       {menuDisplay && (
         <section className="menu__background">
