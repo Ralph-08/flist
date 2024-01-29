@@ -1,0 +1,99 @@
+@use "../../styles/partials/_variables.scss" as *;
+@use "../../styles/partials/_mixins.scss" as *;
+
+@keyframes slide-in-left {
+  from {
+    right: -350px;
+  }
+  to {
+    right: 0px;
+  }
+}
+
+.nav {
+  background-color: $primary-color;
+  color: white;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  @include tablet {
+    padding: 0.5rem 2rem;
+    align-items: center;
+  }
+
+  &__logo {
+    font-size: 1.5rem;
+  }
+
+  &__menu {
+    width: 28px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    @include tablet {
+      border-radius: 20px;
+      width: 40px;
+      padding: 0.5rem;
+
+      &:hover {
+        background-color: #409ac7;
+      }
+    }
+  }
+}
+
+.menu__background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;
+  font-size: 1rem;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.235);
+}
+
+.menu {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(248, 248, 248);
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+  animation-name: slide-in-left;
+  animation-duration: 0.3s;
+  box-shadow: -10px -10px 10px rgba(0, 0, 0, 0.056);
+
+  &__link {
+    font-size: 1.1rem;
+
+    &--logout {
+      color: $error;
+    }
+  }
+
+  &__item {
+    background-color: rgb(248, 248, 248);
+    border-bottom: 1px solid lightgray;
+    width: 100%;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    transition: background-color 0.2s;
+
+    @include tablet {
+      &:hover {
+        background-color: rgb(240, 240, 240);
+      }
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .active {
+    color: $primary-color;
+  }
+}
