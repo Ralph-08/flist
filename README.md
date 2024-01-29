@@ -1,70 +1,366 @@
-# Getting Started with Create React App
+# Flist
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+Flist is a web app that will be able to schedule your groceries to be order on specific dates that you select. There'll be an empty Weekly List that you set it to order your gorceries, and add items as the week goes by before the scheduled date. And there will also be a section where you can add multiple Scheduled Lists that allow you to automatically order items (eg. 3 packs of water every 2 weeks, 1 dozen of eggs every week).
 
-In the project directory, you can run:
+### Problem
 
-### `npm start`
+I believe that grocery shopping can mostly be repeteive and, in my opinion it can be tedious and time consuming. Due to it being mostly repetetive, I brainstormed solutions to develop a solution that could dynamically automate grocery shopping. And also could solve the problem with the chances of forgetting to buy something while shopping.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### User Profile
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Anyone:
+    -looking to reduce time spent in grocery shopping.
+    -looking to be more efficient with shopping for groceries. 
 
-### `npm test`
+### Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-As a user, I want to be able to set my groceries to be ordered every week on Fridays.
+-As a user, I want to be able to add items through the week days before order is submitted on Friday.
+-As a user, I want to be able to recieve text/email notifications of my weekly list before it's submitted.
+-As a user, I want to be able to view the current items in the list and see the Weekly List grow as I add items throughout the week.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Implementation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Tech Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+List technologies that will be used in your app, including any libraries to save time or provide more functionality. Be sure to research any potential limitations.
 
-### `npm run eject`
+- MongoDB
+- Express
+- React
+- Node
+- Client libraries: 
+    - react
+    - react-router
+    - axios
+- Server libraries:
+    - express
+    - bcrypt for password hashing
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### APIs
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+I will be using my own RESTful API, no external APIs be used.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Sitemap
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+-Landing Page
+-Login/Sign Up Page
+-Dashboard
 
-## Learn More
+### Mockups
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### Landing Page
+![](./mockups/LandingPage.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### Login/Sign Up Page
+![](./mockups/Login-signup.png)
 
-### Code Splitting
+#### Dashboard
+![](./mockups/Dashboard.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Data
 
-### Analyzing the Bundle Size
+MongoDB will be used for this app, and it's a non-relational database.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Endpoints
 
-### Making a Progressive Web App
+**GET /items**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Response:
+```
+[
+    {
+        "id": 1,
+        "item_name": "Milk",
+        "item_description": "1 gallon",
+        "item_price": 3.29,
+        "item_unit": "ea",
+    },    
+    {
+        "id": 2,
+        "item_name": "Eggs",
+        "item_description": "1 Dozen",
+        "item_price": 5.74,
+        "item_unit": "pk",
+    },
+    ...
+]
+```
 
-### Advanced Configuration
+**GET /items/:itemId**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```
+[
+    {
+        "id": 2,
+        "item_name": "Eggs",
+        "item_description": "1 Dozen",
+        "item_price": 5.74,
+        "item_unit": "pk",
+    }
+]
+```
 
-### Deployment
+**POST /items**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+Parameters:
+- name: Name of item
+- description: Item description
+- unit: Unit of item
+- price: Item price
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Response:
+```
+[
+    {
+        "id": 4,
+        "item_name": "Toilet Paper",
+        "item_description": "12 pack",
+        "item_price": 10.99,
+        "item_unit": "pk",
+    }
+]
+```
+
+**GET /weekly-list**
+
+- There will only be one weekly list allowed
+- sheduled_date: Timestamp will vary depending on selected schedule date.
+
+```
+[
+    {
+        "id": 1
+        "scheduled_date": 1706057788195,
+    }
+]
+```
+
+**POST /weekly-list**
+
+- There will only be one weekly list allowed
+- sheduled_date: Timestamp will be placed with the scheduled date that the user has selected.
+
+
+```
+[
+    {
+        "id": 1
+        "scheduled_date": 1706057788195,
+    }
+]
+```
+
+**POST /weekly-list/:itemId**
+
+- When the user selects an item, it'll get the id of the item and will pass it into the POST request function, so it can be recieved in the API and find the item based on the item id. Then added to the weekly list.
+
+
+```
+[
+    {
+        "id": 1
+        "scheduled_date": 1706057788195,
+        "items": {
+            "id": 1,
+            "item_name": "Milk",
+            "item_description": "1 gallon",
+            "item_price": 3.29,
+            "item_unit": "ea",
+            "quanity": 2,
+            "weekly_list": true,
+            "scheduled_date": 17060577886741,
+        },
+    }
+]
+```
+
+**GET /scheduled-lists**
+
+- sheduled_date: Timestamp will vary depending on selected schedule date.
+
+```
+[
+    {
+        "id": 1
+        "scheduled_date": 1706057788195,
+        "items": {
+            "id": 1,
+            "item_name": "Milk",
+            "item_description": "1 gallon",
+            "item_price": 3.29,
+            "item_unit": "ea",
+            "quanity": 2,
+        },
+        {
+            "id": 2,
+            "item_name": "Eggs",
+            "item_description": "1 Dozen",
+            "item_price": 5.74,
+            "item_unit": "pk",
+            "quanity": 1,
+        }
+        ...
+    },
+    {
+        "id": 2
+        "scheduled_date": 1706057786935,
+        "items": {
+            "id": 4,
+            "item_name": "Toilet Paper",
+            "item_description": "12 pack",
+            "item_price": 10.99,
+            "item_unit": "pk",
+            "quanity": 2,
+        },
+        ...
+    },   
+    ...
+]
+```
+
+**POST /scheduled-lists/:listId**
+
+- sheduled_date: Timestamp will vary depending on selected schedule date.
+
+```
+[
+    {
+        "id": 1
+        "scheduled_date": 1706057788195,
+        "items": {
+            "id": 1,
+            "item_name": "Milk",
+            "item_description": "1 gallon",
+            "item_price": 3.29,
+            "item_unit": "ea",
+            "quanity": 2,
+        },
+        {
+            "id": 2,
+            "item_name": "Eggs",
+            "item_description": "1 Dozen",
+            "item_price": 5.74,
+            "item_unit": "pk",
+            "quanity": 1,
+        }
+        ...
+    },
+    {
+        "id": 2
+        "scheduled_date": 1706057786935,
+        "items": {
+            "id": 4,
+            "item_name": "Toilet Paper",
+            "item_description": "12 pack",
+            "item_price": 10.99,
+            "item_unit": "pk",
+            "quanity": 2,
+        },
+        ...
+    },   
+    ...
+]
+```
+
+**POST /users/register**
+
+- Add a user account
+
+Parameters:
+
+- email: User's email
+- password: User's provided password
+
+Response:
+```
+{
+    "token": "seyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6I..."
+}
+```
+
+**POST /users/login**
+
+- Login a user
+
+Parameters:
+- email: User's email
+- password: User's provided password
+
+Response:
+```
+{
+    "token": "seyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6I..."
+}
+```
+
+### Auth
+
+- JWT will be use for authentication/authorization
+    - Store JWT in localStorage, remove when a user logs out
+    - Added after core features have first been implemented
+
+## Roadmap
+
+Scope your project as a sprint. Break down the tasks that will need to be completed and map out timeframes for implementation. Think about what you can reasonably complete before the due date. The more detail you provide, the easier it will be to build.
+
+- Create client
+    - Components
+    - Pages
+    - Routing
+
+- Create server
+    - Create controllers
+    - Create API end points 
+
+- Feature: View items
+    - Create a GET /items
+
+- Feature: View an specific item
+    - Create a GET /items/:itemId
+
+- Feautre: Create an item
+    - Create a POST /items
+
+- Feature: View weekly list
+    -Creat a GET /weekly-list request
+
+- Feature: Add to weekly list
+    - Add form component that the user fills in.
+    - User selects item
+    - Create a POST /weekly-list/:itemId
+    - Create a GET /weekly-list after posting to update state of the weekly list
+
+- Feaure: View scheduled lists
+    - Create a GET /scheduled-lists
+    - Renders List components depending on array length
+
+- Feature: Create a schedule list.
+    - Create a POST /scheduled-list
+
+- Feature: Add item to scheduled list
+    - Create POST /scheduled-list/:listId
+
+- Feature: Create account
+    - Implement register page + form
+    - Create POST /users/register endpoint
+
+- Feature: Login
+    - Implement login page + form
+    - Create POST /users/login endpoint
+
+- Feature: Implement JWT tokens
+    - Server: Update expected requests / responses on protected endpoints
+    - Client: Store JWT in local storage, include JWT on axios calls
+
+- Bug fixes
+
+- DEMO DAY
+
+## Nice-to-haves
+
+- Intergrate Amazon API to be able to link accounts, to when the list scheduled date is met, it'll place all those items in your Amazon cart ready to be ordered.
