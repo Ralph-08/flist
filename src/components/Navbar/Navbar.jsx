@@ -23,41 +23,47 @@ const Navbar = () => {
       </nav>
 
       {menuDisplay && (
-        <ul className="menu">
-          <li className="menu__item">
-            <NavLink
-              to="/dashboard"
-              className="menu__link"
-              onClick={handleMenu}
-            >
-              Dashboard
-            </NavLink>
-          </li>
-          <li className="menu__item">
-            <NavLink to="/items" className="menu__link" onClick={handleMenu}>
-              Items
-            </NavLink>
-          </li>
-          <li className="menu__item">
-            <NavLink to="/orders" className="menu__link" onClick={handleMenu}>
-              Orders
-            </NavLink>
-          </li>
-          <li className="menu__item">
-            <NavLink to="/profile" className="menu__link" onClick={handleMenu}>
-              Profile
-            </NavLink>
-          </li>
-          <li className="menu__item">
-            <NavLink
-              to="/logout"
-              className="menu__link menu__link--logout"
-              onClick={handleMenu}
-            >
-              Logout
-            </NavLink>
-          </li>
-        </ul>
+        <section className="menu__background">
+          <ul className="menu">
+            <li className="menu__item">
+              <NavLink
+                to="/dashboard"
+                className="menu__link"
+                onClick={handleMenu}
+              >
+                Dashboard
+              </NavLink>
+            </li>
+            <li className="menu__item">
+              <NavLink to="/items" className="menu__link" onClick={handleMenu}>
+                Items
+              </NavLink>
+            </li>
+            <li className="menu__item">
+              <NavLink to="/orders" className="menu__link" onClick={handleMenu}>
+                Orders
+              </NavLink>
+            </li>
+            <li className="menu__item">
+              <NavLink
+                to="/profile"
+                className="menu__link"
+                onClick={handleMenu}
+              >
+                Profile
+              </NavLink>
+            </li>
+            <li className="menu__item">
+              <NavLink
+                to="/logout"
+                className="menu__link menu__link--logout"
+                onClick={handleMenu}
+              >
+                Logout
+              </NavLink>
+            </li>
+          </ul>
+        </section>
       )}
     </>
   );
