@@ -17,3 +17,43 @@
     @content;
   }
 }
+
+@mixin primary-button {
+  display: flex;
+  align-items: center;
+  column-gap: 0.1rem;
+  padding: 0.3rem 1rem;
+  border-style: none;
+  border-radius: 15px;
+  background-color: #e07b48;
+  color: white;
+  cursor: pointer;
+  @include tablet {
+    padding: 0.5rem 1rem;
+
+    &:hover {
+      background-color: #d27242;
+    }
+  }
+}
+
+// #4861E0
+
+@mixin secondary-button {
+  display: flex;
+  align-items: center;
+  column-gap: 0.1rem;
+  padding: 0.3rem 1rem;
+  border-style: none;
+  border-radius: 15px;
+  background-color: #4861E0;
+  color: white;
+  cursor: pointer;
+  @include tablet {
+    padding: 0.5rem 1rem;
+
+    &:hover {
+      background-color: #3e55ca;
+    }
+  }
+}

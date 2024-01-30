@@ -1,0 +1,17 @@
+@use "../../styles/partials/_variables.scss" as *;
+@use "../../styles/partials/_mixins.scss" as *;
+
+.list-info {
+  &__list {
+    padding: 0.5rem 1.5rem 1rem;
+
+    display: flex;
+    justify-content: space-between;
+    @include tablet {
+      padding: 0.5rem 2rem 1.5rem;
+    }
+  }
+  .bold {
+    font-weight: 800;
+  }
+}
