@@ -2,6 +2,7 @@ import "./Navbar.scss";
 import menuIcon from "../../assets/icons/menu-button.svg";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import closeIcon from "../../assets/icons/close.png";
 
 const Navbar = () => {
   const [menuDisplay, setMenuDisplay] = useState(false);
@@ -14,10 +15,18 @@ const Navbar = () => {
     <>
       <section className="nav__container">
         <nav className="nav">
-          <p className="nav__logo">Flist</p>
+          <section className="nav__top-left">
+            <img
+              onClick={handleMenu}
+              className="nav__menu nav__menu--desktop"
+              src={menuIcon}
+              alt="menu-icon"
+            />
+            <p className="nav__logo">Flist</p>
+          </section>
           <img
             onClick={handleMenu}
-            className="nav__menu"
+            className="nav__menu nav__menu--mobile"
             src={menuIcon}
             alt="menu-icon"
           />
@@ -27,6 +36,9 @@ const Navbar = () => {
       {menuDisplay && (
         <section className="menu__background">
           <ul className="menu">
+            <li className="menu__btn" onClick={handleMenu}>
+              <img className="menu__close" src={closeIcon} alt="close-icon" />
+            </li>
             <li className="menu__item">
               <NavLink
                 to="/dashboard"
