@@ -11,7 +11,7 @@ export default function Item({ item, imgSrc }) {
         />
         <ul className="items__list">
           <li className="items__item">
-            <h3 className="items__text">
+            <h3 className="items__subheader">
               Organic Valley, Organic Whole Milk, 64 Oz (Half Gallon)
             </h3>
             <p className="items__text">Reviews: 4.3/5</p>
