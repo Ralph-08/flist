@@ -1,5 +1,5 @@
 import "./DashboardPage.scss";
-
+import ScheduledList from "../../components/ScheduledList/ScheduledList";
 import WeeklyList from "../../components/WeeklyList/WeeklyList";
 
 const DashboardPage = () => {
@@ -9,7 +9,7 @@ const DashboardPage = () => {
         <h1 className="dashboard__header">Dashboard</h1>
 
         <WeeklyList />
-        <WeeklyList />
+        <ScheduledList />
       </section>
     </>
   );
