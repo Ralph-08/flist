@@ -6,7 +6,7 @@ import { useState } from "react";
 import EditListModal from "../EditListModal/EditListModal";
 
 const WeeklyList = () => {
-  const [editModal, setEditModal] = useState(true);
+  const [editModal, setEditModal] = useState(false);
   const [scheduledDate, setScheduledDate] = useState(null);
 
   const handleEditDisplay = () => {
@@ -44,7 +44,8 @@ const WeeklyList = () => {
             </li>
           </ul>
         </section>
-
+        <Item />
+        <Item />
         <Item />
         <Item />
         <section className="list-info">
