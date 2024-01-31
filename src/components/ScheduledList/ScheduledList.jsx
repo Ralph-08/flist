@@ -1,5 +1,4 @@
 import Item from "../Item/Item";
-import addIcon from "../../assets/icons/add-svgrepo-com (1).svg";
 import editIcon from "../../assets/icons/edit-pencil.svg";
 import "./ScheduledList.scss";
 
