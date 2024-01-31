@@ -16,6 +16,13 @@
     }
   }
 
+  &__subheader {
+    font-size: 1rem;
+    @include tablet {
+      font-size: 1.3rem;
+    }
+  }
+
   &__item {
     display: flex;
     flex-direction: column;
@@ -24,11 +31,18 @@
   }
 
   &__img {
-    height: 10rem;
+    height: 8rem;
+
+    @include tablet {
+      height: 10rem;
+
+    }
   }
 
   &__container {
     display: flex;
-    column-gap: 2rem;
+    @include tablet {
+      column-gap: 2rem;
+    }
   }
 }

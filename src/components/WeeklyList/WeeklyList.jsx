@@ -6,7 +6,7 @@ import { useState } from "react";
 import EditListModal from "../EditListModal/EditListModal";
 
 const WeeklyList = () => {
-  const [editModal, setEditModal] = useState(false);
+  const [editModal, setEditModal] = useState(true);
   const [scheduledDate, setScheduledDate] = useState(null);
 
   const handleEditDisplay = () => {
