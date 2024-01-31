@@ -1,0 +1,49 @@
+@use "../../styles/partials/_variables.scss" as *;
+@use "../../styles/partials/_mixins.scss" as *;
+
+.edit {
+    background-color: rgba(0, 0, 0, 0.407);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    padding: 0 2rem;
+
+    &__card {
+        background-color: #fff;
+        width: 100%;
+        height: 80%;
+        border-radius: 4px;
+        padding: 2rem 1.5rem;
+    }
+
+    .top-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        &__btn {
+            padding: 0.5rem;
+            border-radius: 20px;
+            transition: background-color 0.2s;
+            cursor: pointer;
+            width: 2.3rem;
+            text-align: center;
+        
+            @include tablet {
+              &:hover {
+                background-color: rgb(233, 233, 233);
+              }
+            }
+          }
+        
+          &__close {
+            width: 1.2rem;
+            height: 1.1rem;
+          }
+    }
+}
