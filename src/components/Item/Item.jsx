@@ -1,6 +1,6 @@
+import "./Item.scss";
 
-
-export default function Item({ item, imgSrc}) {
+export default function Item({ item, imgSrc }) {
   return (
     <section className="dashboard__container items__card">
       <section className="items__container">
