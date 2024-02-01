@@ -1,26 +1,19 @@
 import "./Item.scss";
 
-export default function Item({ item, imgSrc }) {
+export default function Item({ img, price, title, rating, asin }) {
   return (
     <section className="dashboard__container items__card">
       <section className="items__container">
-        <img
-          className="items__img"
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9HNcOUzoo6o5IiycQ2xAcy_-8PZvo3YLz-mTwctekqwzRL9Swq31JDfOVg3osET2a2Uo&usqp=CAU"
-          alt="product-img"
-        />
+        <img className="items__img" src={img} alt="product-img" />
         <ul className="items__list">
           <li className="items__item">
-            <h3 className="items__subheader">
-              Organic Valley, Organic Whole Milk, 64 Oz (Half Gallon)
-            </h3>
-            <p className="items__text">Reviews: 4.3/5</p>
+            <h3 className="items__subheader">{title}</h3>
+            <p className="items__text">Ratings: {rating}/5</p>
             <p className="items__text">Quantity: 1</p>
           </li>
         </ul>
       </section>
-
-      <p>$3.29</p>
+      <p className="item__price">{"$" + price}</p>
     </section>
   );
 }

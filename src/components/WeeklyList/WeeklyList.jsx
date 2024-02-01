@@ -2,16 +2,31 @@ import "./WeeklyList.scss";
 import Item from "../Item/Item";
 import addIcon from "../../assets/icons/add-svgrepo-com (1).svg";
 import editIcon from "../../assets/icons/edit-pencil.svg";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import EditListModal from "../EditListModal/EditListModal";
+import axios from "axios";
 
 const WeeklyList = () => {
   const [editModal, setEditModal] = useState(false);
   const [scheduledDate, setScheduledDate] = useState(null);
+  const [itemsList, setItemsList] = useState(null);
 
   const handleEditDisplay = () => {
     !editModal ? setEditModal(true) : setEditModal(false);
   };
+
+  useEffect(() => {
+    const getItems = async () => {
+      try {
+        const res = await axios.get("http://localhost:8080");
+        setItemsList(res.data);
+      } catch (err) {
+        console.log("Error getting items", err);
+      }
+    };
+
+    getItems();
+  }, []);
 
   return (
     <section className="weekly">
@@ -44,10 +59,20 @@ const WeeklyList = () => {
             </li>
           </ul>
         </section>
-        <Item />
-        <Item />
-        <Item />
-        <Item />
+        {!itemsList ? (
+          <p>Loading..</p>
+        ) : (
+          itemsList.map((item, i) => (
+            <Item
+              img={item.image}
+              price={item.price}
+              title={item.title}
+              rating={item.rating}
+              asin={item.asin}
+              key={item.asin}
+            />
+          ))
+        )}
         <section className="list-info">
           <ul className="list-info__list">
             <li className="list-info__item">
