@@ -18,7 +18,7 @@ const WeeklyList = () => {
   useEffect(() => {
     const getItems = async () => {
       try {
-        const res = await axios.get("http://localhost:8080");
+        const res = await axios.get("http://localhost:8080/items");
         setItemsList(res.data);
       } catch (err) {
         console.log("Error getting items", err);
@@ -93,6 +93,7 @@ const WeeklyList = () => {
           handleClose={handleEditDisplay}
           scheduledDate={scheduledDate}
           setScheduledDate={setScheduledDate}
+          itemsList={itemsList}
         />
       )}
     </section>

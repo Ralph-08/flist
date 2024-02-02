@@ -4,7 +4,12 @@ import PickDate from "../PickDate/PickDate";
 import { useState } from "react";
 import Item from "../Item/Item";
 
-const EditListModal = ({ handleClose, setScheduledDate, scheduledDate }) => {
+const EditListModal = ({
+  handleClose,
+  setScheduledDate,
+  scheduledDate,
+  itemsList,
+}) => {
   const [selectedDate, setSelectedDate] = useState(new Date());
 
   // ------------timestamp--------------------
@@ -41,10 +46,20 @@ const EditListModal = ({ handleClose, setScheduledDate, scheduledDate }) => {
           </li>
           <li className="bottom-list__item">
             <section className="bottom-list__items-container">
-            <Item />
-            <Item />
-            <Item />
-            <Item />
+              {!itemsList ? (
+                <p>Loading</p>
+              ) : (
+                itemsList.map((item) => (
+                  <Item
+                    img={item.image}
+                    price={item.price}
+                    title={item.title}
+                    rating={item.rating}
+                    asin={item.asin}
+                    key={item.asin}
+                  />
+                ))
+              )}
             </section>
             <section className="bottom-list__actions">
               <button className="bottom-list__save">Save Changes</button>
