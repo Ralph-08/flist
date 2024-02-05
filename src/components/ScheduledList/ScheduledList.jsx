@@ -75,7 +75,7 @@ const ScheduledList = ({ items, listId, getItems }) => {
             </li>
             <li className="list-info__item">
               <p className="list-info__text">
-                <span className="bold">Total:</span> $7.99
+                <span className="bold"></span>
               </p>
             </li>
           </ul>
