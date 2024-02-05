@@ -28,6 +28,8 @@ const WeeklyList = () => {
     getItems();
   }, []);
 
+  // console.log(weeklyList._id);
+
   return (
     <section className="weekly">
       <ul className="weekly__list">
@@ -65,7 +67,7 @@ const WeeklyList = () => {
           </ul>
         </section>
         {!weeklyList ? (
-          <p>Loading..</p>
+          <h2 className="message-prompt">No Items Added</h2>
         ) : (
           weeklyList.items.map((item, i) => (
             <Item
@@ -78,20 +80,22 @@ const WeeklyList = () => {
             />
           ))
         )}
-        <section className="list-info">
-          <ul className="list-info__list">
-            <li className="list-info__item">
-              <p className="list-info__text">
-                <span className="bold">Scheduled for:</span> {scheduledDate}
-              </p>
-            </li>
-            <li className="list-info__item">
-              <p className="list-info__text">
-                <span className="bold">Total:</span> $43.02
-              </p>
-            </li>
-          </ul>
-        </section>
+        {weeklyList && (
+          <section className="list-info">
+            <ul className="list-info__list">
+              <li className="list-info__item">
+                <p className="list-info__text">
+                  <span className="bold">Scheduled for:</span> {scheduledDate}
+                </p>
+              </li>
+              <li className="list-info__item">
+                <p className="list-info__text">
+                  <span className="bold">Total:</span> $43.02
+                </p>
+              </li>
+            </ul>
+          </section>
+        )}
       </section>
       {editModal && (
         <EditListModal
