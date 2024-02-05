@@ -91,7 +91,7 @@ const WeeklyList = () => {
             </li>
             <li className="list-info__item">
               <p className="list-info__text">
-                <span className="bold">Total:</span> $43.02
+                <span className="bold"></span>
               </p>
             </li>
           </ul>
