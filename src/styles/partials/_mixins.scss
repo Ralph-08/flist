@@ -1,0 +1,83 @@
+@use "../partials/_variables.scss" as *;
+
+@mixin mobile {
+  @media only screen and (min-width: $mobile-breakpoint) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (min-width: $tablet-breakpoint) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: $desktop-breakpoint) {
+    @content;
+  }
+}
+
+@mixin primary-button {
+  display: flex;
+  align-items: center;
+  column-gap: 0.1rem;
+  padding: 0.5rem 1rem;
+  border-style: none;
+  border-radius: 15px;
+  background-color: #e07b48;
+  color: white;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  @include tablet {
+    padding: 0.5rem 1rem;
+
+    &:hover {
+      background-color: #d27242;
+    }
+  }
+}
+
+@mixin secondary-button {
+  display: flex;
+  align-items: center;
+  column-gap: 0.1rem;
+  padding: 0.5rem 1rem;
+
+  border-style: none;
+  border-radius: 15px;
+  background-color: #4861e0;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  @include tablet {
+    padding: 0.5rem 1rem;
+
+    &:hover {
+      background-color: #3e55ca;
+    }
+  }
+}
+
+@mixin cancel-button {
+  display: flex;
+  align-items: center;
+  column-gap: 0.1rem;
+  padding: 0.5rem 1rem;
+
+  border-style: none;
+  border-radius: 15px;
+  background-color: #fff;
+  color: rgb(80, 80, 80);
+  border: 1px solid lightgrey;
+  cursor: pointer;
+  transition: color 0.3s, border-color 0.3s;
+  @include tablet {
+    padding: 0.5rem 1rem;
+
+    &:hover {
+      color: #d27242;
+      border-color: #d27242;
+    }
+  }
+}

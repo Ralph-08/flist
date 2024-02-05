@@ -1,0 +1,52 @@
+@use "./_variables.scss" as *;
+@use "./_mixins.scss" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica";
+}
+
+h1 {
+  font-size: 1.75rem;
+  @include tablet {
+    font-size: 2rem;
+  }
+}
+
+h2 {
+  font-size: 1.25rem;
+  @include tablet {
+    font-size: 1.5rem;
+  }
+}
+
+label,
+a,
+button {
+  font-size: 0.8125rem;
+  @include tablet {
+    font-size: 0.875rem;
+  }
+}
+
+p {
+  font-size: 0.9375rem;
+  @include tablet {
+    font-size: 1rem;
+  }
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}

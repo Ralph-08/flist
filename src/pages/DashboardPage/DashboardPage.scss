@@ -1,0 +1,24 @@
+@use "../../styles/partials/_variables.scss" as *;
+@use "../../styles/partials/_mixins.scss" as *;
+
+.dashboard {
+  padding: 0 1rem;
+  @include tablet {
+    padding: 0 2rem;
+  }
+  @include desktop {
+    max-width: 1280px;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  &__header {
+    width: 100%;
+    text-align: center;
+    padding: 0 1rem;
+    margin: 24px 0 1rem;
+    @include tablet {
+      padding: 0 2rem;
+    }
+  }
+}

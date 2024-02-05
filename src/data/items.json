@@ -1,0 +1,4179 @@
+[
+  {
+    "request_parameters": {
+      "domain": "amazon.com",
+      "search_term": "grocery",
+      "type": "search-page",
+      "refinements": [""],
+      "exclude_sponsored": false,
+      "page": 1,
+      "max_page": 1,
+      "direct_search": false
+    },
+    "request_info": {
+      "success": true,
+      "credits_used": 1,
+      "time_collected": "2024-02-01T02:31:47.064795+00:00",
+      "reference_id": "717636ba-3d31-403a-9a22-291b43be385e",
+      "search_results_scanned": 48
+    },
+    "request_metadata": {
+      "amazon_url": "https://www.amazon.com/s/?page=1&k=grocery"
+    },
+    "search_results": [
+      {
+        "position": 1,
+        "title": "Ramen Chicken, 3 Ounce (Pack of 24)",
+        "asin": "B07222R3Y5",
+        "link": "https://www.amazon.com/Maruchan-Ramen-Chicken-3-0-Pack/dp/B07222R3Y5/ref=sr_1_1?keywords=grocery&qid=1706754702&sr=8-1",
+        "link_sr": "8-1",
+        "link_ref": "sr_1_1",
+        "categories": [
+          {
+            "name": "All Departments",
+            "id": "aps"
+          }
+        ],
+        "image": "https://m.media-amazon.com/images/I/91xajJWygpL._AC_UL320_.jpg",
+        "bestseller": {
+          "link": "https://www.amazon.com/gp/bestsellers/grocery/16319721/ref=sr_bs_0_16319721_1",
+          "category": "Best Sellerin Packaged Noodle Soups"
+        },
+        "sales_estimate": {
+          "raw": "60K+ bought in past month",
+          "value": 60000
+        },
+        "is_small_business": false,
+        "is_amazon_brand": false,
+        "is_exclusive_to_amazon": false,
+        "delivery_info": [
+          {
+            "shipping_price": {
+              "symbol": "$",
+              "value": 35,
+              "currency": "USD",
+              "raw": "35"
+            },
+            "shipping_estimate": "FREE delivery Mon, Feb 5 on $35 of items shipped by Amazon"
+          },
+          {
+            "shipping_estimate": "Or fastest delivery Tomorrow, Feb 1"
+          }
+        ],
+        "offer_count": 7,
+        "rating": 4.7,
+        "ratings_total": 77869,
+        "prices": [
+          {
+            "symbol": "$",
+            "value": 7.36,
+            "currency": "USD",
+            "raw": "$7.36",
+            "name": "Base Price",
+            "is_base_price": true
+          },
+          {
+            "symbol": "$",
+            "value": 0.1,
+            "currency": "USD",
+            "raw": "$0.10",
+            "name": "Price Per Measured Unit",
+            "is_per_unit_price": true
+          }
+        ],
+        "price": {
+          "symbol": "$",
+          "value": 7.36,
+          "currency": "USD",
+          "raw": "$7.36",
+          "name": "Base Price",
+          "is_base_price": true
+        },
+        "prime_badge": true,
+        "status_badge": "Best Seller",
+        "is_sponsored": false,
+        "is_prime_exclusive_price": false
+      },
+      {
+        "position": 2,
+        "title": "Instant Lunch Chicken Flavor, 2.25 Ounce (Pack of 12)",
+        "asin": "B00MIK4GCS",
+        "link": "https://www.amazon.com/Maruchan-Instant-Lunch-Chicken-Flavor/dp/B00MIK4GCS/ref=sr_1_2?keywords=grocery&qid=1706754702&sr=8-2",
+        "link_sr": "8-2",
+        "link_ref": "sr_1_2",
+        "categories": [
+          {
+            "name": "All Departments",
+            "id": "aps"
+          }
+        ],
+        "image": "https://m.media-amazon.com/images/I/91uMP0uU4HL._AC_UL320_.jpg",
+        "bestseller": {
+          "link": "https://www.amazon.com/gp/bestsellers/grocery/6499423011/ref=sr_bs_1_6499423011_1",
+          "category": "Best Sellerin Packaged Noodle Dishes"
+        },
+        "sales_estimate": {
+          "raw": "30K+ bought in past month",
+          "value": 30000
+        },
+        "is_small_business": false,
+        "is_amazon_brand": false,
+        "is_exclusive_to_amazon": false,
+        "delivery_info": [
+          {
+            "shipping_price": {
+              "symbol": "$",
+              "value": 35,
+              "currency": "USD",
+              "raw": "35"
+            },
+            "shipping_estimate": "FREE delivery Mon, Feb 5 on $35 of items shipped by Amazon"
+          },
+          {
+            "shipping_estimate": "Or fastest delivery Tomorrow, Feb 1"
+          }
+        ],
+        "offer_count": 1,
+        "rating": 4.7,
+        "ratings_total": 63757,
+        "prices": [
+          {
+            "symbol": "$",
+            "value": 6.24,
+            "currency": "USD",
+            "raw": "$6.24",
+            "name": "Base Price",
+            "is_base_price": true
+          },
+          {
+            "symbol": "$",
+            "value": 0.23,
+            "currency": "USD",
+            "raw": "$0.23",
+            "name": "Price Per Measured Unit",
+            "is_per_unit_price": true
+          }
+        ],
+        "price": {
+          "symbol": "$",
+          "value": 6.24,
+          "currency": "USD",
+          "raw": "$6.24",
+          "name": "Base Price",
+          "is_base_price": true
+        },
+        "prime_badge": true,
+        "status_badge": "Best Seller",
+        "is_sponsored": false,
+        "is_prime_exclusive_price": false
+      },
+      {
+        "position": 3,
+        "title": "Fruit Flavored Snacks, Assorted Fruit, Pouches, 0.8 oz, 40 ct",
+        "asin": "B00KRFL5SO",
+        "link": "https://www.amazon.com/Motts-Snacks-Assorted-Gluten-Pouches/dp/B00KRFL5SO/ref=sr_1_3?keywords=grocery&qid=1706754702&sr=8-3",
+        "link_sr": "8-3",
+        "link_ref": "sr_1_3",
+        "categories": [
+          {
+            "name": "All Departments",
+            "id": "aps"
+          }
+        ],
+        "image": "https://m.media-amazon.com/images/I/814DtzezQuL._AC_UL320_.jpg",
+        "sales_estimate": {
+          "raw": "40K+ bought in past month",
+          "value": 40000
+        },
+        "is_small_business": false,
+        "is_amazon_brand": false,
+        "is_exclusive_to_amazon": false,
+        "delivery_info": [
+          {
+            "shipping_price": {
+              "symbol": "$",
+              "value": 35,
+              "currency": "USD",
+              "raw": "35"
+            },
+            "shipping_estimate": "FREE delivery Mon, Feb 5 on $35 of items shipped by Amazon"
+          },
+          {
+            "shipping_estimate": "Or fastest delivery Tomorrow, Feb 1"
+          }
+        ],
+        "offer_count": 1,
+        "rating": 4.7,
+        "ratings_total": 58774,
+        "prices": [
+          {
+            "symbol": "$",
+            "value": 7.98,
+            "currency": "USD",
+            "raw": "$7.98",
+            "name": "Base Price",
+            "is_base_price": true
+          },
+          {
+            "symbol": "$",
+            "value": 7.98,
+            "currency": "USD",
+            "raw": "$7.98",
+            "name": "Price Per Measured Unit",
+            "is_per_unit_price": true
+          }
+        ],
+        "price": {
+          "symbol": "$",
+          "value": 7.98,
+          "currency": "USD",
+          "raw": "$7.98",
+          "name": "Base Price",
+          "is_base_price": true
+        },
+        "prime_badge": true,
+        "is_sponsored": false,
+        "is_prime_exclusive_price": false
+      },
+      {
+        "position": 4,
+        "title": "Chocolate and Vanilla Flavored Pudding Cups Family Pack, 12 Count Pudding Cups",
+        "asin": "B013OY25GA",
+        "link": "https://www.amazon.com/Snack-Pack-Chocolate-Vanilla-Pudding/dp/B013OY25GA/ref=sr_1_4?keywords=grocery&qid=1706754702&sr=8-4",
+        "link_sr": "8-4",
+        "link_ref": "sr_1_4",
+        "categories": [
+          {
+            "name": "All Departments",
+            "id": "aps"
+          }
+        ],
+        "image": "https://m.media-amazon.com/images/I/71gVQyoeguL._AC_UL320_.jpg",
+        "sales_estimate": {
+          "raw": "30K+ bought in past month",
+          "value": 30000
+        },
+        "is_small_business": false,
+        "is_amazon_brand": false,
+        "is_exclusive_to_amazon": false,
+        "delivery_info": [
+          {
+            "shipping_price": {
+              "symbol": "$",
+              "value": 35,
+              "currency": "USD",
+              "raw": "35"
+            },
+            "shipping_estimate": "FREE delivery Mon, Feb 5 on $35 of items shipped by Amazon"
+          },
+          {
+            "shipping_estimate": "Or fastest delivery Tomorrow, Feb 1"
+          }
+        ],
+        "offer_count": 1,
+        "rating": 4.7,
+        "ratings_total": 30648,
+        "prices": [
+          {
+            "symbol": "$",
+            "value": 3.27,
+            "currency": "USD",
+            "raw": "$3.27",
+            "name": "Base Price",
+            "is_base_price": true
+          },
+          {
+            "symbol": "$",
+            "value": 0.01,
+            "currency": "USD",
+            "raw": "$0.01",
+            "name": "Price Per Measured Unit",
+            "is_per_unit_price": true
+          }
+        ],
+        "price": {
+          "symbol": "$",
+          "value": 3.27,
+          "currency": "USD",
+          "raw": "$3.27",
+          "name": "Base Price",
+          "is_base_price": true
+        },
+        "prime_badge": true,
+        "is_sponsored": false,
+        "is_prime_exclusive_price": false
+      },
+      {
+        "position": 5,
+        "title": "Purple Variety Pack, Flavored Water, Zero Sugar, with Vitamins and Antioxidants, 17 fl oz, 12 count (Black Raspberry, Cherry Limeade, Orange Mango, Kiwi Strawberry)",
+        "asin": "B00F9VCQ2A",
+        "link": "https://www.amazon.com/Sparkling-Ice-Variety-Pack-Fl/dp/B00F9VCQ2A/ref=sr_1_5?keywords=grocery&qid=1706754702&sr=8-5",
+        "link_sr": "8-5",
+        "link_ref": "sr_1_5",
+        "categories": [
+          {
+            "name": "All Departments",
+            "id": "aps"
+          }
+        ],
+        "image": "https://m.media-amazon.com/images/I/81BU+xe4jcL._AC_UL320_.jpg",
+        "sales_estimate": {
+          "raw": "30K+ bought in past month",
+          "value": 30000
+        },
+        "is_small_business": false,
+        "is_amazon_brand": false,
+        "is_exclusive_to_amazon": false,
+        "delivery_info": [
+          {
+            "shipping_price": {
+              "symbol": "$",
+              "value": 35,
+              "currency": "USD",
+              "raw": "35"
+            },
+            "shipping_estimate": "FREE delivery Mon, Feb 5 on $35 of items shipped by Amazon"
+          },
+          {
+            "shipping_estimate": "Or fastest delivery Tomorrow, Feb 1"
+          }
+        ],
+        "offer_count": 1,
+        "rating": 4.7,
+        "ratings_total": 41910,
+        "prices": [
+          {
+            "symbol": "$",
+            "value": 10.98,
+            "currency": "USD",
+            "raw": "$10.98",
+            "name": "Base Price",
+            "is_base_price": true
+          },
+          {
+            "symbol": "$",
+            "value": 0.05,
+            "currency": "USD",
+            "raw": "$0.05",
+            "name": "Price Per Measured Unit",
+            "is_per_unit_price": true
+          }
+        ],
+        "price": {
+          "symbol": "$",
+          "value": 10.98,
+          "currency": "USD",
+          "raw": "$10.98",
+          "name": "Base Price",
+          "is_base_price": true
+        },
+        "prime_badge": true,
+        "is_sponsored": false,
+        "is_prime_exclusive_price": false
+      },
+      {
+        "position": 6,
+        "title": "Potato Crisps Chips, Snack Stacks, Lunch Snacks, Office and Kids Snacks, Variety Pack (27 Cups)",
+        "asin": "B0785RNKZS",
+        "link": "https://www.amazon.com/Pringles-Flavored-Variety-Original-Cheddar/dp/B0785RNKZS/ref=sr_1_6?keywords=grocery&qid=1706754702&sr=8-6",
+        "link_sr": "8-6",
+        "link_ref": "sr_1_6",
+        "categories": [
+          {
+            "name": "All Departments",
+            "id": "aps"
+          }
+        ],
+        "image": "https://m.media-amazon.com/images/I/71yR7fIOp+L._AC_UL320_.jpg",
+        "sales_estimate": {
+          "raw": "20K+ bought in past month",
+          "value": 20000
+        },
+        "is_small_business": false,
+        "is_amazon_brand": false,
+        "is_exclusive_to_amazon": false,
+        "delivery_info": [
+          {
+            "shipping_price": {
+              "symbol": "$",
+              "value": 35,
+              "currency": "USD",
+              "raw": "35"
+            },
+            "shipping_estimate": "FREE delivery Mon, Feb 5 on $35 of items shipped by Amazon"
+          },
+          {
+            "shipping_estimate": "Or fastest delivery Tomorrow, Feb 1"
+          }
+        ],
+        "offer_count": 1,
+        "rating": 4.6,
+        "ratings_total": 73129,
+        "prices": [
+          {
+            "symbol": "$",
+            "value": 12.98,
+            "currency": "USD",
+            "raw": "$12.98",
+            "name": "Base Price",
+            "is_base_price": true
+          },
+          {
+            "symbol": "$",
+            "value": 0.67,
+            "currency": "USD",
+            "raw": "$0.67",
+            "name": "Price Per Measured Unit",
+            "is_per_unit_price": true
+          }
+        ],
+        "price": {
+          "symbol": "$",
+          "value": 12.98,
+          "currency": "USD",
+          "raw": "$12.98",
+          "name": "Base Price",
+          "is_base_price": true
+        },
+        "prime_badge": true,
+        "is_sponsored": false,
+        "is_prime_exclusive_price": false
+      },
+      {
+        "position": 7,
+        "title": "Instant Oatmeal, 4 Flavor Variety Pack, Individual Packets, 48 Count",
+        "asin": "B01KMHY4KM",
+        "link": "https://www.amazon.com/Quaker-Instant-Oatmeal-Variety-Breakfast/dp/B01KMHY4KM/ref=sr_1_7?keywords=grocery&qid=1706754702&sr=8-7",
+        "link_sr": "8-7",
+        "link_ref": "sr_1_7",
+        "categories": [
+          {
+            "name": "All Departments",
+            "id": "aps"
+          }
+        ],
+        "image": "https://m.media-amazon.com/images/I/91Ts8gUnqNL._AC_UL320_.jpg",
+        "bestseller": {
+          "link": "https://www.amazon.com/gp/bestsellers/grocery/118518017011/ref=sr_bs_6_118518017011_1",
+          "category": "Best Sellerin Oatmeal"
+        },
+        "sales_estimate": {
+          "raw": "7K+ bought in past month",
+          "value": 7000
+        },
+        "is_small_business": false,
+        "is_amazon_brand": false,
+        "is_exclusive_to_amazon": false,
+        "delivery_info": [
+          {
+            "shipping_price": {
+              "symbol": "$",
+              "value": 35,
+              "currency": "USD",
+              "raw": "35"
+            },
+            "shipping_estimate": "FREE delivery Mon, Feb 5 on $35 of items shipped by Amazon"
+          },
+          {
+            "shipping_estimate": "Or fastest delivery Tomorrow, Feb 1"
+          }
+        ],
+        "offer_count": 1,
+        "rating": 4.7,
+        "ratings_total": 81777,
+        "prices": [
+          {
+            "symbol": "$",
+            "value": 15.99,
+            "currency": "USD",
+            "raw": "$15.99",
+            "name": "Base Price",
+            "is_base_price": true
+          },
+          {
+            "symbol": "$",
+            "value": 0.23,
+            "currency": "USD",
+            "raw": "$0.23",
+            "name": "Price Per Measured Unit",
+            "is_per_unit_price": true
+          },
+          {
+            "symbol": "$",
+            "value": 19.99,
+            "currency": "USD",
+            "raw": "$19.99",
+            "name": "List Price",
+            "is_list_price": true
+          }
+        ],
+        "price": {
+          "symbol": "$",
+          "value": 15.99,
+          "currency": "USD",
+          "raw": "$15.99",
+          "name": "Base Price",
+          "is_base_price": true
+        },
+        "deal_text": "Limited time deal",
+        "prime_badge": true,
+        "status_badge": "Best Seller",
+        "is_sponsored": false,
+        "is_prime_exclusive_price": false
+      },
+      {
+        "position": 8,
+        "title": "Pistachio Lovers Nut Mix with Pistachios, Almonds & Cashews, 1 LB 2.5 oz Canister",
+        "asin": "B008KAM0XM",
+        "link": "https://www.amazon.com/Planters-Pistachio-Lovers-Salted-Canister/dp/B008KAM0XM/ref=sr_1_8?keywords=grocery&qid=1706754702&sr=8-8",
+        "link_sr": "8-8",
+        "link_ref": "sr_1_8",
+        "categories": [
+          {
+            "name": "All Departments",
+            "id": "aps"
+          }
+        ],
+        "image": "https://m.media-amazon.com/images/I/81k2uUCgO-L._AC_UL320_.jpg",
+        "sales_estimate": {
+          "raw": "10K+ bought in past month",
+          "value": 10000
+        },
+        "is_small_business": false,
+        "is_amazon_brand": false,
+        "is_exclusive_to_amazon": false,
+        "delivery_info": [
+          {
+            "shipping_price": {
+              "symbol": "$",
+              "value": 35,
+              "currency": "USD",
+              "raw": "35"
+            },
+            "shipping_estimate": "FREE delivery Mon, Feb 5 on $35 of items shipped by Amazon"
+          },
+          {
+            "shipping_estimate": "Or fastest delivery Tomorrow, Feb 1"
+          }
+        ],
+        "offer_count": 1,
+        "rating": 4.7,
+        "ratings_total": 42105,
+        "prices": [
+          {
+            "symbol": "$",
+            "value": 10.38,
+            "currency": "USD",
+            "raw": "$10.38",
+            "name": "Base Price",
+            "is_base_price": true
+          },
+          {
+            "symbol": "$",
+            "value": 0.58,
+            "currency": "USD",
+            "raw": "$0.58",
+            "name": "Price Per Measured Unit",
+            "is_per_unit_price": true
+          },
+          {
+            "symbol": "$",
+            "value": 12.98,
+            "currency": "USD",
+            "raw": "$12.98",
+            "name": "List Price",
+            "is_list_price": true
+          }
+        ],
+        "price": {
+          "symbol": "$",
+          "value": 10.38,
+          "currency": "USD",
+          "raw": "$10.38",
+          "name": "Base Price",
+          "is_base_price": true
+        },
+        "deal_text": "Limited time deal",
+        "prime_badge": true,
+        "is_sponsored": false,
+        "is_prime_exclusive_price": false
+      },
+      {
+        "position": 9,
+        "title": "100% Pineapple Juice, No Added Sugar, Excellent Source of Vitamin C, 100% Fruit Juice, 8.4 Fl Oz, 24 Cans, Packaging May Vary",
+        "asin": "B002IGA2FW",
+        "link": "https://www.amazon.com/Dole-Pineapple-Juice-Concentrate-Count/dp/B002IGA2FW/ref=sr_1_9?keywords=grocery&qid=1706754702&sr=8-9",
+        "link_sr": "8-9",
+        "link_ref": "sr_1_9",
+        "categories": [
+          {
+            "name": "All Departments",
+            "id": "aps"
+          }
+        ],
+        "image": "https://m.media-amazon.com/images/I/81G9VUahvDL._AC_UL320_.jpg",
+        "sales_estimate": {
+          "raw": "10K+ bought in past month",
+          "value": 10000
+        },
+        "is_small_business": false,
+        "is_amazon_brand": false,
+        "is_exclusive_to_amazon": false,
+        "delivery_info": [
+          {
+            "shipping_price": {
+              "symbol": "$",
+              "value": 35,
+              "currency": "USD",
+              "raw": "35"
+            },
+            "shipping_estimate": "FREE delivery Mon, Feb 5 on $35 of items shipped by Amazon"
+          },
+          {
+            "shipping_estimate": "Or fastest delivery Tomorrow, Feb 1"
+          }
+        ],
+        "offer_count": 1,
+        "rating": 4.7,
+        "ratings_total": 14998,
+        "prices": [
+          {
+            "symbol": "$",
+            "value": 14.74,
+            "currency": "USD",
+            "raw": "$14.74",
+            "name": "Base Price",
+            "is_base_price": true
+          },
+          {
+            "symbol": "$",
+            "value": 0.07,
+            "currency": "USD",
+            "raw": "$0.07",
+            "name": "Price Per Measured Unit",
+            "is_per_unit_price": true
+          }
+        ],
+        "price": {
+          "symbol": "$",
+          "value": 14.74,
+          "currency": "USD",
+          "raw": "$14.74",
+          "name": "Base Price",
+          "is_base_price": true
+        },
+        "prime_badge": true,
+        "is_sponsored": false,
+        "is_prime_exclusive_price": false
+      },
+      {
+        "position": 10,
+        "title": "Lightly Salted Deluxe Whole Cashews (1lb 2.25oz Canister)",
+        "asin": "B00FFJ2GRG",
+        "link": "https://www.amazon.com/Planters-Deluxe-Cashews-Lightly-Canister/dp/B00FFJ2GRG/ref=sr_1_10?keywords=grocery&qid=1706754702&sr=8-10",
+        "link_sr": "8-10",
+        "link_ref": "sr_1_10",
+        "categories": [
+          {
+            "name": "All Departments",
+            "id": "aps"
+          }
+        ],
+        "image": "https://m.media-amazon.com/images/I/81k9r1EnY5L._AC_UL320_.jpg",
+        "sales_estimate": {
+          "raw": "20K+ bought in past month",
+          "value": 20000
+        },
+        "is_small_business": false,
+        "is_amazon_brand": false,
+        "is_exclusive_to_amazon": false,
+        "delivery_info": [
+          {
+            "shipping_price": {
+              "symbol": "$",
+              "value": 35,
+              "currency": "USD",
+              "raw": "35"
+            },
+            "shipping_estimate": "FREE delivery Mon, Feb 5 on $35 of items shipped by Amazon"
+          },
+          {
+            "shipping_estimate": "Or fastest delivery Tomorrow, Feb 1"
+          }
+        ],
+        "offer_count": 1,
+        "rating": 4.7,
+        "ratings_total": 80788,
+        "prices": [
+          {
+            "symbol": "$",
+            "value": 9.89,
+            "currency": "USD",
+            "raw": "$9.89",
+            "name": "Base Price",
+            "is_base_price": true
+          },
+          {
+            "symbol": "$",
+            "value": 0.54,
+            "currency": "USD",
+            "raw": "$0.54",
+            "name": "Price Per Measured Unit",
+            "is_per_unit_price": true
+          }
+        ],
+        "price": {
+          "symbol": "$",
+          "value": 9.89,
+          "currency": "USD",
+          "raw": "$9.89",
+          "name": "Base Price",
+          "is_base_price": true
+        },
+        "prime_badge": true,
+        "is_sponsored": false,
+        "is_prime_exclusive_price": false
+      },
+      {
+        "position": 11,
+        "title": "Kraft Easy Mac Microwavable Macaroni & Cheese (6.7oz Packets, Pack of 18)",
+        "asin": "B005ECO3H0",
+        "link": "https://www.amazon.com/Kraft-Original-Macaroni-Microwaveable-Packets/dp/B005ECO3H0/ref=sr_1_11?keywords=grocery&qid=1706754702&sr=8-11",
+        "link_sr": "8-11",
+        "link_ref": "sr_1_11",
+        "categories": [
+          {
+            "name": "All Departments",
+            "id": "aps"
+          }
+        ],
+        "image": "https://m.media-amazon.com/images/I/71S0kuwvthL._AC_UL320_.jpg",
+        "sales_estimate": {
+          "raw": "6K+ bought in past month",
+          "value": 6000
+        },
+        "is_small_business": false,
+        "is_amazon_brand": false,
+        "is_exclusive_to_amazon": false,
+        "delivery_info": [
+          {
+            "shipping_price": {
+              "symbol": "$",
+              "value": 35,
+              "currency": "USD",
+              "raw": "35"
+            },
+            "shipping_estimate": "FREE delivery Mon, Feb 5 on $35 of items shipped by Amazon"
+          },
+          {
+            "shipping_estimate": "Or fastest delivery Tomorrow, Feb 1"
+          }
+        ],
+        "offer_count": 1,
+        "rating": 4.6,
+        "ratings_total": 41563,
+        "prices": [
+          {
+            "symbol": "$",
+            "value": 7.99,
+            "currency": "USD",
+            "raw": "$7.99",
+            "name": "Base Price",
+            "is_base_price": true
+          },
+          {
+            "symbol": "$",
+            "value": 0.44,
+            "currency": "USD",
+            "raw": "$0.44",
+            "name": "Price Per Measured Unit",
+            "is_per_unit_price": true
+          },
+          {
+            "symbol": "$",
+            "value": 18.61,
+            "currency": "USD",
+            "raw": "$18.61",
+            "name": "List Price",
+            "is_list_price": true
+          }
+        ],
+        "price": {
+          "symbol": "$",
+          "value": 7.99,
+          "currency": "USD",
+          "raw": "$7.99",
+          "name": "Base Price",
+          "is_base_price": true
+        },
+        "prime_badge": true,
+        "is_sponsored": false,
+        "is_prime_exclusive_price": false
+      },
+      {
+        "position": 12,
+        "title": "Mini Soft Baked Cookies, Chocolate Chip, Snack Bags, 12 ct",
+        "asin": "B09ZQ1RQ92",
+        "link": "https://www.amazon.com/Pillsbury-Baked-Cookies-Chocolate-Count/dp/B09ZQ1RQ92/ref=sr_1_12?keywords=grocery&qid=1706754702&sr=8-12",
+        "link_sr": "8-12",
+        "link_ref": "sr_1_12",
+        "categories": [
+          {
+            "name": "All Departments",
+            "id": "aps"
+          }
+        ],
+        "image": "https://m.media-amazon.com/images/I/81Ffjcb-XdL._AC_UL320_.jpg",
+        "bestseller": {
+          "link": "https://www.amazon.com/gp/bestsellers/grocery/18774317011/ref=sr_bs_11_18774317011_1",
+          "category": "Best Sellerin Chocolate-Chip Cookies"
+        },
+        "sales_estimate": {
+          "raw": "10K+ bought in past month",
+          "value": 10000
+        },
+        "is_small_business": false,
+        "is_amazon_brand": false,
+        "is_exclusive_to_amazon": false,
+        "delivery_info": [
+          {
+            "shipping_price": {
+              "symbol": "$",
+              "value": 35,
+              "currency": "USD",
+              "raw": "35"
+            },
+            "shipping_estimate": "FREE delivery Mon, Feb 5 on $35 of items shipped by Amazon"
+          },
+          {
+            "shipping_estimate": "Or fastest delivery Tomorrow, Feb 1"
+          }
+        ],
+        "offer_count": 1,
+        "rating": 4.1,
+        "ratings_total": 17669,
+        "prices": [
+          {
+            "symbol": "$",
+            "value": 5.88,
+            "currency": "USD",
+            "raw": "$5.88",
+            "name": "Base Price",
+            "is_base_price": true
+          },
+          {
+            "symbol": "$",
+            "value": 0.49,
+            "currency": "USD",
+            "raw": "$0.49",
+            "name": "Price Per Measured Unit",
+            "is_per_unit_price": true
+          }
+        ],
+        "price": {
+          "symbol": "$",
+          "value": 5.88,
+          "currency": "USD",
+          "raw": "$5.88",
+          "name": "Base Price",
+          "is_base_price": true
+        },
+        "prime_badge": true,
+        "status_badge": "Best Seller",
+        "is_sponsored": false,
+        "is_prime_exclusive_price": false
+      },
+      {
+        "position": 13,
+        "title": "Vanilla Wafers - Crispy Wafer Cookies With 3 Delicious, Indulgent, Decadent Layers of Vanilla Flavored Cream - Delicious Sweet Snack or Desert - 5.0 oz (Pack of 1)",
+        "asin": "B0C6RG22VN",
+        "link": "https://www.amazon.com/Bauducco-Vanilla-Wafers-Delicious-Indulgent/dp/B0C6RG22VN/ref=sr_1_13?keywords=grocery&qid=1706754702&sr=8-13",
+        "link_sr": "8-13",
+        "link_ref": "sr_1_13",
+        "categories": [
+          {
+            "name": "All Departments",
+            "id": "aps"
+          }
+        ],
+        "image": "https://m.media-amazon.com/images/I/71vrxVb+PdL._AC_UL320_.jpg",
+        "bestseller": {
+          "link": "https://www.amazon.com/gp/bestsellers/grocery/18774336011/ref=sr_bs_12_18774336011_1",
+          "category": "Best Sellerin Wafer Cookies"
+        },
+        "sales_estimate": {
+          "raw": "4K+ bought in past month",
+          "value": 4000
+        },
+        "is_small_business": false,
+        "is_amazon_brand": false,
+        "is_exclusive_to_amazon": false,
+        "delivery_info": [
+          {
+            "shipping_price": {
+              "symbol": "$",
+              "value": 35,
+              "currency": "USD",
+              "raw": "35"
+            },
+            "shipping_estimate": "FREE delivery Mon, Feb 5 on $35 of items shipped by Amazon"
+          },
+          {
+            "shipping_estimate": "Or fastest delivery Tomorrow, Feb 1"
+          }
+        ],
+        "offer_count": 1,
+        "rating": 4.3,
+        "ratings_total": 13142,
+        "prices": [
+          {
+            "symbol": "$",
+            "value": 0.99,
+            "currency": "USD",
+            "raw": "$0.99",
+            "name": "Base Price",
+            "is_base_price": true
+          },
+          {
+            "symbol": "$",
+            "value": 0.2,
+            "currency": "USD",
+            "raw": "$0.20",
+            "name": "Price Per Measured Unit",
+            "is_per_unit_price": true
+          },
+          {
+            "symbol": "$",
+            "value": 1.25,
+            "currency": "USD",
+            "raw": "$1.25",
+            "name": "List Price",
+            "is_list_price": true
+          }
+        ],
+        "price": {
+          "symbol": "$",
+          "value": 0.99,
+          "currency": "USD",
+          "raw": "$0.99",
+          "name": "Base Price",
+          "is_base_price": true
+        },
+        "prime_badge": true,
+        "status_badge": "Best Seller",
+        "is_sponsored": false,
+        "is_prime_exclusive_price": false
+      },
+      {
+        "position": 14,
+        "title": "Kiwi Strawberry, Zero Calorie Sports Drinking Water with Electrolytes and Vitamins C&E, 16.9 Fl Oz (Pack of 12) - Packaging May Vary",
+        "asin": "B002U58PRI",
+        "link": "https://www.amazon.com/Propel-Strawberry-Flavored-Electrolytes-Vitamins/dp/B002U58PRI/ref=sr_1_14?keywords=grocery&qid=1706754702&sr=8-14",
+        "link_sr": "8-14",
+        "link_ref": "sr_1_14",
+        "categories": [
+          {
+            "name": "All Departments",
+            "id": "aps"
+          }
+        ],
+        "image": "https://m.media-amazon.com/images/I/81ca3M+VQAL._AC_UL320_.jpg",
+        "bestseller": {
+          "link": "https://www.amazon.com/gp/bestsellers/grocery/5782439011/ref=sr_bs_13_5782439011_1",
+          "category": "Best Sellerin Flavored Drinking Water"
+        },
+        "sales_estimate": {
+          "raw": "20K+ bought in past month",
+          "value": 20000
+        },
+        "is_small_business": false,
+        "is_amazon_brand": false,
+        "is_exclusive_to_amazon": false,
+        "delivery_info": [
+          {
+            "shipping_price": {
+              "symbol": "$",
+              "value": 35,
+              "currency": "USD",
+              "raw": "35"
+            },
+            "shipping_estimate": "FREE delivery Mon, Feb 5 on $35 of items shipped by Amazon"
+          },
+          {
+            "shipping_estimate": "Or fastest delivery Fri, Feb 2"
+          }
+        ],
+        "offer_count": 1,
+        "rating": 4.7,
+        "ratings_total": 53864,
+        "prices": [
+          {
+            "symbol": "$",
+            "value": 8.38,
+            "currency": "USD",
+            "raw": "$8.38",
+            "name": "Base Price",
+            "is_base_price": true
+          },
+          {
+            "symbol": "$",
+            "value": 0.04,
+            "currency": "USD",
+            "raw": "$0.04",
+            "name": "Price Per Measured Unit",
+            "is_per_unit_price": true
+          }
+        ],
+        "price": {
+          "symbol": "$",
+          "value": 8.38,
+          "currency": "USD",
+          "raw": "$8.38",
+          "name": "Base Price",
+          "is_base_price": true
+        },
+        "prime_badge": true,
+        "status_badge": "Best Seller",
+        "is_sponsored": false,
+        "is_prime_exclusive_price": false
+      },
+      {
+        "position": 15,
+        "title": "Beef Jerky, Teriyaki - Flavorful Meat Snack for Lunches, Ready to Eat Snacks - 7g of Protein, Made with Premium Beef - 0.625 Oz Bags (Pack of 5)",
+        "asin": "B015SQAVB8",
+        "link": "https://www.amazon.com/Jack-Links-Teriyaki-Protein-5-0-625oz/dp/B015SQAVB8/ref=sr_1_15?keywords=grocery&qid=1706754702&sr=8-15",
+        "link_sr": "8-15",
+        "link_ref": "sr_1_15",
+        "categories": [
+          {
+            "name": "All Departments",
+            "id": "aps"
+          }
+        ],
+        "image": "https://m.media-amazon.com/images/I/61VOuSVWFoL._AC_UL320_.jpg",
+        "sales_estimate": {
+          "raw": "6K+ bought in past month",
+          "value": 6000
+        },
+        "is_small_business": false,
+        "is_amazon_brand": false,
+        "is_exclusive_to_amazon": false,
+        "delivery_info": [
+          {
+            "shipping_price": {
+              "symbol": "$",
+              "value": 35,
+              "currency": "USD",
+              "raw": "35"
+            },
+            "shipping_estimate": "FREE delivery Mon, Feb 5 on $35 of items shipped by Amazon"
+          },
+          {
+            "shipping_estimate": "Or fastest delivery Tomorrow, Feb 1"
+          }
+        ],
+        "offer_count": 1,
+        "rating": 4.5,
+        "ratings_total": 69790,
+        "prices": [
+          {
+            "symbol": "$",
+            "value": 7.49,
+            "currency": "USD",
+            "raw": "$7.49",
+            "name": "Base Price",
+            "is_base_price": true
+          },
+          {
+            "symbol": "$",
+            "value": 11.98,
+            "currency": "USD",
+            "raw": "$11.98",
+            "name": "Price Per Measured Unit",
+            "is_per_unit_price": true
+          }
+        ],
+        "price": {
+          "symbol": "$",
+          "value": 7.49,
+          "currency": "USD",
+          "raw": "$7.49",
+          "name": "Base Price",
+          "is_base_price": true
+        },
+        "prime_badge": true,
+        "is_sponsored": false,
+        "is_prime_exclusive_price": false
+      },
+      {
+        "position": 16,
+        "title": "White Cheddar Shells Macaroni & Cheese Dinner with Organic Pasta, 6 OZ (Pack of 12)",
+        "asin": "B000CQ01GU",
+        "link": "https://www.amazon.com/Annies-Macaroni-Cheese-Shells-Cheddar/dp/B000CQ01GU/ref=sr_1_16?keywords=grocery&qid=1706754702&sr=8-16",
+        "link_sr": "8-16",
+        "link_ref": "sr_1_16",
+        "categories": [
+          {
+            "name": "All Departments",
+            "id": "aps"
+          }
+        ],
+        "image": "https://m.media-amazon.com/images/I/71VVi5mB2fL._AC_UL320_.jpg",
+        "sales_estimate": {
+          "raw": "9K+ bought in past month",
+          "value": 9000
+        },
+        "is_small_business": false,
+        "is_amazon_brand": false,
+        "is_exclusive_to_amazon": false,
+        "delivery_info": [
+          {
+            "shipping_price": {
+              "symbol": "$",
+              "value": 35,
+              "currency": "USD",
+              "raw": "35"
+            },
+            "shipping_estimate": "FREE delivery Mon, Feb 5 on $35 of items shipped by Amazon"
+          },
+          {
+            "shipping_estimate": "Or fastest delivery Tomorrow, Feb 1"
+          }
+        ],
+        "offer_count": 1,
+        "rating": 4.7,
+        "ratings_total": 9218,
+        "prices": [
+          {
+            "symbol": "$",
+            "value": 15.12,
+            "currency": "USD",
+            "raw": "$15.12",
+            "name": "Base Price",
+            "is_base_price": true
+          },
+          {
+            "symbol": "$",
+            "value": 0.21,
+            "currency": "USD",
+            "raw": "$0.21",
+            "name": "Price Per Measured Unit",
+            "is_per_unit_price": true
+          },
+          {
+            "symbol": "$",
+            "value": 17.28,
+            "currency": "USD",
+            "raw": "$17.28",
+            "name": "List Price",
+            "is_list_price": true
+          }
+        ],
+        "price": {
+          "symbol": "$",
+          "value": 15.12,
+          "currency": "USD",
+          "raw": "$15.12",
+          "name": "Base Price",
+          "is_base_price": true
+        },
+        "prime_badge": true,
+        "is_sponsored": false,
+        "is_prime_exclusive_price": false
+      },
+      {
+        "position": 17,
+        "title": "100% Orange Juice, 15.2 fl oz (Pack of 12) - Real Fruit Juices, Vitamin C Rich, No Added Sugars, No Artificial Flavors",
+        "asin": "B003VTJUOE",
+        "link": "https://www.amazon.com/Tropicana-Orange-Juice-15-2-Ounce-Bottles/dp/B003VTJUOE/ref=sr_1_17?keywords=grocery&qid=1706754702&sr=8-17",
+        "link_sr": "8-17",
+        "link_ref": "sr_1_17",
+        "categories": [
+          {
+            "name": "All Departments",
+            "id": "aps"
+          }
+        ],
+        "image": "https://m.media-amazon.com/images/I/81IrN3DV+YL._AC_UL320_.jpg",
+        "sales_estimate": {
+          "raw": "1K+ bought in past month",
+          "value": 1000
+        },
+        "is_small_business": false,
+        "is_amazon_brand": false,
+        "is_exclusive_to_amazon": false,
+        "delivery_info": [
+          {
+            "shipping_price": {
+              "symbol": "$",
+              "value": 35,
+              "currency": "USD",
+              "raw": "35"
+            },
+            "shipping_estimate": "FREE delivery Mon, Feb 5 on $35 of items shipped by Amazon"
+          },
+          {
+            "shipping_estimate": "Or fastest delivery Tomorrow, Feb 1"
+          }
+        ],
+        "offer_count": 1,
+        "rating": 4.6,
+        "ratings_total": 57775,
+        "prices": [
+          {
+            "symbol": "$",
+            "value": 15.48,
+            "currency": "USD",
+            "raw": "$15.48",
+            "name": "Base Price",
+            "is_base_price": true
+          },
+          {
+            "symbol": "$",
+            "value": 0.08,
+            "currency": "USD",
+            "raw": "$0.08",
+            "name": "Price Per Measured Unit",
+            "is_per_unit_price": true
+          }
+        ],
+        "price": {
+          "symbol": "$",
+          "value": 15.48,
+          "currency": "USD",
+          "raw": "$15.48",
+          "name": "Base Price",
+          "is_base_price": true
+        },
+        "prime_badge": true,
+        "is_sponsored": false,
+        "is_prime_exclusive_price": false
+      },
+      {
+        "position": 18,
+        "title": "Chocolate Pudding, 4 Count Pudding Cups",
+        "asin": "B00I9VC2AI",
+        "link": "https://www.amazon.com/Snack-Pack-Chocolate-Pudding-Count/dp/B00I9VC2AI/ref=sr_1_18?keywords=grocery&qid=1706754702&sr=8-18",
+        "link_sr": "8-18",
+        "link_ref": "sr_1_18",
+        "categories": [
+          {
+            "name": "All Departments",
+            "id": "aps"
+          }
+        ],
+        "image": "https://m.media-amazon.com/images/I/71Qjhi9dZzL._AC_UL320_.jpg",
+        "sales_estimate": {
+          "raw": "10K+ bought in past month",
+          "value": 10000
+        },
+        "is_small_business": false,
+        "is_amazon_brand": false,
+        "is_exclusive_to_amazon": false,
+        "delivery_info": [
+          {
+            "shipping_price": {
+              "symbol": "$",
+              "value": 35,
+              "currency": "USD",
+              "raw": "35"
+            },
+            "shipping_estimate": "FREE delivery Mon, Feb 5 on $35 of items shipped by Amazon"
+          },
+          {
+            "shipping_estimate": "Or fastest delivery Tomorrow, Feb 1"
+          }
+        ],
+        "offer_count": 1,
+        "rating": 4.6,
+        "ratings_total": 21252,
+        "prices": [
+          {
+            "symbol": "$",
+            "value": 1,
+            "currency": "USD",
+            "raw": "$1.00",
+            "name": "Base Price",
+            "is_base_price": true
+          },
+          {
+            "symbol": "$",
+            "value": 0.02,
+            "currency": "USD",
+            "raw": "$0.02",
+            "name": "Price Per Measured Unit",
+            "is_per_unit_price": true
+          },
+          {
+            "symbol": "$",
+            "value": 1.25,
+            "currency": "USD",
+            "raw": "$1.25",
+            "name": "List Price",
+            "is_list_price": true
+          }
+        ],
+        "price": {
+          "symbol": "$",
+          "value": 1,
+          "currency": "USD",
+          "raw": "$1.00",
+          "name": "Base Price",
+          "is_base_price": true
+        },
+        "prime_badge": true,
+        "is_sponsored": false,
+        "is_prime_exclusive_price": false
+      },
+      {
+        "position": 19,
+        "title": "Coconut Pineapple Sparkling Water, Zero Sugar Flavored Water, with Vitamins and Antioxidants, Low Calorie Beverage, 17 fl oz Bottles (Pack of 12)",
+        "asin": "B006FUL3XC",
+        "link": "https://www.amazon.com/Sparkling-Coconut-Pineapple-Antioxidants-Vitamins/dp/B006FUL3XC/ref=sr_1_19?keywords=grocery&qid=1706754702&sr=8-19",
+        "link_sr": "8-19",
+        "link_ref": "sr_1_19",
+        "categories": [
+          {
+            "name": "All Departments",
+            "id": "aps"
+          }
+        ],
+        "image": "https://m.media-amazon.com/images/I/81AVn2jEcqL._AC_UL320_.jpg",
+        "bestseller": {
+          "link": "https://www.amazon.com/gp/bestsellers/grocery/5782442011/ref=sr_bs_18_5782442011_1",
+          "category": "Best Sellerin Carbonated Drinking Water"
+        },
+        "sales_estimate": {
+          "raw": "10K+ bought in past month",
+          "value": 10000
+        },
+        "is_small_business": false,
+        "is_amazon_brand": false,
+        "is_exclusive_to_amazon": false,
+        "delivery_info": [
+          {
+            "shipping_price": {
+              "symbol": "$",
+              "value": 35,
+              "currency": "USD",
+              "raw": "35"
+            },
+            "shipping_estimate": "FREE delivery Mon, Feb 5 on $35 of items shipped by Amazon"
+          },
+          {
+            "shipping_estimate": "Or fastest delivery Tomorrow, Feb 1"
+          }
+        ],
+        "offer_count": 1,
+        "rating": 4.7,
+        "ratings_total": 90752,
+        "prices": [
+          {
+            "symbol": "$",
+            "value": 12,
+            "currency": "USD",
+            "raw": "$12.00",
+            "name": "Base Price",
+            "is_base_price": true
+          },
+          {
+            "symbol": "$",
+            "value": 0.06,
+            "currency": "USD",
+            "raw": "$0.06",
+            "name": "Price Per Measured Unit",
+            "is_per_unit_price": true
+          }
+        ],
+        "price": {
+          "symbol": "$",
+          "value": 12,
+          "currency": "USD",
+          "raw": "$12.00",
+          "name": "Base Price",
+          "is_base_price": true
+        },
+        "prime_badge": true,
+        "status_badge": "Best Seller",
+        "is_sponsored": false,
+        "is_prime_exclusive_price": false
+      },
+      {
+        "position": 20,
+        "title": "Original Thirst Quencher 3-Flavor Frost Variety Pack, 20 Fl Ounce - Pack of 12",
+        "asin": "B00HC7633C",
+        "link": "https://www.amazon.com/Gatorade-Thirst-Quencher-Variety-Bottles/dp/B00HC7633C/ref=sr_1_20?keywords=grocery&qid=1706754702&sr=8-20",
+        "link_sr": "8-20",
+        "link_ref": "sr_1_20",
+        "categories": [
+          {
+            "name": "All Departments",
+            "id": "aps"
+          }
+        ],
+        "image": "https://m.media-amazon.com/images/I/91H6l8TEmLL._AC_UL320_.jpg",
+        "bestseller": {
+          "link": "https://www.amazon.com/gp/bestsellers/grocery/16318371/ref=sr_bs_19_16318371_1",
+          "category": "Best Sellerin Sports Drinks"
+        },
+        "sales_estimate": {
+          "raw": "7K+ bought in past month",
+          "value": 7000
+        },
+        "is_small_business": false,
+        "is_amazon_brand": false,
+        "is_exclusive_to_amazon": false,
+        "delivery_info": [
+          {
+            "shipping_price": {
+              "symbol": "$",
+              "value": 35,
+              "currency": "USD",
+              "raw": "35"
+            },
+            "shipping_estimate": "FREE delivery Mon, Feb 5 on $35 of items shipped by Amazon"
+          },
+          {
+            "shipping_estimate": "Or fastest delivery Tomorrow, Feb 1"
+          }
+        ],
+        "offer_count": 1,
+        "rating": 4.8,
+        "ratings_total": 71351,
+        "prices": [
+          {
+            "symbol": "$",
+            "value": 15.29,
+            "currency": "USD",
+            "raw": "$15.29",
+            "name": "Base Price",
+            "is_base_price": true
+          },
+          {
+            "symbol": "$",
+            "value": 0.06,
+            "currency": "USD",
+            "raw": "$0.06",
+            "name": "Price Per Measured Unit",
+            "is_per_unit_price": true
+          },
+          {
+            "symbol": "$",
+            "value": 21.79,
+            "currency": "USD",
+            "raw": "$21.79",
+            "name": "List Price",
+            "is_list_price": true
+          }
+        ],
+        "price": {
+          "symbol": "$",
+          "value": 15.29,
+          "currency": "USD",
+          "raw": "$15.29",
+          "name": "Base Price",
+          "is_base_price": true
+        },
+        "prime_badge": true,
+        "status_badge": "Best Seller",
+        "is_sponsored": false,
+        "is_prime_exclusive_price": false
+      },
+      {
+        "position": 21,
+        "title": "Reese's Puffs Cinnamon Toast Crunch Cereal Treat Bars Variety Pack, 28 ct",
+        "asin": "B08NGF1TGG",
+        "link": "https://www.amazon.com/Reeses-Puffs-Cinnamon-Crunch-Variety/dp/B08NGF1TGG/ref=sr_1_21?keywords=grocery&qid=1706754702&sr=8-21",
+        "link_sr": "8-21",
+        "link_ref": "sr_1_21",
+        "categories": [
+          {
+            "name": "All Departments",
+            "id": "aps"
+          }
+        ],
+        "image": "https://m.media-amazon.com/images/I/81F0z-RM8lL._AC_UL320_.jpg",
+        "sales_estimate": {
+          "raw": "10K+ bought in past month",
+          "value": 10000
+        },
+        "is_small_business": false,
+        "is_amazon_brand": false,
+        "is_exclusive_to_amazon": false,
+        "delivery_info": [
+          {
+            "shipping_price": {
+              "symbol": "$",
+              "value": 35,
+              "currency": "USD",
+              "raw": "35"
+            },
+            "shipping_estimate": "FREE delivery Mon, Feb 5 on $35 of items shipped by Amazon"
+          },
+          {
+            "shipping_estimate": "Or fastest delivery Tomorrow, Feb 1"
+          }
+        ],
+        "offer_count": 1,
+        "rating": 4.6,
+        "ratings_total": 3972,
+        "prices": [
+          {
+            "symbol": "$",
+            "value": 10.13,
+            "currency": "USD",
+            "raw": "$10.13",
+            "name": "Base Price",
+            "is_base_price": true
+          },
+          {
+            "symbol": "$",
+            "value": 0.43,
+            "currency": "USD",
+            "raw": "$0.43",
+            "name": "Price Per Measured Unit",
+            "is_per_unit_price": true
+          }
+        ],
+        "price": {
+          "symbol": "$",
+          "value": 10.13,
+          "currency": "USD",
+          "raw": "$10.13",
+          "name": "Base Price",
+          "is_base_price": true
+        },
+        "prime_badge": true,
+        "is_sponsored": false,
+        "is_prime_exclusive_price": false
+      },
+      {
+        "position": 22,
+        "title": "Movie Theater Butter Microwave Popcorn, 3.29 Ounce Classic Bag, 24-Count",
+        "asin": "B00I9VCF0U",
+        "link": "https://www.amazon.com/Orville-Redenbachers-Theater-Microwave-24-Count/dp/B00I9VCF0U/ref=sr_1_22?keywords=grocery&qid=1706754702&sr=8-22",
+        "link_sr": "8-22",
+        "link_ref": "sr_1_22",
+        "categories": [
+          {
+            "name": "All Departments",
+            "id": "aps"
+          }
+        ],
+        "image": "https://m.media-amazon.com/images/I/81-Iu7Nd37L._AC_UL320_.jpg",
+        "bestseller": {
+          "link": "https://www.amazon.com/gp/bestsellers/grocery/16323051/ref=sr_bs_21_16323051_1",
+          "category": "Best Sellerin Microwave Popcorn"
+        },
+        "sales_estimate": {
+          "raw": "10K+ bought in past month",
+          "value": 10000
+        },
+        "is_small_business": false,
+        "is_amazon_brand": false,
+        "is_exclusive_to_amazon": false,
+        "delivery_info": [
+          {
+            "shipping_price": {
+              "symbol": "$",
+              "value": 35,
+              "currency": "USD",
+              "raw": "35"
+            },
+            "shipping_estimate": "FREE delivery Mon, Feb 5 on $35 of items shipped by Amazon"
+          },
+          {
+            "shipping_estimate": "Or fastest delivery Fri, Feb 2"
+          }
+        ],
+        "offer_count": 1,
+        "rating": 4.7,
+        "ratings_total": 29863,
+        "prices": [
+          {
+            "symbol": "$",
+            "value": 11.98,
+            "currency": "USD",
+            "raw": "$11.98",
+            "name": "Base Price",
+            "is_base_price": true
+          },
+          {
+            "symbol": "$",
+            "value": 0.15,
+            "currency": "USD",
+            "raw": "$0.15",
+            "name": "Price Per Measured Unit",
+            "is_per_unit_price": true
+          }
+        ],
+        "price": {
+          "symbol": "$",
+          "value": 11.98,
+          "currency": "USD",
+          "raw": "$11.98",
+          "name": "Base Price",
+          "is_base_price": true
+        },
+        "prime_badge": true,
+        "status_badge": "Best Seller",
+        "is_sponsored": false,
+        "is_prime_exclusive_price": false
+      },
+      {
+        "position": 23,
+        "title": "Applesauce, 4 Ounce Cup, 18 Count",
+        "asin": "B01EOW6OK4",
+        "link": "https://www.amazon.com/Motts-Applesauce-Ounce-Cup-Count/dp/B01EOW6OK4/ref=sr_1_23?keywords=grocery&qid=1706754702&sr=8-23",
+        "link_sr": "8-23",
+        "link_ref": "sr_1_23",
+        "categories": [
+          {
+            "name": "All Departments",
+            "id": "aps"
+          }
+        ],
+        "image": "https://m.media-amazon.com/images/I/81J9DJsXj2L._AC_UL320_.jpg",
+        "sales_estimate": {
+          "raw": "10K+ bought in past month",
+          "value": 10000
+        },
+        "is_small_business": false,
+        "is_amazon_brand": false,
+        "is_exclusive_to_amazon": false,
+        "delivery_info": [
+          {
+            "shipping_price": {
+              "symbol": "$",
+              "value": 35,
+              "currency": "USD",
+              "raw": "35"
+            },
+            "shipping_estimate": "FREE delivery Mon, Feb 5 on $35 of items shipped by Amazon"
+          },
+          {
+            "shipping_estimate": "Or fastest delivery Tomorrow, Feb 1"
+          }
+        ],
+        "offer_count": 1,
+        "rating": 4.7,
+        "ratings_total": 21303,
+        "prices": [
+          {
+            "symbol": "$",
+            "value": 6.98,
+            "currency": "USD",
+            "raw": "$6.98",
+            "name": "Base Price",
+            "is_base_price": true
+          },
+          {
+            "symbol": "$",
+            "value": 0.39,
+            "currency": "USD",
+            "raw": "$0.39",
+            "name": "Price Per Measured Unit",
+            "is_per_unit_price": true
+          }
+        ],
+        "price": {
+          "symbol": "$",
+          "value": 6.98,
+          "currency": "USD",
+          "raw": "$6.98",
+          "name": "Base Price",
+          "is_base_price": true
+        },
+        "prime_badge": true,
+        "is_sponsored": false,
+        "is_prime_exclusive_price": false
+      },
+      {
+        "position": 24,
+        "title": "Frito-Lay Classic Mix Variety Pack, (Pack of 35)",
+        "asin": "B073QMN75M",
+        "link": "https://www.amazon.com/Frito-Lay-Classic-Variety-Pack-Count/dp/B073QMN75M/ref=sr_1_24?keywords=grocery&qid=1706754702&sr=8-24",
+        "link_sr": "8-24",
+        "link_ref": "sr_1_24",
+        "categories": [
+          {
+            "name": "All Departments",
+            "id": "aps"
+          }
+        ],
+        "image": "https://m.media-amazon.com/images/I/81dROkl2pKL._AC_UL320_.jpg",
+        "bestseller": {
+          "link": "https://www.amazon.com/gp/bestsellers/grocery/16322761/ref=sr_bs_23_16322761_1",
+          "category": "Best Sellerin Potato Chips & Crisps"
+        },
+        "sales_estimate": {
+          "raw": "4K+ bought in past month",
+          "value": 4000
+        },
+        "is_small_business": false,
+        "is_amazon_brand": false,
+        "is_exclusive_to_amazon": false,
+        "delivery_info": [
+          {
+            "shipping_price": {
+              "symbol": "$",
+              "value": 35,
+              "currency": "USD",
+              "raw": "35"
+            },
+            "shipping_estimate": "FREE delivery Mon, Feb 5 on $35 of items shipped by Amazon"
+          },
+          {
+            "shipping_estimate": "Or fastest delivery Fri, Feb 2"
+          }
+        ],
+        "offer_count": 1,
+        "rating": 4.6,
+        "ratings_total": 165095,
+        "prices": [
+          {
+            "symbol": "$",
+            "value": 18.39,
+            "currency": "USD",
+            "raw": "$18.39",
+            "name": "Base Price",
+            "is_base_price": true
+          },
+          {
+            "symbol": "$",
+            "value": 0.57,
+            "currency": "USD",
+            "raw": "$0.57",
+            "name": "Price Per Measured Unit",
+            "is_per_unit_price": true
+          },
+          {
+            "symbol": "$",
+            "value": 22.99,
+            "currency": "USD",
+            "raw": "$22.99",
+            "name": "List Price",
+            "is_list_price": true
+          }
+        ],
+        "price": {
+          "symbol": "$",
+          "value": 18.39,
+          "currency": "USD",
+          "raw": "$18.39",
+          "name": "Base Price",
+          "is_base_price": true
+        },
+        "deal_text": "Limited time deal",
+        "prime_badge": true,
+        "status_badge": "Best Seller",
+        "is_sponsored": false,
+        "is_prime_exclusive_price": false
+      },
+      {
+        "position": 25,
+        "title": "Chunk Light Tuna in Water, 2.6 Oz, Pack of 4",
+        "asin": "B00DYGQZOC",
+        "link": "https://www.amazon.com/StarKist-Chunk-Light-Tuna-Water/dp/B00DYGQZOC/ref=sr_1_25?keywords=grocery&qid=1706754702&sr=8-25",
+        "link_sr": "8-25",
+        "link_ref": "sr_1_25",
+        "categories": [
+          {
+            "name": "All Departments",
+            "id": "aps"
+          }
+        ],
+        "image": "https://m.media-amazon.com/images/I/91MVlR+d21L._AC_UL320_.jpg",
+        "sales_estimate": {
+          "raw": "700+ bought in past month",
+          "value": 700
+        },
+        "is_small_business": false,
+        "is_amazon_brand": false,
+        "is_exclusive_to_amazon": false,
+        "delivery_info": [
+          {
+            "shipping_price": {
+              "symbol": "$",
+              "value": 35,
+              "currency": "USD",
+              "raw": "35"
+            },
+            "shipping_estimate": "FREE delivery Mon, Feb 5 on $35 of items shipped by Amazon"
+          },
+          {
+            "shipping_estimate": "Or fastest delivery Tomorrow, Feb 1"
+          }
+        ],
+        "offer_count": 1,
+        "rating": 4.8,
+        "ratings_total": 23634,
+        "prices": [
+          {
+            "symbol": "$",
+            "value": 5.96,
+            "currency": "USD",
+            "raw": "$5.96",
+            "name": "Base Price",
+            "is_base_price": true
+          },
+          {
+            "symbol": "$",
+            "value": 0.57,
+            "currency": "USD",
+            "raw": "$0.57",
+            "name": "Price Per Measured Unit",
+            "is_per_unit_price": true
+          }
+        ],
+        "price": {
+          "symbol": "$",
+          "value": 5.96,
+          "currency": "USD",
+          "raw": "$5.96",
+          "name": "Base Price",
+          "is_base_price": true
+        },
+        "prime_badge": true,
+        "is_sponsored": false,
+        "is_prime_exclusive_price": false
+      },
+      {
+        "position": 26,
+        "title": "Fruit on the Go Variety Pack, Apple, Peach & Gimme Five!, 3.2 oz (Pack of 20), Unsweetened Fruit Snacks for Kids, Gluten Free, Nut Free and Dairy Free, Recloseable Cap, BPA Free Pouches",
+        "asin": "B07C2SVB83",
+        "link": "https://www.amazon.com/GoGo-Unsweetened-Recloseable-following-information/dp/B07C2SVB83/ref=sr_1_26?keywords=grocery&qid=1706754702&sr=8-26",
+        "link_sr": "8-26",
+        "link_ref": "sr_1_26",
+        "categories": [
+          {
+            "name": "All Departments",
+            "id": "aps"
+          }
+        ],
+        "image": "https://m.media-amazon.com/images/I/813FCAMufwS._AC_UL320_.jpg",
+        "sales_estimate": {
+          "raw": "9K+ bought in past month",
+          "value": 9000
+        },
+        "is_small_business": false,
+        "is_amazon_brand": false,
+        "is_exclusive_to_amazon": false,
+        "delivery_info": [
+          {
+            "shipping_price": {
+              "symbol": "$",
+              "value": 35,
+              "currency": "USD",
+              "raw": "35"
+            },
+            "shipping_estimate": "FREE delivery Mon, Feb 5 on $35 of items shipped by Amazon"
+          },
+          {
+            "shipping_estimate": "Or fastest delivery Tomorrow, Feb 1"
+          }
+        ],
+        "offer_count": 1,
+        "rating": 4.8,
+        "ratings_total": 12458,
+        "prices": [
+          {
+            "symbol": "$",
+            "value": 11.88,
+            "currency": "USD",
+            "raw": "$11.88",
+            "name": "Base Price",
+            "is_base_price": true
+          },
+          {
+            "symbol": "$",
+            "value": 0.19,
+            "currency": "USD",
+            "raw": "$0.19",
+            "name": "Price Per Measured Unit",
+            "is_per_unit_price": true
+          }
+        ],
+        "price": {
+          "symbol": "$",
+          "value": 11.88,
+          "currency": "USD",
+          "raw": "$11.88",
+          "name": "Base Price",
+          "is_base_price": true
+        },
+        "prime_badge": true,
+        "is_sponsored": false,
+        "is_prime_exclusive_price": false
+      },
+      {
+        "position": 27,
+        "title": "Dark Chocolate Fudge Brownie Mix, 18.2 OZ",
+        "asin": "B00L2MWLMK",
+        "link": "https://www.amazon.com/Duncan-Hines-Brownie-Chocolate-Fudge/dp/B00L2MWLMK/ref=sr_1_27?keywords=grocery&qid=1706754702&sr=8-27",
+        "link_sr": "8-27",
+        "link_ref": "sr_1_27",
+        "categories": [
+          {
+            "name": "All Departments",
+            "id": "aps"
+          }
+        ],
+        "image": "https://m.media-amazon.com/images/I/91EIdd9ddbL._AC_UL320_.jpg",
+        "bestseller": {
+          "link": "https://www.amazon.com/gp/bestsellers/grocery/16317261/ref=sr_bs_26_16317261_1",
+          "category": "Best Sellerin Brownie Mixes"
+        },
+        "sales_estimate": {
+          "raw": "10K+ bought in past month",
+          "value": 10000
+        },
+        "is_small_business": false,
+        "is_amazon_brand": false,
+        "is_exclusive_to_amazon": false,
+        "delivery_info": [
+          {
+            "shipping_price": {
+              "symbol": "$",
+              "value": 35,
+              "currency": "USD",
+              "raw": "35"
+            },
+            "shipping_estimate": "FREE delivery Mon, Feb 5 on $35 of items shipped by Amazon"
+          },
+          {
+            "shipping_estimate": "Or fastest delivery Tomorrow, Feb 1"
+          }
+        ],
+        "offer_count": 1,
+        "rating": 4.6,
+        "ratings_total": 8652,
+        "prices": [
+          {
+            "symbol": "$",
+            "value": 1.38,
+            "currency": "USD",
+            "raw": "$1.38",
+            "name": "Base Price",
+            "is_base_price": true
+          },
+          {
+            "symbol": "$",
+            "value": 0.08,
+            "currency": "USD",
+            "raw": "$0.08",
+            "name": "Price Per Measured Unit",
+            "is_per_unit_price": true
+          }
+        ],
+        "price": {
+          "symbol": "$",
+          "value": 1.38,
+          "currency": "USD",
+          "raw": "$1.38",
+          "name": "Base Price",
+          "is_base_price": true
+        },
+        "prime_badge": true,
+        "status_badge": "Best Seller",
+        "is_sponsored": false,
+        "is_prime_exclusive_price": false
+      },
+      {
+        "position": 28,
+        "title": "Shells & Cheese Original Shell Pasta & Cheese Sauce Meal (3 ct Pack, 12 oz Boxes)",
+        "asin": "B00XABL28K",
+        "link": "https://www.amazon.com/Velveeta-Shells-Cheese-Original-Pack/dp/B00XABL28K/ref=sr_1_28?keywords=grocery&qid=1706754702&sr=8-28",
+        "link_sr": "8-28",
+        "link_ref": "sr_1_28",
+        "categories": [
+          {
+            "name": "All Departments",
+            "id": "aps"
+          }
+        ],
+        "image": "https://m.media-amazon.com/images/I/71jIwNp8QhL._AC_UL320_.jpg",
+        "sales_estimate": {
+          "raw": "10K+ bought in past month",
+          "value": 10000
+        },
+        "is_small_business": false,
+        "is_amazon_brand": false,
+        "is_exclusive_to_amazon": false,
+        "delivery_info": [
+          {
+            "shipping_price": {
+              "symbol": "$",
+              "value": 35,
+              "currency": "USD",
+              "raw": "35"
+            },
+            "shipping_estimate": "FREE delivery Mon, Feb 5 on $35 of items shipped by Amazon"
+          },
+          {
+            "shipping_estimate": "Or fastest delivery Tomorrow, Feb 1"
+          }
+        ],
+        "offer_count": 1,
+        "rating": 4.7,
+        "ratings_total": 13356,
+        "prices": [
+          {
+            "symbol": "$",
+            "value": 7.47,
+            "currency": "USD",
+            "raw": "$7.47",
+            "name": "Base Price",
+            "is_base_price": true
+          },
+          {
+            "symbol": "$",
+            "value": 0.21,
+            "currency": "USD",
+            "raw": "$0.21",
+            "name": "Price Per Measured Unit",
+            "is_per_unit_price": true
+          }
+        ],
+        "price": {
+          "symbol": "$",
+          "value": 7.47,
+          "currency": "USD",
+          "raw": "$7.47",
+          "name": "Base Price",
+          "is_base_price": true
+        },
+        "prime_badge": true,
+        "is_sponsored": false,
+        "is_prime_exclusive_price": false
+      },
+      {
+        "position": 29,
+        "title": "Strawberry and Orange Flavored Juicy Gels, 4 Count Snack Cups",
+        "asin": "B083ZRSKSM",
+        "link": "https://www.amazon.com/Snack-Pack-Juicy-Strawberry-Orange/dp/B083ZRSKSM/ref=sr_1_29?keywords=grocery&qid=1706754702&sr=8-29",
+        "link_sr": "8-29",
+        "link_ref": "sr_1_29",
+        "categories": [
+          {
+            "name": "All Departments",
+            "id": "aps"
+          }
+        ],
+        "image": "https://m.media-amazon.com/images/I/71Ug4djoFKL._AC_UL320_.jpg",
+        "bestseller": {
+          "link": "https://www.amazon.com/gp/bestsellers/grocery/6492316011/ref=sr_bs_28_6492316011_1",
+          "category": "Best Sellerin Gelatins"
+        },
+        "sales_estimate": {
+          "raw": "8K+ bought in past month",
+          "value": 8000
+        },
+        "is_small_business": false,
+        "is_amazon_brand": false,
+        "is_exclusive_to_amazon": false,
+        "delivery_info": [
+          {
+            "shipping_price": {
+              "symbol": "$",
+              "value": 35,
+              "currency": "USD",
+              "raw": "35"
+            },
+            "shipping_estimate": "FREE delivery Mon, Feb 5 on $35 of items shipped by Amazon"
+          },
+          {
+            "shipping_estimate": "Or fastest delivery Tomorrow, Feb 1"
+          }
+        ],
+        "offer_count": 1,
+        "rating": 4.3,
+        "ratings_total": 4007,
+        "prices": [
+          {
+            "symbol": "$",
+            "value": 1,
+            "currency": "USD",
+            "raw": "$1.00",
+            "name": "Base Price",
+            "is_base_price": true
+          },
+          {
+            "symbol": "$",
+            "value": 0.08,
+            "currency": "USD",
+            "raw": "$0.08",
+            "name": "Price Per Measured Unit",
+            "is_per_unit_price": true
+          }
+        ],
+        "price": {
+          "symbol": "$",
+          "value": 1,
+          "currency": "USD",
+          "raw": "$1.00",
+          "name": "Base Price",
+          "is_base_price": true
+        },
+        "prime_badge": true,
+        "status_badge": "Best Seller",
+        "is_sponsored": false,
+        "is_prime_exclusive_price": false
+      },
+      {
+        "position": 30,
+        "title": "Oatmeal Creme Pies, 12 Individually Wrapped creme pies, 16.2 Ounces, Pack of One (1)",
+        "asin": "B07K6C6278",
+        "link": "https://www.amazon.com/Little-Debbie-Oatmeal-Cr%C3%A8me-Pie/dp/B07K6C6278/ref=sr_1_30?keywords=grocery&qid=1706754702&sr=8-30",
+        "link_sr": "8-30",
+        "link_ref": "sr_1_30",
+        "categories": [
+          {
+            "name": "All Departments",
+            "id": "aps"
+          }
+        ],
+        "image": "https://m.media-amazon.com/images/I/81an7ILBWrL._AC_UL320_.jpg",
+        "bestseller": {
+          "link": "https://www.amazon.com/gp/bestsellers/grocery/18774328011/ref=sr_bs_29_18774328011_1",
+          "category": "Best Sellerin Oatmeal Cookies"
+        },
+        "sales_estimate": {
+          "raw": "20K+ bought in past month",
+          "value": 20000
+        },
+        "is_small_business": false,
+        "is_amazon_brand": false,
+        "is_exclusive_to_amazon": false,
+        "delivery_info": [
+          {
+            "shipping_price": {
+              "symbol": "$",
+              "value": 35,
+              "currency": "USD",
+              "raw": "35"
+            },
+            "shipping_estimate": "FREE delivery Mon, Feb 5 on $35 of items shipped by Amazon"
+          },
+          {
+            "shipping_estimate": "Or fastest delivery Tomorrow, Feb 1"
+          }
+        ],
+        "offer_count": 1,
+        "rating": 4.6,
+        "ratings_total": 8376,
+        "prices": [
+          {
+            "symbol": "$",
+            "value": 2.68,
+            "currency": "USD",
+            "raw": "$2.68",
+            "name": "Base Price",
+            "is_base_price": true
+          },
+          {
+            "symbol": "$",
+            "value": 0.17,
+            "currency": "USD",
+            "raw": "$0.17",
+            "name": "Price Per Measured Unit",
+            "is_per_unit_price": true
+          }
+        ],
+        "price": {
+          "symbol": "$",
+          "value": 2.68,
+          "currency": "USD",
+          "raw": "$2.68",
+          "name": "Base Price",
+          "is_base_price": true
+        },
+        "prime_badge": true,
+        "status_badge": "Best Seller",
+        "is_sponsored": false,
+        "is_prime_exclusive_price": false
+      },
+      {
+        "position": 31,
+        "title": "No Shells, 3 Flavors Mixed Variety Pack of 9 (0.75 Ounce), Roasted & Salted Nuts (4), Chili Roasted (3), Honey Roasted (2), Protein Snack, On-the Go Snack",
+        "asin": "B08DX4JCKQ",
+        "link": "https://www.amazon.com/Wonderful-Pistachios-Shell-Nuts-Variety/dp/B08DX4JCKQ/ref=sr_1_31?keywords=grocery&qid=1706754702&sr=8-31",
+        "link_sr": "8-31",
+        "link_ref": "sr_1_31",
+        "categories": [
+          {
+            "name": "All Departments",
+            "id": "aps"
+          }
+        ],
+        "image": "https://m.media-amazon.com/images/I/71fK4F1cJrL._AC_UL320_.jpg",
+        "bestseller": {
+          "link": "https://www.amazon.com/gp/bestsellers/grocery/16322951/ref=sr_bs_30_16322951_1",
+          "category": "Best Sellerin Pistachio Nuts"
+        },
+        "sales_estimate": {
+          "raw": "30K+ bought in past month",
+          "value": 30000
+        },
+        "is_small_business": false,
+        "is_amazon_brand": false,
+        "is_exclusive_to_amazon": false,
+        "delivery_info": [
+          {
+            "shipping_price": {
+              "symbol": "$",
+              "value": 35,
+              "currency": "USD",
+              "raw": "35"
+            },
+            "shipping_estimate": "FREE delivery Mon, Feb 5 on $35 of items shipped by Amazon"
+          },
+          {
+            "shipping_estimate": "Or fastest delivery Tomorrow, Feb 1"
+          }
+        ],
+        "offer_count": 1,
+        "rating": 4.7,
+        "ratings_total": 147764,
+        "prices": [
+          {
+            "symbol": "$",
+            "value": 7.48,
+            "currency": "USD",
+            "raw": "$7.48",
+            "name": "Base Price",
+            "is_base_price": true
+          },
+          {
+            "symbol": "$",
+            "value": 1.11,
+            "currency": "USD",
+            "raw": "$1.11",
+            "name": "Price Per Measured Unit",
+            "is_per_unit_price": true
+          }
+        ],
+        "price": {
+          "symbol": "$",
+          "value": 7.48,
+          "currency": "USD",
+          "raw": "$7.48",
+          "name": "Base Price",
+          "is_base_price": true
+        },
+        "prime_badge": true,
+        "status_badge": "Best Seller",
+        "is_sponsored": false,
+        "is_prime_exclusive_price": false
+      },
+      {
+        "position": 32,
+        "title": "TRUE LEMON Water Enhancer, Bulk Pack, 0 Calorie Drink Mix Packets, Sugar Free, Flavoring, Made with Real Lemons, 500 count (Pack of 1)",
+        "asin": "B004RZ63KK",
+        "link": "https://www.amazon.com/Enhancer-Calorie-Packets-Flavoring-Powder/dp/B004RZ63KK/ref=sr_1_32?keywords=grocery&qid=1706754702&sr=8-32",
+        "link_sr": "8-32",
+        "link_ref": "sr_1_32",
+        "categories": [
+          {
+            "name": "All Departments",
+            "id": "aps"
+          }
+        ],
+        "image": "https://m.media-amazon.com/images/I/81-415b6IBL._AC_UL320_.jpg",
+        "sales_estimate": {
+          "raw": "9K+ bought in past month",
+          "value": 9000
+        },
+        "is_small_business": false,
+        "is_amazon_brand": false,
+        "is_exclusive_to_amazon": false,
+        "delivery_info": [
+          {
+            "shipping_price": {
+              "symbol": "$",
+              "value": 35,
+              "currency": "USD",
+              "raw": "35"
+            },
+            "shipping_estimate": "FREE delivery Mon, Feb 5 on $35 of items shipped by Amazon"
+          },
+          {
+            "shipping_estimate": "Or fastest delivery Tomorrow, Feb 1"
+          }
+        ],
+        "offer_count": 1,
+        "rating": 4.7,
+        "ratings_total": 20262,
+        "prices": [
+          {
+            "symbol": "$",
+            "value": 24.5,
+            "currency": "USD",
+            "raw": "$24.50",
+            "name": "Base Price",
+            "is_base_price": true
+          },
+          {
+            "symbol": "$",
+            "value": 1.74,
+            "currency": "USD",
+            "raw": "$1.74",
+            "name": "Price Per Measured Unit",
+            "is_per_unit_price": true
+          }
+        ],
+        "price": {
+          "symbol": "$",
+          "value": 24.5,
+          "currency": "USD",
+          "raw": "$24.50",
+          "name": "Base Price",
+          "is_base_price": true
+        },
+        "prime_badge": true,
+        "is_sponsored": false,
+        "is_prime_exclusive_price": false
+      },
+      {
+        "position": 33,
+        "title": "Kraft Original Macaroni & Cheese Dinner (4 ct Pack, 7.25 oz Boxes)",
+        "asin": "B003M0ZDAM",
+        "link": "https://www.amazon.com/Kraft-Original-Flavor-Macaroni-Cheese/dp/B003M0ZDAM/ref=sr_1_33?keywords=grocery&qid=1706754702&sr=8-33",
+        "link_sr": "8-33",
+        "link_ref": "sr_1_33",
+        "categories": [
+          {
+            "name": "All Departments",
+            "id": "aps"
+          }
+        ],
+        "image": "https://m.media-amazon.com/images/I/710uCPCW9ZL._AC_UL320_.jpg",
+        "sales_estimate": {
+          "raw": "6K+ bought in past month",
+          "value": 6000
+        },
+        "is_small_business": false,
+        "is_amazon_brand": false,
+        "is_exclusive_to_amazon": false,
+        "delivery_info": [
+          {
+            "shipping_price": {
+              "symbol": "$",
+              "value": 35,
+              "currency": "USD",
+              "raw": "35"
+            },
+            "shipping_estimate": "FREE delivery Mon, Feb 5 on $35 of items shipped by Amazon"
+          },
+          {
+            "shipping_estimate": "Or fastest delivery Tomorrow, Feb 1"
+          }
+        ],
+        "offer_count": 2,
+        "rating": 4.8,
+        "ratings_total": 5111,
+        "prices": [
+          {
+            "symbol": "$",
+            "value": 6.49,
+            "currency": "USD",
+            "raw": "$6.49",
+            "name": "Base Price",
+            "is_base_price": true
+          },
+          {
+            "symbol": "$",
+            "value": 1.62,
+            "currency": "USD",
+            "raw": "$1.62",
+            "name": "Price Per Measured Unit",
+            "is_per_unit_price": true
+          }
+        ],
+        "price": {
+          "symbol": "$",
+          "value": 6.49,
+          "currency": "USD",
+          "raw": "$6.49",
+          "name": "Base Price",
+          "is_base_price": true
+        },
+        "prime_badge": true,
+        "is_sponsored": false,
+        "is_prime_exclusive_price": false
+      },
+      {
+        "position": 34,
+        "title": "Crunchy Oats 'n Honey Granola Bars 30 Count",
+        "asin": "B0025W9A5C",
+        "link": "https://www.amazon.com/Natures-Valley-granola-Crunchy-Honey/dp/B0025W9A5C/ref=sr_1_34?keywords=grocery&qid=1706754702&sr=8-34",
+        "link_sr": "8-34",
+        "link_ref": "sr_1_34",
+        "categories": [
+          {
+            "name": "All Departments",
+            "id": "aps"
+          }
+        ],
+        "image": "https://m.media-amazon.com/images/I/81Kb5TVBQvL._AC_UL320_.jpg",
+        "sales_estimate": {
+          "raw": "10K+ bought in past month",
+          "value": 10000
+        },
+        "is_small_business": false,
+        "is_amazon_brand": false,
+        "is_exclusive_to_amazon": false,
+        "delivery_info": [
+          {
+            "shipping_price": {
+              "symbol": "$",
+              "value": 35,
+              "currency": "USD",
+              "raw": "35"
+            },
+            "shipping_estimate": "FREE delivery Mon, Feb 5 on $35 of items shipped by Amazon"
+          },
+          {
+            "shipping_estimate": "Or fastest delivery Sat, Feb 3"
+          }
+        ],
+        "offer_count": 1,
+        "rating": 4.5,
+        "ratings_total": 23479,
+        "prices": [
+          {
+            "symbol": "$",
+            "value": 12.49,
+            "currency": "USD",
+            "raw": "$12.49",
+            "name": "Base Price",
+            "is_base_price": true
+          },
+          {
+            "symbol": "$",
+            "value": 0.28,
+            "currency": "USD",
+            "raw": "$0.28",
+            "name": "Price Per Measured Unit",
+            "is_per_unit_price": true
+          }
+        ],
+        "price": {
+          "symbol": "$",
+          "value": 12.49,
+          "currency": "USD",
+          "raw": "$12.49",
+          "name": "Base Price",
+          "is_base_price": true
+        },
+        "prime_badge": true,
+        "is_sponsored": false,
+        "is_prime_exclusive_price": false
+      },
+      {
+        "position": 35,
+        "title": "HORMEL COMPLEATS Meatloaf & Gravy With Mashed Potatoes Microwave Tray, 9 oz. (6 Pack)",
+        "asin": "B000V1JVAI",
+        "link": "https://www.amazon.com/Hormel-Compleats-Meatloaf-Mashed-Potatoes/dp/B000V1JVAI/ref=sr_1_35?keywords=grocery&qid=1706754702&sr=8-35",
+        "link_sr": "8-35",
+        "link_ref": "sr_1_35",
+        "categories": [
+          {
+            "name": "All Departments",
+            "id": "aps"
+          }
+        ],
+        "image": "https://m.media-amazon.com/images/I/81A4OLXPmBL._AC_UL320_.jpg",
+        "bestseller": {
+          "link": "https://www.amazon.com/gp/bestsellers/grocery/6499428011/ref=sr_bs_34_6499428011_1",
+          "category": "Best Sellerin Packaged Potato Side Dishes"
+        },
+        "sales_estimate": {
+          "raw": "3K+ bought in past month",
+          "value": 3000
+        },
+        "is_small_business": false,
+        "is_amazon_brand": false,
+        "is_exclusive_to_amazon": false,
+        "delivery_info": [
+          {
+            "shipping_price": {
+              "symbol": "$",
+              "value": 35,
+              "currency": "USD",
+              "raw": "35"
+            },
+            "shipping_estimate": "FREE delivery Mon, Feb 5 on $35 of items shipped by Amazon"
+          },
+          {
+            "shipping_estimate": "Or fastest delivery Tomorrow, Feb 1"
+          }
+        ],
+        "offer_count": 1,
+        "rating": 4.1,
+        "ratings_total": 21296,
+        "prices": [
+          {
+            "symbol": "$",
+            "value": 13.68,
+            "currency": "USD",
+            "raw": "$13.68",
+            "name": "Base Price",
+            "is_base_price": true
+          },
+          {
+            "symbol": "$",
+            "value": 0.25,
+            "currency": "USD",
+            "raw": "$0.25",
+            "name": "Price Per Measured Unit",
+            "is_per_unit_price": true
+          }
+        ],
+        "price": {
+          "symbol": "$",
+          "value": 13.68,
+          "currency": "USD",
+          "raw": "$13.68",
+          "name": "Base Price",
+          "is_base_price": true
+        },
+        "prime_badge": true,
+        "status_badge": "Best Seller",
+        "is_sponsored": false,
+        "is_prime_exclusive_price": false
+      },
+      {
+        "position": 36,
+        "title": "Beef Sausage Snack Sticks, Naturally Smoked, Ready to Eat, High Protein, Low Carb, Keto, Gluten Free, 14 Ounce Resealable Package",
+        "asin": "B076PMVBJ8",
+        "link": "https://www.amazon.com/Old-Wisconsin-Snack-Sticks-ounce/dp/B076PMVBJ8/ref=sr_1_36?keywords=grocery&qid=1706754702&sr=8-36",
+        "link_sr": "8-36",
+        "link_ref": "sr_1_36",
+        "categories": [
+          {
+            "name": "All Departments",
+            "id": "aps"
+          }
+        ],
+        "image": "https://m.media-amazon.com/images/I/81-EYBOwrgL._AC_UL320_.jpg",
+        "sales_estimate": {
+          "raw": "1K+ bought in past month",
+          "value": 1000
+        },
+        "is_small_business": false,
+        "is_amazon_brand": false,
+        "is_exclusive_to_amazon": false,
+        "delivery_info": [
+          {
+            "shipping_price": {
+              "symbol": "$",
+              "value": 35,
+              "currency": "USD",
+              "raw": "35"
+            },
+            "shipping_estimate": "FREE delivery Mon, Feb 5 on $35 of items shipped by Amazon"
+          },
+          {
+            "shipping_estimate": "Or fastest delivery Tomorrow, Feb 1"
+          }
+        ],
+        "offer_count": 1,
+        "rating": 4.3,
+        "ratings_total": 2421,
+        "prices": [
+          {
+            "symbol": "$",
+            "value": 9.98,
+            "currency": "USD",
+            "raw": "$9.98",
+            "name": "Base Price",
+            "is_base_price": true
+          },
+          {
+            "symbol": "$",
+            "value": 0.71,
+            "currency": "USD",
+            "raw": "$0.71",
+            "name": "Price Per Measured Unit",
+            "is_per_unit_price": true
+          },
+          {
+            "symbol": "$",
+            "value": 10.98,
+            "currency": "USD",
+            "raw": "$10.98",
+            "name": "List Price",
+            "is_list_price": true
+          }
+        ],
+        "price": {
+          "symbol": "$",
+          "value": 9.98,
+          "currency": "USD",
+          "raw": "$9.98",
+          "name": "Base Price",
+          "is_base_price": true
+        },
+        "deal_text": "Limited time deal",
+        "prime_badge": true,
+        "is_sponsored": false,
+        "is_prime_exclusive_price": false
+      },
+      {
+        "position": 37,
+        "title": "Chocolate Drink, 6.5 fl oz boxes (Pack of 32)",
+        "asin": "B003ZS4FXM",
+        "link": "https://www.amazon.com/Yoo-hoo-Chocolate-Drink-boxes-count/dp/B003ZS4FXM/ref=sr_1_37?keywords=grocery&qid=1706754702&sr=8-37",
+        "link_sr": "8-37",
+        "link_ref": "sr_1_37",
+        "categories": [
+          {
+            "name": "All Departments",
+            "id": "aps"
+          }
+        ],
+        "image": "https://m.media-amazon.com/images/I/81XP3VFvhgS._AC_UL320_.jpg",
+        "sales_estimate": {
+          "raw": "6K+ bought in past month",
+          "value": 6000
+        },
+        "is_small_business": false,
+        "is_amazon_brand": false,
+        "is_exclusive_to_amazon": false,
+        "delivery_info": [
+          {
+            "shipping_price": {
+              "symbol": "$",
+              "value": 35,
+              "currency": "USD",
+              "raw": "35"
+            },
+            "shipping_estimate": "FREE delivery Mon, Feb 5 on $35 of items shipped by Amazon"
+          },
+          {
+            "shipping_estimate": "Or fastest delivery Fri, Feb 2"
+          }
+        ],
+        "offer_count": 1,
+        "rating": 4.8,
+        "ratings_total": 17661,
+        "prices": [
+          {
+            "symbol": "$",
+            "value": 11.48,
+            "currency": "USD",
+            "raw": "$11.48",
+            "name": "Base Price",
+            "is_base_price": true
+          },
+          {
+            "symbol": "$",
+            "value": 0.06,
+            "currency": "USD",
+            "raw": "$0.06",
+            "name": "Price Per Measured Unit",
+            "is_per_unit_price": true
+          }
+        ],
+        "price": {
+          "symbol": "$",
+          "value": 11.48,
+          "currency": "USD",
+          "raw": "$11.48",
+          "name": "Base Price",
+          "is_base_price": true
+        },
+        "prime_badge": true,
+        "is_sponsored": false,
+        "is_prime_exclusive_price": false
+      },
+      {
+        "position": 38,
+        "title": "Original Crackers, Family Size, 3 Boxes",
+        "asin": "B07ZV3323B",
+        "link": "https://www.amazon.com/Ritz-Original-Crackers-Family-Boxes/dp/B07ZV3323B/ref=sr_1_38?keywords=grocery&qid=1706754702&rdc=1&sr=8-38",
+        "link_sr": "8-38",
+        "link_ref": "sr_1_38",
+        "categories": [
+          {
+            "name": "All Departments",
+            "id": "aps"
+          }
+        ],
+        "image": "https://m.media-amazon.com/images/I/81E8CGXfrkL._AC_UL320_.jpg",
+        "bestseller": {
+          "link": "https://www.amazon.com/gp/bestsellers/grocery/16322861/ref=sr_bs_37_16322861_1",
+          "category": "Best Sellerin Wheat Crackers"
+        },
+        "sales_estimate": {
+          "raw": "1K+ bought in past month",
+          "value": 1000
+        },
+        "is_small_business": false,
+        "is_amazon_brand": false,
+        "is_exclusive_to_amazon": false,
+        "delivery_info": [
+          {
+            "shipping_price": {
+              "symbol": "$",
+              "value": 35,
+              "currency": "USD",
+              "raw": "35"
+            },
+            "shipping_estimate": "FREE delivery Mon, Feb 5 on $35 of items shipped by Amazon"
+          },
+          {
+            "shipping_estimate": "Or fastest delivery Tomorrow, Feb 1"
+          }
+        ],
+        "offer_count": 15,
+        "rating": 4.8,
+        "ratings_total": 60679,
+        "prices": [
+          {
+            "symbol": "$",
+            "value": 16.85,
+            "currency": "USD",
+            "raw": "$16.85",
+            "name": "Base Price",
+            "is_base_price": true
+          },
+          {
+            "symbol": "$",
+            "value": 0.94,
+            "currency": "USD",
+            "raw": "$0.94",
+            "name": "Price Per Measured Unit",
+            "is_per_unit_price": true
+          }
+        ],
+        "price": {
+          "symbol": "$",
+          "value": 16.85,
+          "currency": "USD",
+          "raw": "$16.85",
+          "name": "Base Price",
+          "is_base_price": true
+        },
+        "coupon": {
+          "badge": "Extra 25% off",
+          "text": "<label>Extra 25% off</label> when you subscribe",
+          "discount": {
+            "percentage": 25,
+            "coupon_type": "percentage"
+          }
+        },
+        "prime_badge": true,
+        "status_badge": "Best Seller",
+        "is_sponsored": false,
+        "is_prime_exclusive_price": false
+      },
+      {
+        "position": 39,
+        "title": "Cheesy Skillets Chicken & Broccoli, 13.6 Oz",
+        "asin": "B00IGHGNDM",
+        "link": "https://www.amazon.com/Kraft-Velveeta-Skillets-Chicken-Broccoli/dp/B00IGHGNDM/ref=sr_1_39?keywords=grocery&qid=1706754702&sr=8-39",
+        "link_sr": "8-39",
+        "link_ref": "sr_1_39",
+        "categories": [
+          {
+            "name": "All Departments",
+            "id": "aps"
+          }
+        ],
+        "image": "https://m.media-amazon.com/images/I/8159+rsd7XL._AC_UL320_.jpg",
+        "sales_estimate": {
+          "raw": "1K+ bought in past month",
+          "value": 1000
+        },
+        "is_small_business": false,
+        "is_amazon_brand": false,
+        "is_exclusive_to_amazon": false,
+        "delivery_info": [
+          {
+            "shipping_price": {
+              "symbol": "$",
+              "value": 35,
+              "currency": "USD",
+              "raw": "35"
+            },
+            "shipping_estimate": "FREE delivery Mon, Feb 5 on $35 of items shipped by Amazon"
+          },
+          {
+            "shipping_estimate": "Or fastest delivery Tomorrow, Feb 1"
+          }
+        ],
+        "offer_count": 1,
+        "rating": 4.4,
+        "ratings_total": 6005,
+        "prices": [
+          {
+            "symbol": "$",
+            "value": 3.38,
+            "currency": "USD",
+            "raw": "$3.38",
+            "name": "Base Price",
+            "is_base_price": true
+          },
+          {
+            "symbol": "$",
+            "value": 0.25,
+            "currency": "USD",
+            "raw": "$0.25",
+            "name": "Price Per Measured Unit",
+            "is_per_unit_price": true
+          }
+        ],
+        "price": {
+          "symbol": "$",
+          "value": 3.38,
+          "currency": "USD",
+          "raw": "$3.38",
+          "name": "Base Price",
+          "is_base_price": true
+        },
+        "prime_badge": true,
+        "is_sponsored": false,
+        "is_prime_exclusive_price": false
+      },
+      {
+        "position": 40,
+        "title": "Frito-Lay Sweet & Salty Snacks, Variety Mix of Cookies, Crackers, Chips & Nuts, (Pack of 50)",
+        "asin": "B01EAG3VUA",
+        "link": "https://www.amazon.com/Sweet-Snacks-Variety-Cookies-Crackers/dp/B01EAG3VUA/ref=sr_1_40?keywords=grocery&qid=1706754702&sr=8-40",
+        "link_sr": "8-40",
+        "link_ref": "sr_1_40",
+        "categories": [
+          {
+            "name": "All Departments",
+            "id": "aps"
+          }
+        ],
+        "image": "https://m.media-amazon.com/images/I/81CSX9FzQxL._AC_UL320_.jpg",
+        "bestseller": {
+          "link": "https://www.amazon.com/gp/bestsellers/grocery/2255582011/ref=sr_bs_39_2255582011_1",
+          "category": "Best Sellerin Snack Food Gifts"
+        },
+        "sales_estimate": {
+          "raw": "6K+ bought in past month",
+          "value": 6000
+        },
+        "is_small_business": false,
+        "is_amazon_brand": false,
+        "is_exclusive_to_amazon": false,
+        "delivery_info": [
+          {
+            "shipping_price": {
+              "symbol": "$",
+              "value": 35,
+              "currency": "USD",
+              "raw": "35"
+            },
+            "shipping_estimate": "FREE delivery Mon, Feb 5 on $35 of items shipped by Amazon"
+          },
+          {
+            "shipping_estimate": "Or fastest delivery Fri, Feb 2"
+          }
+        ],
+        "offer_count": 1,
+        "rating": 4.6,
+        "ratings_total": 100718,
+        "prices": [
+          {
+            "symbol": "$",
+            "value": 21.05,
+            "currency": "USD",
+            "raw": "$21.05",
+            "name": "Base Price",
+            "is_base_price": true
+          },
+          {
+            "symbol": "$",
+            "value": 21.05,
+            "currency": "USD",
+            "raw": "$21.05",
+            "name": "Price Per Measured Unit",
+            "is_per_unit_price": true
+          },
+          {
+            "symbol": "$",
+            "value": 26.31,
+            "currency": "USD",
+            "raw": "$26.31",
+            "name": "List Price",
+            "is_list_price": true
+          }
+        ],
+        "price": {
+          "symbol": "$",
+          "value": 21.05,
+          "currency": "USD",
+          "raw": "$21.05",
+          "name": "Base Price",
+          "is_base_price": true
+        },
+        "deal_text": "Limited time deal",
+        "prime_badge": true,
+        "status_badge": "Best Seller",
+        "is_sponsored": false,
+        "is_prime_exclusive_price": false
+      },
+      {
+        "position": 41,
+        "title": "Caffeine Blue Raspberry Sparkling Water, with Antioxidants and Vitamins, Zero Sugar, 16 Fl Oz (Pack of 12)",
+        "asin": "B07P5TW7WF",
+        "link": "https://www.amazon.com/Sparkling-Caffeine-Raspberry-Naturally-Antioxidants/dp/B07P5TW7WF/ref=sr_1_41?keywords=grocery&qid=1706754702&sr=8-41",
+        "link_sr": "8-41",
+        "link_ref": "sr_1_41",
+        "categories": [
+          {
+            "name": "All Departments",
+            "id": "aps"
+          }
+        ],
+        "image": "https://m.media-amazon.com/images/I/81NyEVyRrkL._AC_UL320_.jpg",
+        "sales_estimate": {
+          "raw": "10K+ bought in past month",
+          "value": 10000
+        },
+        "is_small_business": false,
+        "is_amazon_brand": false,
+        "is_exclusive_to_amazon": false,
+        "delivery_info": [
+          {
+            "shipping_price": {
+              "symbol": "$",
+              "value": 35,
+              "currency": "USD",
+              "raw": "35"
+            },
+            "shipping_estimate": "FREE delivery Mon, Feb 5 on $35 of items shipped by Amazon"
+          },
+          {
+            "shipping_estimate": "Or fastest delivery Tomorrow, Feb 1"
+          }
+        ],
+        "offer_count": 7,
+        "rating": 4.6,
+        "ratings_total": 32496,
+        "prices": [
+          {
+            "symbol": "$",
+            "value": 16.33,
+            "currency": "USD",
+            "raw": "$16.33",
+            "name": "Base Price",
+            "is_base_price": true
+          },
+          {
+            "symbol": "$",
+            "value": 1.36,
+            "currency": "USD",
+            "raw": "$1.36",
+            "name": "Price Per Measured Unit",
+            "is_per_unit_price": true
+          }
+        ],
+        "price": {
+          "symbol": "$",
+          "value": 16.33,
+          "currency": "USD",
+          "raw": "$16.33",
+          "name": "Base Price",
+          "is_base_price": true
+        },
+        "prime_badge": true,
+        "is_sponsored": false,
+        "is_prime_exclusive_price": false
+      },
+      {
+        "position": 42,
+        "title": "Popcorn, Variety Pack, 0.5 Ounce (Pack of 40)",
+        "asin": "B075LZZ5MR",
+        "link": "https://www.amazon.com/Smartfood-Popcorn-Variety-Pack-count/dp/B075LZZ5MR/ref=sr_1_42?keywords=grocery&qid=1706754702&sr=8-42",
+        "link_sr": "8-42",
+        "link_ref": "sr_1_42",
+        "categories": [
+          {
+            "name": "All Departments",
+            "id": "aps"
+          }
+        ],
+        "image": "https://m.media-amazon.com/images/I/81y-6PigaeL._AC_UL320_.jpg",
+        "sales_estimate": {
+          "raw": "10K+ bought in past month",
+          "value": 10000
+        },
+        "is_small_business": false,
+        "is_amazon_brand": false,
+        "is_exclusive_to_amazon": false,
+        "delivery_info": [
+          {
+            "shipping_price": {
+              "symbol": "$",
+              "value": 35,
+              "currency": "USD",
+              "raw": "35"
+            },
+            "shipping_estimate": "FREE delivery Mon, Feb 5 on $35 of items shipped by Amazon"
+          },
+          {
+            "shipping_estimate": "Or fastest delivery Tomorrow, Feb 1"
+          }
+        ],
+        "offer_count": 1,
+        "rating": 4.6,
+        "ratings_total": 52345,
+        "prices": [
+          {
+            "symbol": "$",
+            "value": 21.86,
+            "currency": "USD",
+            "raw": "$21.86",
+            "name": "Base Price",
+            "is_base_price": true
+          },
+          {
+            "symbol": "$",
+            "value": 1.12,
+            "currency": "USD",
+            "raw": "$1.12",
+            "name": "Price Per Measured Unit",
+            "is_per_unit_price": true
+          }
+        ],
+        "price": {
+          "symbol": "$",
+          "value": 21.86,
+          "currency": "USD",
+          "raw": "$21.86",
+          "name": "Base Price",
+          "is_base_price": true
+        },
+        "prime_badge": true,
+        "is_sponsored": false,
+        "is_prime_exclusive_price": false
+      },
+      {
+        "position": 43,
+        "title": "Chunk White Albacore Tuna in Water, 5 oz Cans (Pack of 4) - Wild Caught Tuna - 20g Protein per Serving - Non-GMO Project Verified, Gluten Free, Kosher - Great for Tuna Salad & Recipes",
+        "asin": "B00E3QNEGY",
+        "link": "https://www.amazon.com/Bumble-Bee-Chunk-White-Albacore/dp/B00E3QNEGY/ref=sr_1_43?keywords=grocery&qid=1706754702&sr=8-43",
+        "link_sr": "8-43",
+        "link_ref": "sr_1_43",
+        "categories": [
+          {
+            "name": "All Departments",
+            "id": "aps"
+          }
+        ],
+        "image": "https://m.media-amazon.com/images/I/81QAQINYHML._AC_UL320_.jpg",
+        "sales_estimate": {
+          "raw": "3K+ bought in past month",
+          "value": 3000
+        },
+        "is_small_business": false,
+        "is_amazon_brand": false,
+        "is_exclusive_to_amazon": false,
+        "delivery_info": [
+          {
+            "shipping_price": {
+              "symbol": "$",
+              "value": 35,
+              "currency": "USD",
+              "raw": "35"
+            },
+            "shipping_estimate": "FREE delivery Mon, Feb 5 on $35 of items shipped by Amazon"
+          },
+          {
+            "shipping_estimate": "Or fastest delivery Tomorrow, Feb 1"
+          }
+        ],
+        "offer_count": 1,
+        "rating": 4.5,
+        "ratings_total": 2934,
+        "prices": [
+          {
+            "symbol": "$",
+            "value": 5.28,
+            "currency": "USD",
+            "raw": "$5.28",
+            "name": "Base Price",
+            "is_base_price": true
+          },
+          {
+            "symbol": "$",
+            "value": 0.26,
+            "currency": "USD",
+            "raw": "$0.26",
+            "name": "Price Per Measured Unit",
+            "is_per_unit_price": true
+          },
+          {
+            "symbol": "$",
+            "value": 5.98,
+            "currency": "USD",
+            "raw": "$5.98",
+            "name": "List Price",
+            "is_list_price": true
+          }
+        ],
+        "price": {
+          "symbol": "$",
+          "value": 5.28,
+          "currency": "USD",
+          "raw": "$5.28",
+          "name": "Base Price",
+          "is_base_price": true
+        },
+        "prime_badge": true,
+        "is_sponsored": false,
+        "is_prime_exclusive_price": false
+      },
+      {
+        "position": 44,
+        "title": "Canned Pasta with Meatballs, 15.6 oz Can (Pack of 12)",
+        "asin": "B089PMW6C3",
+        "link": "https://www.amazon.com/Campbells-SpaghettiOs-Canned-Pasta-Meatballs/dp/B089PMW6C3/ref=sr_1_44?keywords=grocery&qid=1706754702&sr=8-44",
+        "link_sr": "8-44",
+        "link_ref": "sr_1_44",
+        "categories": [
+          {
+            "name": "All Departments",
+            "id": "aps"
+          }
+        ],
+        "image": "https://m.media-amazon.com/images/I/81ECseycG1L._AC_UL320_.jpg",
+        "sales_estimate": {
+          "raw": "9K+ bought in past month",
+          "value": 9000
+        },
+        "is_small_business": false,
+        "is_amazon_brand": false,
+        "is_exclusive_to_amazon": false,
+        "delivery_info": [
+          {
+            "shipping_price": {
+              "symbol": "$",
+              "value": 35,
+              "currency": "USD",
+              "raw": "35"
+            },
+            "shipping_estimate": "FREE delivery Mon, Feb 5 on $35 of items shipped by Amazon"
+          },
+          {
+            "shipping_estimate": "Or fastest delivery Fri, Feb 2"
+          }
+        ],
+        "offer_count": 1,
+        "rating": 4.6,
+        "ratings_total": 6231,
+        "prices": [
+          {
+            "symbol": "$",
+            "value": 11.44,
+            "currency": "USD",
+            "raw": "$11.44",
+            "name": "Base Price",
+            "is_base_price": true
+          },
+          {
+            "symbol": "$",
+            "value": 0.06,
+            "currency": "USD",
+            "raw": "$0.06",
+            "name": "Price Per Measured Unit",
+            "is_per_unit_price": true
+          }
+        ],
+        "price": {
+          "symbol": "$",
+          "value": 11.44,
+          "currency": "USD",
+          "raw": "$11.44",
+          "name": "Base Price",
+          "is_base_price": true
+        },
+        "prime_badge": true,
+        "is_sponsored": false,
+        "is_prime_exclusive_price": false
+      },
+      {
+        "position": 45,
+        "title": "Fruit Snacks, Mixed Fruit, Great Valentines Day Gifts for Kids, Gluten Free, Bulk Pack, Individual Single Serve Bags, 0.8 oz (Pack of 40)",
+        "asin": "B0BWSKYV63",
+        "link": "https://www.amazon.com/Welchs-Snacks-Gluten-Individual-Single/dp/B0BWSKYV63/ref=sr_1_45?keywords=grocery&qid=1706754702&sr=8-45",
+        "link_sr": "8-45",
+        "link_ref": "sr_1_45",
+        "categories": [
+          {
+            "name": "All Departments",
+            "id": "aps"
+          }
+        ],
+        "image": "https://m.media-amazon.com/images/I/81jZKYi1CEL._AC_UL320_.jpg",
+        "bestseller": {
+          "link": "https://www.amazon.com/gp/bestsellers/grocery/6524463011/ref=sr_bs_44_6524463011_1",
+          "category": "Best Sellerin Fruit Snacks"
+        },
+        "sales_estimate": {
+          "raw": "60K+ bought in past month",
+          "value": 60000
+        },
+        "is_small_business": false,
+        "is_amazon_brand": false,
+        "is_exclusive_to_amazon": false,
+        "delivery_info": [
+          {
+            "shipping_price": {
+              "symbol": "$",
+              "value": 35,
+              "currency": "USD",
+              "raw": "35"
+            },
+            "shipping_estimate": "FREE delivery Mon, Feb 5 on $35 of items shipped by Amazon"
+          },
+          {
+            "shipping_estimate": "Or fastest delivery Tomorrow, Feb 1"
+          }
+        ],
+        "offer_count": 25,
+        "rating": 4.8,
+        "ratings_total": 5294,
+        "prices": [
+          {
+            "symbol": "$",
+            "value": 8.48,
+            "currency": "USD",
+            "raw": "$8.48",
+            "name": "Base Price",
+            "is_base_price": true
+          },
+          {
+            "symbol": "$",
+            "value": 0.21,
+            "currency": "USD",
+            "raw": "$0.21",
+            "name": "Price Per Measured Unit",
+            "is_per_unit_price": true
+          }
+        ],
+        "price": {
+          "symbol": "$",
+          "value": 8.48,
+          "currency": "USD",
+          "raw": "$8.48",
+          "name": "Base Price",
+          "is_base_price": true
+        },
+        "prime_badge": true,
+        "status_badge": "Best Seller",
+        "is_sponsored": false,
+        "is_prime_exclusive_price": false
+      },
+      {
+        "position": 46,
+        "title": "Fruit Bowls Snacks Cherry Mixed Fruit in 100% Juice Snacks, 4oz 12 Total Cups, Gluten & Dairy Free, Bulk Lunch Snacks for Kids & Adults",
+        "asin": "B00VZ3NJHM",
+        "link": "https://www.amazon.com/FRUIT-BOWLS-Cherry-Mixed-Fruit/dp/B00VZ3NJHM/ref=sr_1_46?keywords=grocery&qid=1706754702&sr=8-46",
+        "link_sr": "8-46",
+        "link_ref": "sr_1_46",
+        "categories": [
+          {
+            "name": "All Departments",
+            "id": "aps"
+          }
+        ],
+        "image": "https://m.media-amazon.com/images/I/71AaPakIw0L._AC_UL320_.jpg",
+        "sales_estimate": {
+          "raw": "9K+ bought in past month",
+          "value": 9000
+        },
+        "is_small_business": false,
+        "is_amazon_brand": false,
+        "is_exclusive_to_amazon": false,
+        "delivery_info": [
+          {
+            "shipping_price": {
+              "symbol": "$",
+              "value": 35,
+              "currency": "USD",
+              "raw": "35"
+            },
+            "shipping_estimate": "FREE delivery Mon, Feb 5 on $35 of items shipped by Amazon"
+          },
+          {
+            "shipping_estimate": "Or fastest delivery Fri, Feb 2"
+          }
+        ],
+        "offer_count": 1,
+        "rating": 4.6,
+        "ratings_total": 76148,
+        "prices": [
+          {
+            "symbol": "$",
+            "value": 6.74,
+            "currency": "USD",
+            "raw": "$6.74",
+            "name": "Base Price",
+            "is_base_price": true
+          },
+          {
+            "symbol": "$",
+            "value": 0.56,
+            "currency": "USD",
+            "raw": "$0.56",
+            "name": "Price Per Measured Unit",
+            "is_per_unit_price": true
+          }
+        ],
+        "price": {
+          "symbol": "$",
+          "value": 6.74,
+          "currency": "USD",
+          "raw": "$6.74",
+          "name": "Base Price",
+          "is_base_price": true
+        },
+        "prime_badge": true,
+        "is_sponsored": false,
+        "is_prime_exclusive_price": false
+      },
+      {
+        "position": 47,
+        "title": "Real Hardwood Smoked Sausages, Hunter's Sausage Meat Sticks, Low Carb, High Protein, Ready to Eat Snacks, 36 Count Bulk Pack",
+        "asin": "B07RWTK144",
+        "link": "https://www.amazon.com/Tillamook-Country-Smoker-Hunters-Sausage/dp/B07RWTK144/ref=sr_1_47?keywords=grocery&qid=1706754702&sr=8-47",
+        "link_sr": "8-47",
+        "link_ref": "sr_1_47",
+        "categories": [
+          {
+            "name": "All Departments",
+            "id": "aps"
+          }
+        ],
+        "image": "https://m.media-amazon.com/images/I/819YbSxB+CL._AC_UL320_.jpg",
+        "sales_estimate": {
+          "raw": "9K+ bought in past month",
+          "value": 9000
+        },
+        "is_small_business": false,
+        "is_amazon_brand": false,
+        "is_exclusive_to_amazon": false,
+        "delivery_info": [
+          {
+            "shipping_price": {
+              "symbol": "$",
+              "value": 35,
+              "currency": "USD",
+              "raw": "35"
+            },
+            "shipping_estimate": "FREE delivery Mon, Feb 5 on $35 of items shipped by Amazon"
+          },
+          {
+            "shipping_estimate": "Or fastest delivery Tomorrow, Feb 1"
+          }
+        ],
+        "offer_count": 1,
+        "rating": 4.3,
+        "ratings_total": 20040,
+        "prices": [
+          {
+            "symbol": "$",
+            "value": 14.96,
+            "currency": "USD",
+            "raw": "$14.96",
+            "name": "Base Price",
+            "is_base_price": true
+          },
+          {
+            "symbol": "$",
+            "value": 0.42,
+            "currency": "USD",
+            "raw": "$0.42",
+            "name": "Price Per Measured Unit",
+            "is_per_unit_price": true
+          }
+        ],
+        "price": {
+          "symbol": "$",
+          "value": 14.96,
+          "currency": "USD",
+          "raw": "$14.96",
+          "name": "Base Price",
+          "is_base_price": true
+        },
+        "prime_badge": true,
+        "is_sponsored": false,
+        "is_prime_exclusive_price": false
+      },
+      {
+        "position": 48,
+        "title": "Instant Oatmeal Express Cups, 4 Flavor Variety Pack, 1.76 Ounce (Pack of 12)",
+        "asin": "B01M3RZBFH",
+        "link": "https://www.amazon.com/Quaker-Instant-Oatmeal-Flavor-Variety/dp/B01M3RZBFH/ref=sr_1_48?keywords=grocery&qid=1706754702&sr=8-48",
+        "link_sr": "8-48",
+        "link_ref": "sr_1_48",
+        "categories": [
+          {
+            "name": "All Departments",
+            "id": "aps"
+          }
+        ],
+        "image": "https://m.media-amazon.com/images/I/91DmnlKKgYL._AC_UL320_.jpg",
+        "sales_estimate": {
+          "raw": "8K+ bought in past month",
+          "value": 8000
+        },
+        "is_small_business": false,
+        "is_amazon_brand": false,
+        "is_exclusive_to_amazon": false,
+        "delivery_info": [
+          {
+            "shipping_price": {
+              "symbol": "$",
+              "value": 35,
+              "currency": "USD",
+              "raw": "35"
+            },
+            "shipping_estimate": "FREE delivery Mon, Feb 5 on $35 of items shipped by Amazon"
+          },
+          {
+            "shipping_estimate": "Or fastest delivery Fri, Feb 2"
+          }
+        ],
+        "offer_count": 1,
+        "rating": 4.6,
+        "ratings_total": 7940,
+        "prices": [
+          {
+            "symbol": "$",
+            "value": 13.58,
+            "currency": "USD",
+            "raw": "$13.58",
+            "name": "Base Price",
+            "is_base_price": true
+          },
+          {
+            "symbol": "$",
+            "value": 1.93,
+            "currency": "USD",
+            "raw": "$1.93",
+            "name": "Price Per Measured Unit",
+            "is_per_unit_price": true
+          },
+          {
+            "symbol": "$",
+            "value": 16.98,
+            "currency": "USD",
+            "raw": "$16.98",
+            "name": "List Price",
+            "is_list_price": true
+          }
+        ],
+        "price": {
+          "symbol": "$",
+          "value": 13.58,
+          "currency": "USD",
+          "raw": "$13.58",
+          "name": "Base Price",
+          "is_base_price": true
+        },
+        "deal_text": "Limited time deal",
+        "prime_badge": true,
+        "is_sponsored": false,
+        "is_prime_exclusive_price": false
+      }
+    ],
+    "related_searches": [
+      {
+        "query": "grocery cart",
+        "link": "https://www.amazon.com/s/?k=grocery+cart&ref=sugsr_0&pd_rd_w=uauuN&content-id=amzn1.sym.e333145d-c591-4f23-a7a6-158d847c777a:amzn1.sym.e333145d-c591-4f23-a7a6-158d847c777a&pf_rd_p=e333145d-c591-4f23-a7a6-158d847c777a&pf_rd_r=XVEJX39SC5AXY4888HQ6&pd_rd_wg=iyLui&pd_rd_r=fcf179ac-a33e-4894-85c3-a701bf63b0f2&qid=1706754702"
+      },
+      {
+        "query": "grocery snack chip",
+        "link": "https://www.amazon.com/s/?k=grocery+snack+chip&ref=sugsr_1&pd_rd_w=uauuN&content-id=amzn1.sym.e333145d-c591-4f23-a7a6-158d847c777a:amzn1.sym.e333145d-c591-4f23-a7a6-158d847c777a&pf_rd_p=e333145d-c591-4f23-a7a6-158d847c777a&pf_rd_r=XVEJX39SC5AXY4888HQ6&pd_rd_wg=iyLui&pd_rd_r=fcf179ac-a33e-4894-85c3-a701bf63b0f2&qid=1706754702"
+      },
+      {
+        "query": "grocery food items",
+        "link": "https://www.amazon.com/s/?k=grocery+food+items&ref=sugsr_2&pd_rd_w=uauuN&content-id=amzn1.sym.e333145d-c591-4f23-a7a6-158d847c777a:amzn1.sym.e333145d-c591-4f23-a7a6-158d847c777a&pf_rd_p=e333145d-c591-4f23-a7a6-158d847c777a&pf_rd_r=XVEJX39SC5AXY4888HQ6&pd_rd_wg=iyLui&pd_rd_r=fcf179ac-a33e-4894-85c3-a701bf63b0f2&qid=1706754702"
+      }
+    ],
+    "refinements": {
+      "eligible_for_free_shipping": [
+        {
+          "name": "Free Shipping by Amazon Get FREE Shipping on eligible orders shipped by Amazon",
+          "value": "n:16310101,p_76:1249146011",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_76%3A1249146011&dc&qid=1706754702&rnid=1249144011&ref=sr_nr_p_76_1&ds=v1%3A3RErxm1UNs3d6jtxDe6nXKnV9muMRQRP6TKKL9LFD6I",
+          "refinement_display_name": "Eligible for Free Shipping"
+        }
+      ],
+      "delivery_day": [
+        {
+          "name": "Get It by Tomorrow",
+          "value": "p_90:8308921011",
+          "link": "https://www.amazon.com/s?k=grocery&rh=p_90%3A8308921011&dc&qid=1706754702&rnid=8308919011&ref=sr_nr_p_90_1&ds=v1%3ATnYKIHavT%2FH42zXFUQyxJDKIx%2FI%2FKHizkIPX9xigyrk",
+          "refinement_display_name": "Delivery Day"
+        }
+      ],
+      "amazon_local_stores": [
+        {
+          "name": "Amazon Fresh",
+          "value": "p_n_alm_brand_id:18075438011",
+          "link": "https://www.amazon.com/s?k=grocery&rh=p_n_alm_brand_id%3A18075438011&dc&qid=1706754702&rnid=18075436011&ref=sr_nr_p_n_alm_brand_id_1&ds=v1%3AUZyGJRs0chV4KFxFuis%2FXRV6qvV%2BYejjSV1kLa9f8rM",
+          "refinement_display_name": "Amazon Local Stores"
+        },
+        {
+          "name": "Whole Foods Market",
+          "value": "p_n_alm_brand_id:18075437011",
+          "link": "https://www.amazon.com/s?k=grocery&rh=p_n_alm_brand_id%3A18075437011&dc&qid=1706754702&rnid=18075436011&ref=sr_nr_p_n_alm_brand_id_2&ds=v1%3A%2BOd0tFVerMzNCHk%2F%2B7zEsUXJGWRm2nVYNyipw6ISsPE",
+          "refinement_display_name": "Amazon Local Stores"
+        }
+      ],
+      "more-sustainable_products": [
+        {
+          "name": "Climate Pledge Friendly",
+          "value": "p_n_cpf_eligible:21512497011",
+          "link": "https://www.amazon.com/s?k=grocery&rh=p_n_cpf_eligible%3A21512497011&dc&qid=1706754702&rnid=21512496011&ref=sr_nr_p_n_cpf_eligible_1&ds=v1%3A8J0v5fn1O%2FGZLzd7gDWD%2BO%2Ftg6GJdnYdCegsMJ6MvLQ",
+          "refinement_display_name": "More-sustainable Products"
+        }
+      ],
+      "department": [
+        {
+          "name": "Grocery & Gourmet Food",
+          "value": "n:16310101",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101&dc&qid=1706754702&rnid=2941120011&ref=sr_nr_n_1&ds=v1%3AJ%2BTvFHppI0CEqxAYBI%2F%2BfvCWUVm68pGjV53DyteOit0",
+          "refinement_display_name": "Department"
+        },
+        {
+          "name": "Snack Foods",
+          "value": "n:16310101,n:16322721",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cn%3A16322721&dc&qid=1706754702&rnid=2941120011&ref=sr_nr_n_2&ds=v1%3A32tfqkqI30tbsXyFoTcEGPVAOVQ70q3f7WfXuflX0SU",
+          "refinement_display_name": "Department"
+        },
+        {
+          "name": "Canned, Jarred & Packaged Foods",
+          "value": "n:16310101,n:6464939011",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cn%3A6464939011&dc&qid=1706754702&rnid=2941120011&ref=sr_nr_n_3&ds=v1%3AXJkco8uutepZJNbupWY0F5u4L7ALreVcW3YDA8785Uo",
+          "refinement_display_name": "Department"
+        },
+        {
+          "name": "Cooking & Baking Grocery Supplies",
+          "value": "n:16310101,n:16310221",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cn%3A16310221&dc&qid=1706754702&rnid=2941120011&ref=sr_nr_n_4&ds=v1%3Agits1inibIRPWc1X5rH%2FSSAXRRaMDEwf%2FLMnZwlEGr0",
+          "refinement_display_name": "Department"
+        },
+        {
+          "name": "Oatmeal",
+          "value": "n:16310101,n:118518017011",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cn%3A118518017011&dc&qid=1706754702&rnid=2941120011&ref=sr_nr_n_5&ds=v1%3Ax2CsafQgsjAh39VeLun2G4Y5zcCovQEQmMZ34enXCZs",
+          "refinement_display_name": "Department"
+        },
+        {
+          "name": "Drinking Water",
+          "value": "n:16310101,n:16318651",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cn%3A16318651&dc&qid=1706754702&rnid=2941120011&ref=sr_nr_n_6&ds=v1%3AqFzsz%2Bwox0ds3nlIIJr3fzoeyePM67VuZ52BFTgHgSA",
+          "refinement_display_name": "Department"
+        },
+        {
+          "name": "Wafer Cookies",
+          "value": "n:16310101,n:18774336011",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cn%3A18774336011&dc&qid=1706754702&rnid=2941120011&ref=sr_nr_n_7&ds=v1%3A%2FQSbuGiaBSDhJTx0E4n2zt9BXFXicJAAFqoY3Et%2FWPc",
+          "refinement_display_name": "Department"
+        },
+        {
+          "name": "Diet & Sports Nutrition",
+          "value": "n:3764441",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A3764441&dc&qid=1706754702&rnid=2941120011&ref=sr_nr_n_8&ds=v1%3AzrBQSBt9EDj4WedPTTnvtoF71sacL8JscjTAsXKpEOY",
+          "refinement_display_name": "Department"
+        }
+      ],
+      "customer_reviews": [
+        {
+          "name": "4 Stars & Up & Up",
+          "value": "n:16310101,p_72:1248897011",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_72%3A1248897011&dc&qid=1706754702&rnid=1248895011&ref=sr_nr_p_72_1&ds=v1%3A6D%2Bktg1sR1DN46AQk2OfA%2Fj%2FnFGFzqzaKakNYD9qUoY",
+          "refinement_display_name": "Customer Reviews"
+        },
+        {
+          "name": "3 Stars & Up & Up",
+          "value": "n:16310101,p_72:1248898011",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_72%3A1248898011&dc&qid=1706754702&rnid=1248895011&ref=sr_nr_p_72_2&ds=v1%3A7uF%2BJfJam96Pzn678ebp5F%2BqPM1ODnefkYavJLq0T58",
+          "refinement_display_name": "Customer Reviews"
+        },
+        {
+          "name": "2 Stars & Up & Up",
+          "value": "n:16310101,p_72:1248899011",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_72%3A1248899011&dc&qid=1706754702&rnid=1248895011&ref=sr_nr_p_72_3&ds=v1%3AytC%2BEMY3mhU7ZPiH7IpTtIYlQnSWjmDYvbKdD8tRBJQ",
+          "refinement_display_name": "Customer Reviews"
+        },
+        {
+          "name": "1 Star & Up & Up",
+          "value": "n:16310101,p_72:1248900011",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_72%3A1248900011&dc&qid=1706754702&rnid=1248895011&ref=sr_nr_p_72_4&ds=v1%3AWteCJYHwhpu5KtoKyCqJDA%2B%2FzndiaKrYH%2FPFEbZfUL4",
+          "refinement_display_name": "Customer Reviews"
+        }
+      ],
+      "brands": [
+        {
+          "name": "Maruchan",
+          "value": "n:16310101,p_89:Maruchan",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_89%3AMaruchan&dc&qid=1706754702&rnid=2528832011&ref=sr_nr_p_89_1&ds=v1%3AX5KmadX9KSA9wJOxP5iI1I4MxGp%2B9PgJH3Bl5%2FF32T8",
+          "refinement_display_name": "Brands"
+        },
+        {
+          "name": "Amazon Fresh",
+          "value": "n:16310101,p_89:Amazon Fresh",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_89%3AAmazon+Fresh&dc&qid=1706754702&rnid=2528832011&ref=sr_nr_p_89_2&ds=v1%3AGa3Gz5o4DDYiJFjTxyepAP390xikua%2BSe7Bf3Vg1l1o",
+          "refinement_display_name": "Brands"
+        },
+        {
+          "name": "Dole",
+          "value": "n:16310101,p_89:Dole",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_89%3ADole&dc&qid=1706754702&rnid=2528832011&ref=sr_nr_p_89_3&ds=v1%3AuQvb47qOGij3IMiPsNRPu%2FqkLVEaneHuMzDfqKOFcgA",
+          "refinement_display_name": "Brands"
+        },
+        {
+          "name": "Frito Lay",
+          "value": "n:16310101,p_89:Frito Lay",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_89%3AFrito+Lay&dc&qid=1706754702&rnid=2528832011&ref=sr_nr_p_89_4&ds=v1%3Ag5CPD9oxMdxnfTi1y9JE33qOSTj9vko0t%2Bctq6pXgyc",
+          "refinement_display_name": "Brands"
+        },
+        {
+          "name": "Nature Valley",
+          "value": "n:16310101,p_89:Nature Valley",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_89%3ANature+Valley&dc&qid=1706754702&rnid=2528832011&ref=sr_nr_p_89_5&ds=v1%3AY%2B7%2FRvclX8n%2Fprj5okDQc63tPPBDTZZwhstAVgpjAYc",
+          "refinement_display_name": "Brands"
+        },
+        {
+          "name": "Rice-A-Roni",
+          "value": "n:16310101,p_89:Rice-A-Roni",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_89%3ARice-A-Roni&dc&qid=1706754702&rnid=2528832011&ref=sr_nr_p_89_6&ds=v1%3APOt9TWq9uIcyVkhRI5JoSqUPN08Q0RKSoqXY%2FYg9K8E",
+          "refinement_display_name": "Brands"
+        },
+        {
+          "name": "Snack Pack",
+          "value": "n:16310101,p_89:Snack Pack",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_89%3ASnack+Pack&dc&qid=1706754702&rnid=2528832011&ref=sr_nr_p_89_7&ds=v1%3A4Rjbtzd2mphpEkcgRcjH8%2BgRBrg%2B8hvOP4wUQ5nVx94",
+          "refinement_display_name": "Brands"
+        },
+        {
+          "name": "Mott's",
+          "value": "n:16310101,p_89:Mott's",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_89%3AMott%27s&dc&qid=1706754702&rnid=2528832011&ref=sr_nr_p_89_8&ds=v1%3AustHDlz9cFuiymdk8m3Wca%2By%2BQ%2BFnZrxffDLiwG02ro",
+          "refinement_display_name": "Brands"
+        },
+        {
+          "name": "Velveeta",
+          "value": "n:16310101,p_89:Velveeta",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_89%3AVelveeta&dc&qid=1706754702&rnid=2528832011&ref=sr_nr_p_89_9&ds=v1%3ALH5NEZa%2B%2FT1yyHqmKRpnhaiwYJgITJXW91Wq%2F0OO0Nw",
+          "refinement_display_name": "Brands"
+        },
+        {
+          "name": "Bumble Bee",
+          "value": "n:16310101,p_89:Bumble Bee",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_89%3ABumble+Bee&dc&qid=1706754702&rnid=2528832011&ref=sr_nr_p_89_10&ds=v1%3AgB1hDg1N9fdFAZ0YA64HJn3ieq3zGRqPJ8Sun8N0h4Y",
+          "refinement_display_name": "Brands"
+        },
+        {
+          "name": "Pop-Tarts",
+          "value": "n:16310101,p_89:Pop-Tarts",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_89%3APop-Tarts&dc&qid=1706754702&rnid=2528832011&ref=sr_nr_p_89_11&ds=v1%3AIhs5jnqtuOQDNwS6W%2F4iIgtH%2BzsrssdqD7JmUqvVGzk",
+          "refinement_display_name": "Brands"
+        },
+        {
+          "name": "Sparkling ICE",
+          "value": "n:16310101,p_89:Sparkling ICE",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_89%3ASparkling+ICE&dc&qid=1706754702&rnid=2528832011&ref=sr_nr_p_89_12&ds=v1%3A6aZYq62IKrJ2Vi%2F%2FRB%2Fpt5fdayXevFfcybUeCNIQOfE",
+          "refinement_display_name": "Brands"
+        },
+        {
+          "name": "Quaker",
+          "value": "n:16310101,p_89:Quaker",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_89%3AQuaker&dc&qid=1706754702&rnid=2528832011&ref=sr_nr_p_89_13&ds=v1%3AaEwb1S9Pjh9rvyMHBfZ1h29Rx9JAiO736WIlybYruHA",
+          "refinement_display_name": "Brands"
+        },
+        {
+          "name": "Bauducco",
+          "value": "n:16310101,p_89:Bauducco",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_89%3ABauducco&dc&qid=1706754702&rnid=2528832011&ref=sr_nr_p_89_14&ds=v1%3Ah%2BJidYj9dgtfoWpMkdVCy4rTH2JuRY6G5wWUAna%2FpdY",
+          "refinement_display_name": "Brands"
+        },
+        {
+          "name": "Planters",
+          "value": "n:16310101,p_89:Planters",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_89%3APlanters&dc&qid=1706754702&rnid=2528832011&ref=sr_nr_p_89_15&ds=v1%3A3b1TUOjH%2BS1LHHA%2BCo2jEd72wRlXCJ7Vun%2BA8WFrYzM",
+          "refinement_display_name": "Brands"
+        },
+        {
+          "name": "Wonderful Pistachios",
+          "value": "n:16310101,p_89:Wonderful Pistachios",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_89%3AWonderful+Pistachios&dc&qid=1706754702&rnid=2528832011&ref=sr_nr_p_89_16&ds=v1%3Ah77GZeyAldZlUJ1V1%2Bd52hr0swgqrQDAaexTvDkFZbk",
+          "refinement_display_name": "Brands"
+        },
+        {
+          "name": "Pringles",
+          "value": "n:16310101,p_89:Pringles",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_89%3APringles&dc&qid=1706754702&rnid=2528832011&ref=sr_nr_p_89_17&ds=v1%3AYrdPGB0tX%2FKPzAn7MH%2Fxm3Pu%2FSvqE%2FVtxiJjLHdPWlM",
+          "refinement_display_name": "Brands"
+        },
+        {
+          "name": "Jack Link's",
+          "value": "n:16310101,p_89:Jack Link's",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_89%3AJack+Link%27s&dc&qid=1706754702&rnid=2528832011&ref=sr_nr_p_89_18&ds=v1%3ABgUvXIm6UjspqqH7QukgMCmeV6aHz3ruPXz5c6dOxQs",
+          "refinement_display_name": "Brands"
+        },
+        {
+          "name": "Oreo",
+          "value": "n:16310101,p_89:Oreo",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_89%3AOreo&dc&qid=1706754702&rnid=2528832011&ref=sr_nr_p_89_19&ds=v1%3AAHrucwUYW7sjuO5r2p%2F9uLGXb7hig4jgu0t06MCv0%2F0",
+          "refinement_display_name": "Brands"
+        },
+        {
+          "name": "StarKist",
+          "value": "n:16310101,p_89:StarKist",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_89%3AStarKist&dc&qid=1706754702&rnid=2528832011&ref=sr_nr_p_89_20&ds=v1%3ASCocjuO0gAGZ%2FVEj2eJRTsYDA1JJTYnWv9sZFYcfgqY",
+          "refinement_display_name": "Brands"
+        },
+        {
+          "name": "HERSHEY'S",
+          "value": "n:16310101,p_89:HERSHEY'S",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_89%3AHERSHEY%27S&dc&qid=1706754702&rnid=2528832011&ref=sr_nr_p_89_21&ds=v1%3AfRURNsn1EGXeUZvLjpfRB5YMxheBqHLqAw0Vk6b825Q",
+          "refinement_display_name": "Brands"
+        },
+        {
+          "name": "Cheerios",
+          "value": "n:16310101,p_89:Cheerios",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_89%3ACheerios&dc&qid=1706754702&rnid=2528832011&ref=sr_nr_p_89_22&ds=v1%3A%2BPSpzyl1nR%2FctcvkstOdp5kd2OIcwFdcrO4Oc08I2iA",
+          "refinement_display_name": "Brands"
+        },
+        {
+          "name": "Duncan Hines",
+          "value": "n:16310101,p_89:Duncan Hines",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_89%3ADuncan+Hines&dc&qid=1706754702&rnid=2528832011&ref=sr_nr_p_89_23&ds=v1%3A5UEYYbJCH2OBvjOxsAJPMAGf8S7JNsT3z9zYCGLkxic",
+          "refinement_display_name": "Brands"
+        },
+        {
+          "name": "Betty Crocker",
+          "value": "n:16310101,p_89:Betty Crocker",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_89%3ABetty+Crocker&dc&qid=1706754702&rnid=2528832011&ref=sr_nr_p_89_24&ds=v1%3A82r55qFe3UVW0x%2Bw4a7tpbkjdAmvqtO0I4JsVBqqz%2Fg",
+          "refinement_display_name": "Brands"
+        },
+        {
+          "name": "Welch's",
+          "value": "n:16310101,p_89:Welch's",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_89%3AWelch%27s&dc&qid=1706754702&rnid=2528832011&ref=sr_nr_p_89_25&ds=v1%3ANVmLagusxwUDU%2BzZRgZG5OmGbSd2xJow1JlPdU8z3MQ",
+          "refinement_display_name": "Brands"
+        },
+        {
+          "name": "Del Monte",
+          "value": "n:16310101,p_89:Del Monte",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_89%3ADel+Monte&dc&qid=1706754702&rnid=2528832011&ref=sr_nr_p_89_26&ds=v1%3Ak5yqjEfk%2FY%2FX3J%2BK9%2FyfZdkmp4sK4Q%2FQIIvTDOU77%2Fw",
+          "refinement_display_name": "Brands"
+        },
+        {
+          "name": "Orville Redenbacher's",
+          "value": "n:16310101,p_89:Orville Redenbacher's",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_89%3AOrville+Redenbacher%27s&dc&qid=1706754702&rnid=2528832011&ref=sr_nr_p_89_27&ds=v1%3ATTuDeUZC6NwrhMYToWDRKrJ3cLNVdwvuLbHrZaD%2F2c8",
+          "refinement_display_name": "Brands"
+        },
+        {
+          "name": "Nature's Bakery",
+          "value": "n:16310101,p_89:Nature's Bakery",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_89%3ANature%27s+Bakery&dc&qid=1706754702&rnid=2528832011&ref=sr_nr_p_89_28&ds=v1%3ATxXT9olCMCUQk2xCrgfTYf9El9Gmc2zwyrc5jC9j0vI",
+          "refinement_display_name": "Brands"
+        },
+        {
+          "name": "Nutella",
+          "value": "n:16310101,p_89:Nutella",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_89%3ANutella&dc&qid=1706754702&rnid=2528832011&ref=sr_nr_p_89_29&ds=v1%3AUNaytHF8Pju39ZcgD5%2Fcp3OjCUA%2BsFOWh%2BWtx7WgRVY",
+          "refinement_display_name": "Brands"
+        },
+        {
+          "name": "Old Wisconsin",
+          "value": "n:16310101,p_89:Old Wisconsin",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_89%3AOld+Wisconsin&dc&qid=1706754702&rnid=2528832011&ref=sr_nr_p_89_30&ds=v1%3AT57oY5XhKI0s39v0ULf2KpgelXVqeMnBlWJjySbn4VM",
+          "refinement_display_name": "Brands"
+        },
+        {
+          "name": "Happy Belly",
+          "value": "n:16310101,p_89:Happy Belly",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_89%3AHappy+Belly&dc&qid=1706754702&rnid=2528832011&ref=sr_nr_p_89_31&ds=v1%3AdMG1mW7SLmx%2BcNvEd%2F%2Bv%2BCBNsziA8NSGVA8v1VUIcR4",
+          "refinement_display_name": "Brands"
+        },
+        {
+          "name": "Chef BOYARDEE",
+          "value": "n:16310101,p_89:Chef BOYARDEE",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_89%3AChef+BOYARDEE&dc&qid=1706754702&rnid=2528832011&ref=sr_nr_p_89_32&ds=v1%3Ag9uoJzyTs6R1IFrYgXzwRqjQ29ovr5QvdeiGMzme0lM",
+          "refinement_display_name": "Brands"
+        },
+        {
+          "name": "Gatorade",
+          "value": "n:16310101,p_89:Gatorade",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_89%3AGatorade&dc&qid=1706754702&rnid=2528832011&ref=sr_nr_p_89_33&ds=v1%3A%2BFPn3GeH4iSjFHDR7TqfVsxQBgU7r%2Fou4fiJaIrZgwE",
+          "refinement_display_name": "Brands"
+        },
+        {
+          "name": "Ritz",
+          "value": "n:16310101,p_89:Ritz",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_89%3ARitz&dc&qid=1706754702&rnid=2528832011&ref=sr_nr_p_89_34&ds=v1%3ADiqEKeyRyK0lF3uJb%2FUkqEVIIcJayH9ul9Bsg6CGWhI",
+          "refinement_display_name": "Brands"
+        },
+        {
+          "name": "Slim Jim",
+          "value": "n:16310101,p_89:Slim Jim",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_89%3ASlim+Jim&dc&qid=1706754702&rnid=2528832011&ref=sr_nr_p_89_35&ds=v1%3Axit27%2BeAPrg9mo7vseDm2ZQwG5u8HuyzhQbX59qkvPg",
+          "refinement_display_name": "Brands"
+        },
+        {
+          "name": "Reese's",
+          "value": "n:16310101,p_89:Reese's",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_89%3AReese%27s&dc&qid=1706754702&rnid=2528832011&ref=sr_nr_p_89_36&ds=v1%3AbfpfBE9qiiGYkZVcjcwUbrk9fFI37iLoc%2Byt%2FTw4BME",
+          "refinement_display_name": "Brands"
+        },
+        {
+          "name": "Propel",
+          "value": "n:16310101,p_89:Propel",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_89%3APropel&dc&qid=1706754702&rnid=2528832011&ref=sr_nr_p_89_37&ds=v1%3A5Si%2F%2BpzEqJIG6lhw1HZCC6gUXZ3rECRpjU9iA5iA5cQ",
+          "refinement_display_name": "Brands"
+        },
+        {
+          "name": "Sun-Maid",
+          "value": "n:16310101,p_89:Sun-Maid",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_89%3ASun-Maid&dc&qid=1706754702&rnid=2528832011&ref=sr_nr_p_89_38&ds=v1%3AsbMsP4Jo6jTC5i3PtuL4Xuc1%2Br94hj9a2dlFUblP1T0",
+          "refinement_display_name": "Brands"
+        },
+        {
+          "name": "Cheetos",
+          "value": "n:16310101,p_89:Cheetos",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_89%3ACheetos&dc&qid=1706754702&rnid=2528832011&ref=sr_nr_p_89_39&ds=v1%3AXV1P52FftbjOIcVMnEB8MgSWUbjAg%2BEISHymtgMB79A",
+          "refinement_display_name": "Brands"
+        },
+        {
+          "name": "Post",
+          "value": "n:16310101,p_89:Post",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_89%3APost&dc&qid=1706754702&rnid=2528832011&ref=sr_nr_p_89_40&ds=v1%3At0f%2FzsoPlZSXt%2FtmydMiGjAjEt0nzeJ1uxDa9uJ1MZE",
+          "refinement_display_name": "Brands"
+        }
+      ],
+      "grocery_&_gourmet_food_price": [
+        {
+          "name": "Under $10",
+          "value": "n:16310101,p_36:698503011",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_36%3A698503011&dc&qid=1706754702&rnid=386454011&ref=sr_nr_p_36_1&ds=v1%3AwU4GjdF75QYgnqUgBLNf2tuMIM4LlE9%2FjzbLQrnqQnY",
+          "refinement_display_name": "Grocery & Gourmet Food Price"
+        },
+        {
+          "name": "$10 to $20",
+          "value": "n:16310101,p_36:698504011",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_36%3A698504011&dc&qid=1706754702&rnid=386454011&ref=sr_nr_p_36_2&ds=v1%3AaUPvMLEB%2BL349Z1zktneT9t1k0HY1hf8xhQh6h22yug",
+          "refinement_display_name": "Grocery & Gourmet Food Price"
+        },
+        {
+          "name": "$20 to $30",
+          "value": "n:16310101,p_36:698505011",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_36%3A698505011&dc&qid=1706754702&rnid=386454011&ref=sr_nr_p_36_3&ds=v1%3AasO4x%2FJFUwT%2BoQ0DhjcJBy%2Bl62E279rMeN3pg0S9jIs",
+          "refinement_display_name": "Grocery & Gourmet Food Price"
+        },
+        {
+          "name": "$30 to $50",
+          "value": "n:16310101,p_36:698506011",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_36%3A698506011&dc&qid=1706754702&rnid=386454011&ref=sr_nr_p_36_4&ds=v1%3Am%2FrAwV2%2F8ydDlolwhxB02dTlr7f6ZQiwijif8HJ91xY",
+          "refinement_display_name": "Grocery & Gourmet Food Price"
+        },
+        {
+          "name": "$50 & Above",
+          "value": "n:16310101,p_36:698507011",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_36%3A698507011&dc&qid=1706754702&rnid=386454011&ref=sr_nr_p_36_5&ds=v1%3ATk7ud0bz%2FzSemoQeM1Hu%2Fs8BMVBDEKr6e6QcNGVTlls",
+          "refinement_display_name": "Grocery & Gourmet Food Price"
+        }
+      ],
+      "deals_&_discounts": [
+        {
+          "name": "All Discounts",
+          "value": "p_n_deal_type:23566065011",
+          "link": "https://www.amazon.com/s?k=grocery&rh=p_n_deal_type%3A23566065011&dc&qid=1706754702&rnid=23566063011&ref=sr_nr_p_n_deal_type_1&ds=v1%3ARn97406rva76PwG%2B0v%2BNfoJnKIhlWoEU%2BVV36q0CTYU",
+          "refinement_display_name": "Deals & Discounts"
+        },
+        {
+          "name": "Today's Deals",
+          "value": "p_n_deal_type:23566064011",
+          "link": "https://www.amazon.com/s?k=grocery&rh=p_n_deal_type%3A23566064011&dc&qid=1706754702&rnid=23566063011&ref=sr_nr_p_n_deal_type_2&ds=v1%3AKjopSVOu%2BXJFHuf5c%2Bjb3vTM04T9IBwdulW1kjbp84w",
+          "refinement_display_name": "Deals & Discounts"
+        }
+      ],
+      "specialty_food_type": [
+        {
+          "name": "Certified Humane-Raised",
+          "value": "n:16310101,p_n_feature_nine_browse-bin:5712558011",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_n_feature_nine_browse-bin%3A5712558011&dc&qid=1706754702&rnid=114319011&ref=sr_nr_p_n_feature_nine_browse-bin_1&ds=v1%3AbuxUKr2WwIKyzlq006V78AUI0RBq2PGLLnAxVTq1s%2FY",
+          "refinement_display_name": "Specialty Food Type"
+        },
+        {
+          "name": "Grain-Free",
+          "value": "n:16310101,p_n_feature_nine_browse-bin:9332135011",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_n_feature_nine_browse-bin%3A9332135011&dc&qid=1706754702&rnid=114319011&ref=sr_nr_p_n_feature_nine_browse-bin_2&ds=v1%3A0uDuGCxQOVIGD9WLibBGJaUBqThESmCI%2BLsxQ1%2FlvI4",
+          "refinement_display_name": "Specialty Food Type"
+        },
+        {
+          "name": "High-Fructose Corn Syrup-Free",
+          "value": "n:16310101,p_n_feature_nine_browse-bin:5712562011",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_n_feature_nine_browse-bin%3A5712562011&dc&qid=1706754702&rnid=114319011&ref=sr_nr_p_n_feature_nine_browse-bin_3&ds=v1%3A5tsXvvNqzoNWI9YKTky4tvWpOrl2JMNMJno4VpJt3RU",
+          "refinement_display_name": "Specialty Food Type"
+        },
+        {
+          "name": "Lactose-Free",
+          "value": "n:16310101,p_n_feature_nine_browse-bin:16208706011",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_n_feature_nine_browse-bin%3A16208706011&dc&qid=1706754702&rnid=114319011&ref=sr_nr_p_n_feature_nine_browse-bin_4&ds=v1%3A3pp03pV0apjFLRW2QKwDEsTZNUTn6FFLsFs28ZCIGDY",
+          "refinement_display_name": "Specialty Food Type"
+        },
+        {
+          "name": "Local",
+          "value": "n:16310101,p_n_feature_nine_browse-bin:9332136011",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_n_feature_nine_browse-bin%3A9332136011&dc&qid=1706754702&rnid=114319011&ref=sr_nr_p_n_feature_nine_browse-bin_5&ds=v1%3AAbre%2FWfJKcrDUPXWK3O78JnxHO3absp1To%2FIRXNOtHc",
+          "refinement_display_name": "Specialty Food Type"
+        },
+        {
+          "name": "Low-Acid",
+          "value": "n:16310101,p_n_feature_nine_browse-bin:5712563011",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_n_feature_nine_browse-bin%3A5712563011&dc&qid=1706754702&rnid=114319011&ref=sr_nr_p_n_feature_nine_browse-bin_6&ds=v1%3AXcsJnuDth5RG06hv0aGGG85jrLBuiaokxbjp4BY9qLY",
+          "refinement_display_name": "Specialty Food Type"
+        },
+        {
+          "name": "Low-Carb",
+          "value": "n:16310101,p_n_feature_nine_browse-bin:114327011",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_n_feature_nine_browse-bin%3A114327011&dc&qid=1706754702&rnid=114319011&ref=sr_nr_p_n_feature_nine_browse-bin_7&ds=v1%3AGZLe73%2BMBiy%2BjSEHYoUEu0ef9oFygU66hJH6DUUd1bE",
+          "refinement_display_name": "Specialty Food Type"
+        },
+        {
+          "name": "No Antibiotics Ever",
+          "value": "n:16310101,p_n_feature_nine_browse-bin:10676436011",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_n_feature_nine_browse-bin%3A10676436011&dc&qid=1706754702&rnid=114319011&ref=sr_nr_p_n_feature_nine_browse-bin_8&ds=v1%3Ae2UNWoOqX5k7k0yiV2rYM5kYdsdKuVhnREpV%2FWkajOM",
+          "refinement_display_name": "Specialty Food Type"
+        },
+        {
+          "name": "Non-GMO",
+          "value": "n:16310101,p_n_feature_nine_browse-bin:5712560011",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_n_feature_nine_browse-bin%3A5712560011&dc&qid=1706754702&rnid=114319011&ref=sr_nr_p_n_feature_nine_browse-bin_9&ds=v1%3A0d0C8F4Dgy1fPv8fsP2RWa8byWkC5Y3EYBIZZ4SJz0I",
+          "refinement_display_name": "Specialty Food Type"
+        },
+        {
+          "name": "Organic",
+          "value": "n:16310101,p_n_feature_nine_browse-bin:114320011",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_n_feature_nine_browse-bin%3A114320011&dc&qid=1706754702&rnid=114319011&ref=sr_nr_p_n_feature_nine_browse-bin_10&ds=v1%3ARyU0adSqH9uDjm2s7c%2BxjMep%2Fc%2F1Fl%2BFYcN4MEP61b4",
+          "refinement_display_name": "Specialty Food Type"
+        },
+        {
+          "name": "Shade-Grown",
+          "value": "n:16310101,p_n_feature_nine_browse-bin:5712566011",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_n_feature_nine_browse-bin%3A5712566011&dc&qid=1706754702&rnid=114319011&ref=sr_nr_p_n_feature_nine_browse-bin_11&ds=v1%3A%2Fwbw4m0PThINR%2FFbgcmbZL72QT95v3UD%2B20Cr%2Bf60yo",
+          "refinement_display_name": "Specialty Food Type"
+        },
+        {
+          "name": "Single-Origin",
+          "value": "n:16310101,p_n_feature_nine_browse-bin:11136982011",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_n_feature_nine_browse-bin%3A11136982011&dc&qid=1706754702&rnid=114319011&ref=sr_nr_p_n_feature_nine_browse-bin_12&ds=v1%3A9KDM4IRONs6h6y5bT7EkYkOLJX5xb2SSf9TrKLnvIz4",
+          "refinement_display_name": "Specialty Food Type"
+        },
+        {
+          "name": "USDA Choice",
+          "value": "n:16310101,p_n_feature_nine_browse-bin:10676435011",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_n_feature_nine_browse-bin%3A10676435011&dc&qid=1706754702&rnid=114319011&ref=sr_nr_p_n_feature_nine_browse-bin_13&ds=v1%3AfYaEioHI41s9jE2SFiRcJUOhwjsxFFQNxe8u806ohkg",
+          "refinement_display_name": "Specialty Food Type"
+        },
+        {
+          "name": "USDA Organic",
+          "value": "n:16310101,p_n_feature_nine_browse-bin:5712568011",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_n_feature_nine_browse-bin%3A5712568011&dc&qid=1706754702&rnid=114319011&ref=sr_nr_p_n_feature_nine_browse-bin_14&ds=v1%3Au9vdeoq2Yu9BU4USyGrK2zDZDzQGFwiehy5ueNYCQ10",
+          "refinement_display_name": "Specialty Food Type"
+        }
+      ],
+      "calories_per_serving": [
+        {
+          "name": "0 Calories",
+          "value": "n:16310101,p_n_feature_thirteen_browse-bin:10434594011",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_n_feature_thirteen_browse-bin%3A10434594011&dc&qid=1706754702&rnid=10434593011&ref=sr_nr_p_n_feature_thirteen_browse-bin_1&ds=v1%3AkvGvsnz24d9CmnUpC3Bo1MquXaKcaj3HQzAGJ41muxY",
+          "refinement_display_name": "Calories Per Serving"
+        },
+        {
+          "name": "Up to 40 Calories",
+          "value": "n:16310101,p_n_feature_thirteen_browse-bin:10434595011",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_n_feature_thirteen_browse-bin%3A10434595011&dc&qid=1706754702&rnid=10434593011&ref=sr_nr_p_n_feature_thirteen_browse-bin_2&ds=v1%3ALutFejk3U1zKj%2BBpTVXyzMmyn8fn59txkzMo%2BGj8Q8I",
+          "refinement_display_name": "Calories Per Serving"
+        },
+        {
+          "name": "40 to 100 Calories",
+          "value": "n:16310101,p_n_feature_thirteen_browse-bin:10434596011",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_n_feature_thirteen_browse-bin%3A10434596011&dc&qid=1706754702&rnid=10434593011&ref=sr_nr_p_n_feature_thirteen_browse-bin_3&ds=v1%3AAYnbjiEPY9ygW%2FJ0B%2FhcQ36C9VOe03krgacxE%2BuaMOg",
+          "refinement_display_name": "Calories Per Serving"
+        },
+        {
+          "name": "100 to 200 Calories",
+          "value": "n:16310101,p_n_feature_thirteen_browse-bin:10434597011",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_n_feature_thirteen_browse-bin%3A10434597011&dc&qid=1706754702&rnid=10434593011&ref=sr_nr_p_n_feature_thirteen_browse-bin_4&ds=v1%3A4BlcxcUOLQ%2BerH7pgfDPp3rm%2BN0Tj93izdxHxbWiAHQ",
+          "refinement_display_name": "Calories Per Serving"
+        },
+        {
+          "name": "200 to 300 Calories",
+          "value": "n:16310101,p_n_feature_thirteen_browse-bin:10434598011",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_n_feature_thirteen_browse-bin%3A10434598011&dc&qid=1706754702&rnid=10434593011&ref=sr_nr_p_n_feature_thirteen_browse-bin_5&ds=v1%3AqW7T4zIySy77xsiBJuqUldOtqlJmW%2F35vPjiJbTZ0ag",
+          "refinement_display_name": "Calories Per Serving"
+        }
+      ],
+      "fat_calories_per_serving": [
+        {
+          "name": "0 Calories",
+          "value": "n:16310101,p_n_feature_seventeen_browse-bin:11139480011",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_n_feature_seventeen_browse-bin%3A11139480011&dc&qid=1706754702&rnid=11139479011&ref=sr_nr_p_n_feature_seventeen_browse-bin_1&ds=v1%3AOcs7nCvGB7qOr6NmFFucRwZfXwJPHT9Czj44AS4gmdM",
+          "refinement_display_name": "Fat Calories Per Serving"
+        },
+        {
+          "name": "<40 Calories",
+          "value": "n:16310101,p_n_feature_seventeen_browse-bin:11139481011",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_n_feature_seventeen_browse-bin%3A11139481011&dc&qid=1706754702&rnid=11139479011&ref=sr_nr_p_n_feature_seventeen_browse-bin_2&ds=v1%3AbP%2BU6suJMIUmUkuDecq7FUPrNUkPDv4JAopZOCpA7Sw",
+          "refinement_display_name": "Fat Calories Per Serving"
+        },
+        {
+          "name": "40-100 Calories",
+          "value": "n:16310101,p_n_feature_seventeen_browse-bin:11139482011",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_n_feature_seventeen_browse-bin%3A11139482011&dc&qid=1706754702&rnid=11139479011&ref=sr_nr_p_n_feature_seventeen_browse-bin_3&ds=v1%3ASmD5py7%2FXJwn1KzdvSQFEaPHDWPeOSMW5zxDcPA52LM",
+          "refinement_display_name": "Fat Calories Per Serving"
+        }
+      ],
+      "nutrition_facts_per_serving": [
+        {
+          "name": "Fat Free (<0.5g)",
+          "value": "n:16310101,p_n_feature_eight_browse-bin:2288328011",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_n_feature_eight_browse-bin%3A2288328011&dc&qid=1706754702&rnid=2288325011&ref=sr_nr_p_n_feature_eight_browse-bin_1&ds=v1%3A4rxD2goV22N9J8k%2FL8bs6qffTpbCmqj%2B3cjuZaAkkrI",
+          "refinement_display_name": "Nutrition Facts Per Serving"
+        },
+        {
+          "name": "Low Fat (<3g)",
+          "value": "n:16310101,p_n_feature_eight_browse-bin:2288329011",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_n_feature_eight_browse-bin%3A2288329011&dc&qid=1706754702&rnid=2288325011&ref=sr_nr_p_n_feature_eight_browse-bin_2&ds=v1%3A%2F2gubBD%2FmHTO0xvqbeZY9nguwbfh6SsgansWmM%2FFJL8",
+          "refinement_display_name": "Nutrition Facts Per Serving"
+        },
+        {
+          "name": "Free of Saturated Fat (<0.5g)",
+          "value": "n:16310101,p_n_feature_eight_browse-bin:10434599011",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_n_feature_eight_browse-bin%3A10434599011&dc&qid=1706754702&rnid=2288325011&ref=sr_nr_p_n_feature_eight_browse-bin_3&ds=v1%3ABvccFsJA76lrwBsJ6oRVGpjhvVlyX3ZxHCRPfT2xI7s",
+          "refinement_display_name": "Nutrition Facts Per Serving"
+        },
+        {
+          "name": "Free of Trans Fat (0g)",
+          "value": "n:16310101,p_n_feature_eight_browse-bin:11139484011",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_n_feature_eight_browse-bin%3A11139484011&dc&qid=1706754702&rnid=2288325011&ref=sr_nr_p_n_feature_eight_browse-bin_4&ds=v1%3AAmv1Bayl3Qrl6raeP7LjeW%2BAkcQsNFg0b2yysGQImsE",
+          "refinement_display_name": "Nutrition Facts Per Serving"
+        },
+        {
+          "name": "Cholesterol Free (<2mg)",
+          "value": "n:16310101,p_n_feature_eight_browse-bin:11139485011",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_n_feature_eight_browse-bin%3A11139485011&dc&qid=1706754702&rnid=2288325011&ref=sr_nr_p_n_feature_eight_browse-bin_5&ds=v1%3AlAIhyrhbYFsN1flKyUyylhg9SdXWTTTW9VmLw084BAw",
+          "refinement_display_name": "Nutrition Facts Per Serving"
+        },
+        {
+          "name": "Sodium Free (<5mg)",
+          "value": "n:16310101,p_n_feature_eight_browse-bin:2288330011",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_n_feature_eight_browse-bin%3A2288330011&dc&qid=1706754702&rnid=2288325011&ref=sr_nr_p_n_feature_eight_browse-bin_6&ds=v1%3A6JIMG3QopcaEkbgEwIMrGYGMgtY6bhnAqM7btsx%2F1iI",
+          "refinement_display_name": "Nutrition Facts Per Serving"
+        },
+        {
+          "name": "Low Sodium (<140mg)",
+          "value": "n:16310101,p_n_feature_eight_browse-bin:2288331011",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_n_feature_eight_browse-bin%3A2288331011&dc&qid=1706754702&rnid=2288325011&ref=sr_nr_p_n_feature_eight_browse-bin_7&ds=v1%3ACn1kDaAzjykNOiKa9H883YPl4CMaqrnphDOwxFyw%2Fhk",
+          "refinement_display_name": "Nutrition Facts Per Serving"
+        },
+        {
+          "name": "Carbohydrate Free (<0.5g)",
+          "value": "n:16310101,p_n_feature_eight_browse-bin:11139487011",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_n_feature_eight_browse-bin%3A11139487011&dc&qid=1706754702&rnid=2288325011&ref=sr_nr_p_n_feature_eight_browse-bin_8&ds=v1%3Ai4VFcYE1PwzieLae44t5dhvGb%2B15Yx%2FWZqD%2FUMSenwA",
+          "refinement_display_name": "Nutrition Facts Per Serving"
+        },
+        {
+          "name": "Sugar Free (<0.5g)",
+          "value": "n:16310101,p_n_feature_eight_browse-bin:2288334011",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_n_feature_eight_browse-bin%3A2288334011&dc&qid=1706754702&rnid=2288325011&ref=sr_nr_p_n_feature_eight_browse-bin_9&ds=v1%3AxiwoDKEfNd%2FHFSXL3qqrBUxOxaG249hcbH38A%2BM1%2F6Q",
+          "refinement_display_name": "Nutrition Facts Per Serving"
+        },
+        {
+          "name": "Dietary Fiber (>10g)",
+          "value": "n:16310101,p_n_feature_eight_browse-bin:10434601011",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_n_feature_eight_browse-bin%3A10434601011&dc&qid=1706754702&rnid=2288325011&ref=sr_nr_p_n_feature_eight_browse-bin_10&ds=v1%3AInThcEhWtX3N7PDxL0LNbPKOjjMjkM1sZDm5e5w9sJc",
+          "refinement_display_name": "Nutrition Facts Per Serving"
+        },
+        {
+          "name": "Protein (>10g)",
+          "value": "n:16310101,p_n_feature_eight_browse-bin:10434600011",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_n_feature_eight_browse-bin%3A10434600011&dc&qid=1706754702&rnid=2288325011&ref=sr_nr_p_n_feature_eight_browse-bin_11&ds=v1%3ARPlLhttfsBZOa7GmW06zcX10VDl7Sgqt153wyRLfycc",
+          "refinement_display_name": "Nutrition Facts Per Serving"
+        }
+      ],
+      "business_type": [
+        {
+          "name": "Small Business",
+          "value": "p_n_sb_certificate_id:98614993011",
+          "link": "https://www.amazon.com/s?k=grocery&rh=p_n_sb_certificate_id%3A98614993011&dc&qid=1706754702&rnid=98614992011&ref=sr_nr_p_n_sb_certificate_id_1&ds=v1%3Ax66sAzvtspVhQ1hI4k4cOnPyDLRw6REKKEnsDS1lzkQ",
+          "refinement_display_name": "Business Type"
+        }
+      ],
+      "subscription_options": [
+        {
+          "name": "Subscribe & Save Eligible",
+          "value": "p_n_is_sns_available:2617006011",
+          "link": "https://www.amazon.com/s?k=grocery&rh=p_n_is_sns_available%3A2617006011&dc&qid=1706754702&rnid=2617005011&ref=sr_nr_p_n_is_sns_available_1&ds=v1%3ARsWNwQG8TMvZHxjHHdA1ymWqush1gi%2Bn3VliNk6tfHg",
+          "refinement_display_name": "Subscription Options"
+        }
+      ],
+      "from_our_brands": [
+        {
+          "name": "Amazon Brands",
+          "value": "p_n_feature_forty-seven_browse-bin:24677333011",
+          "link": "https://www.amazon.com/s?k=grocery&rh=p_n_feature_forty-seven_browse-bin%3A24677333011&dc&qid=1706754702&rnid=21180941011&ref=sr_nr_p_n_feature_forty-seven_browse-bin_1&ds=v1%3AcSETm8Eq75wp9kThYD8SRZgG%2FVP9jJpdUhf3Sy9VR3E",
+          "refinement_display_name": "From Our Brands"
+        }
+      ],
+      "all_top_brands": [
+        {
+          "name": "Top Brands",
+          "value": "n:16310101,p_n_feature_forty-one_browse-bin:119653281011",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_n_feature_forty-one_browse-bin%3A119653281011&dc&qid=1706754702&rnid=119653280011&ref=sr_nr_p_n_feature_forty-one_browse-bin_1&ds=v1%3A8h9D5UAbpCOe1%2FASw9t6nWEkFd593%2B1LsiPOIK9RNbM",
+          "refinement_display_name": "All Top Brands"
+        }
+      ],
+      "packaging_option": [
+        {
+          "name": "Frustration-Free Packaging",
+          "value": "n:16310101,p_n_is_ffp:7252855011",
+          "link": "https://www.amazon.com/s?k=grocery&rh=n%3A16310101%2Cp_n_is_ffp%3A7252855011&dc&qid=1706754702&rnid=7252854011&ref=sr_nr_p_n_is_ffp_1&ds=v1%3AfUfqkSCLLlVwFrGFwukoDhicP41J1f1wWFcDxfG1Vrg",
+          "refinement_display_name": "Packaging Option"
+        }
+      ],
+      "international_shipping": [
+        {
+          "name": "International Shipping Eligible",
+          "value": "p_n_shipping_option-bin:3242350011",
+          "link": "https://www.amazon.com/s?k=grocery&rh=p_n_shipping_option-bin%3A3242350011&dc&qid=1706754702&rnid=2944662011&ref=sr_nr_p_n_shipping_option-bin_1&ds=v1%3Aautxz8q6vRqNOQRyBcrjfWITu3pvvheUFAXCP5avP3E",
+          "refinement_display_name": "International Shipping"
+        }
+      ],
+      "availability": [
+        {
+          "name": "Include Out of Stock",
+          "value": "p_n_availability:2661601011",
+          "link": "https://www.amazon.com/s?k=grocery&rh=p_n_availability%3A2661601011&dc&qid=1706754702&rnid=2661599011&ref=sr_nr_p_n_availability_2&ds=v1%3AVgtzqDDgAGOfrKgGcKAqglKkTIdzBTjO41V3Rz%2FVnws",
+          "refinement_display_name": "Availability"
+        }
+      ]
+    },
+    "ad_blocks": [],
+    "pagination": {
+      "total_results": 80000,
+      "start": 1,
+      "end": 1,
+      "total_pages": 7,
+      "current_page": 1,
+      "next_page_link": "https://www.amazon.com/s?k=grocery&page=2&qid=1706754702&ref=sr_pg_1"
+    }
+  }
+]
