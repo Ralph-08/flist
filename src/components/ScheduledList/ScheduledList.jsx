@@ -3,8 +3,10 @@ import editIcon from "../../assets/icons/edit-pencil.svg";
 import "./ScheduledList.scss";
 import EditListModal from "../EditListModal/EditListModal";
 import { useState } from "react";
+import addIcon from "../../assets/icons/add-svgrepo-com (1).svg";
+import { Link } from "react-router-dom";
 
-const ScheduledList = ({ items }) => {
+const ScheduledList = ({ items, listId, getItems }) => {
   const [editModal, setEditModal] = useState(false);
   const [scheduledDate, setScheduledDate] = useState(null);
 
@@ -19,6 +21,12 @@ const ScheduledList = ({ items }) => {
           <h2 className="scheduled__subheader">Scheduled List:</h2>
         </li>
         <li className="scheduled__item">
+          <Link to={`/items/${listId}`}>
+            <button className="scheduled__button">
+              <img className="scheduled__add-icon" src={addIcon} alt="" />
+              Add Items
+            </button>
+          </Link>
           <button
             onClick={handleEditDisplay}
             className="scheduled__button scheduled__button--secondary"
@@ -78,6 +86,8 @@ const ScheduledList = ({ items }) => {
             scheduledDate={scheduledDate}
             setScheduledDate={setScheduledDate}
             itemsList={items}
+            listId={listId}
+            getItems={getItems}
           />
         )}
       </section>

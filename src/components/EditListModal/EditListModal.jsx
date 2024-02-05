@@ -3,19 +3,21 @@ import closeIcon from "../../assets/icons/close.png";
 import PickDate from "../PickDate/PickDate";
 import { useState } from "react";
 import Item from "../Item/Item";
+import axios from "axios";
+import trashcanIcon from "../../assets/icons/icon-trash.svg";
 
 const EditListModal = ({
   handleClose,
   setScheduledDate,
   scheduledDate,
   itemsList,
+  listId,
+  getItems,
 }) => {
   const [selectedDate, setSelectedDate] = useState(new Date());
 
-  // ------------timestamp--------------------
   const dateObject = new Date(selectedDate);
   const timestamp = dateObject.getTime();
-
   const numberTimestamp = new Date(timestamp);
   const formattedDate = new Intl.DateTimeFormat("en-US", {
     year: "numeric",
@@ -24,6 +26,26 @@ const EditListModal = ({
   }).format(numberTimestamp);
 
   setScheduledDate(`${formattedDate}`);
+
+  let ItemIds = [];
+
+  const getItemIds = (id) => {
+    ItemIds = [...ItemIds, id];
+    console.log(id);
+  };
+
+  const deleteItems = async () => {
+    try {
+      const res = await axios.put(
+        `http://localhost:8080/lists/${listId}`,
+        ItemIds
+      );
+    } catch (err) {
+      console.log("Error deleting items from list: ", err);
+    }
+    getItems();
+    handleClose();
+  };
 
   return (
     <section className="edit">
@@ -55,14 +77,20 @@ const EditListModal = ({
                     price={item.price}
                     title={item.title}
                     rating={item.rating}
+                    ratings_total={item.ratings_total}
                     asin={item.asin}
                     key={item.asin}
+                    itemId={item._id}
+                    getItemIds={getItemIds}
+                    trashcanIcon={trashcanIcon}
                   />
                 ))
               )}
             </section>
             <section className="bottom-list__actions">
-              <button className="bottom-list__save">Save Changes</button>
+              <button onClick={deleteItems} className="bottom-list__save">
+                Save Changes
+              </button>
               <button className="bottom-list__cancel" onClick={handleClose}>
                 Cancel
               </button>
