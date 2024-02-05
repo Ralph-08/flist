@@ -9,7 +9,7 @@ import axios from "axios";
 const WeeklyList = () => {
   const [editModal, setEditModal] = useState(false);
   const [scheduledDate, setScheduledDate] = useState(null);
-  const [itemsList, setItemsList] = useState(null);
+  const [weeklyList, setWeeklyList] = useState(null);
 
   const handleEditDisplay = () => {
     !editModal ? setEditModal(true) : setEditModal(false);
@@ -18,8 +18,8 @@ const WeeklyList = () => {
   useEffect(() => {
     const getItems = async () => {
       try {
-        const res = await axios.get("http://localhost:8080/items");
-        setItemsList(res.data);
+        const res = await axios.get("http://localhost:8080/lists");
+        setWeeklyList(res.data.find((list) => list.weekly_list));
       } catch (err) {
         console.log("Error getting items", err);
       }
@@ -35,10 +35,15 @@ const WeeklyList = () => {
           <h2 className="weekly__subheader">Weekly List:</h2>
         </li>
         <li className="weekly__item">
-          <button className="weekly__button">
-            <img className="weekly__add-icon" src={addIcon} alt="add-icon" />{" "}
-            Add Items
-          </button>
+          <a
+            href="https://www.amazon.com/gp/aws/cart/add.html?ASIN.1=B013OY25GA&Quantity.1=1&ASIN.2=B01M3RZBFH&Quantity.2=1&ASIN.3=B0025W9A5C&Quantity.3=1&ASIN.4=B000V1JVAI&Quantity.4=1"
+            target="_blank"
+          >
+            <button className="weekly__button">
+              <img className="weekly__add-icon" src={addIcon} alt="add-icon" />{" "}
+              Add Items
+            </button>
+          </a>
           <button
             onClick={handleEditDisplay}
             className="weekly__button weekly__button--secondary"
@@ -59,10 +64,10 @@ const WeeklyList = () => {
             </li>
           </ul>
         </section>
-        {!itemsList ? (
+        {!weeklyList ? (
           <p>Loading..</p>
         ) : (
-          itemsList.map((item, i) => (
+          weeklyList.items.map((item, i) => (
             <Item
               img={item.image}
               price={item.price}
@@ -82,7 +87,7 @@ const WeeklyList = () => {
             </li>
             <li className="list-info__item">
               <p className="list-info__text">
-                <span className="bold">Total:</span> $25.78
+                <span className="bold">Total:</span> $43.02
               </p>
             </li>
           </ul>
@@ -93,7 +98,7 @@ const WeeklyList = () => {
           handleClose={handleEditDisplay}
           scheduledDate={scheduledDate}
           setScheduledDate={setScheduledDate}
-          itemsList={itemsList}
+          itemsList={weeklyList.items}
         />
       )}
     </section>

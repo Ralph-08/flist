@@ -8,6 +8,7 @@ export default function Item({
   ratings_total,
   asin,
   link,
+  countTotal,
 }) {
   return (
     <section className="dashboard__container items__card">
@@ -22,7 +23,9 @@ export default function Item({
             )}
             {link ? (
               <p>
-                <a className="items__link" href={link}>View on Amazon</a>
+                <a className="items__link" href={link} target="_blank">
+                  View on Amazon
+                </a>
               </p>
             ) : (
               <p className="items__text">Quantity: 1</p>

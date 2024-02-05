@@ -3,6 +3,7 @@ import menuIcon from "../../assets/icons/menu-button.svg";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import closeIcon from "../../assets/icons/close.png";
+import Logo from "../../assets/images/logo.png";
 
 const Navbar = () => {
   const [menuDisplay, setMenuDisplay] = useState(false);
@@ -22,7 +23,7 @@ const Navbar = () => {
               src={menuIcon}
               alt="menu-icon"
             />
-            <p className="nav__logo">Flist</p>
+            <img src={Logo} className="nav__logo" />
           </section>
           <img
             onClick={handleMenu}
