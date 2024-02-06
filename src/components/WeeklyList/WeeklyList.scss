@@ -95,4 +95,8 @@
   .bold {
     font-weight: 800;
   }
+
+  &__btn {
+    @include secondary-button;
+  }
 }

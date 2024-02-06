@@ -16,10 +16,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 24px 0 1rem;
-    @include tablet {
-      margin: 4rem 0 3rem;
-    }
+    padding: 6rem 0 2rem;
   }
 
   &__top-link {
@@ -39,7 +36,6 @@
   &__card-container {
     display: flex;
     flex-direction: column;
-    padding: 0;
     box-shadow: 2px 2px 10px lightgray;
     border-radius: 4px;
     @include tablet {
