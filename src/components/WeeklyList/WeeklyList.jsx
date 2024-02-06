@@ -5,7 +5,7 @@ import editIcon from "../../assets/icons/edit-pencil.svg";
 import { useState, useEffect } from "react";
 import EditListModal from "../EditListModal/EditListModal";
 import axios from "axios";
-import { Link } from "react-router-dom";
+import { Link, redirect } from "react-router-dom";
 
 const WeeklyList = () => {
   const [editModal, setEditModal] = useState(false);
@@ -27,6 +27,18 @@ const WeeklyList = () => {
   useEffect(() => {
     getItems();
   }, []);
+
+  let amazonUrl;
+  let cartUrl = [];
+
+  const handleDynamicUrl = (item, i) => {
+    if (weeklyList.items.length !== i + 1) {
+      cartUrl.push(`ASIN.${i + 1}=${item.asin}&Quantity.${i + 1}=1&`);
+    } else {
+      cartUrl.push(`ASIN.${i + 1}=${item.asin}&Quantity.${i + 1}=1`);
+      amazonUrl = cartUrl.join("");
+    }
+  };
 
   return (
     <section className="weekly">
@@ -70,24 +82,30 @@ const WeeklyList = () => {
         {!weeklyList ? (
           <p>Loading..</p>
         ) : (
-          weeklyList.items.map((item) => (
-            <Item
-              img={item.image}
-              price={item.price}
-              title={item.title}
-              rating={item.rating}
-              asin={item.asin}
-              key={item.asin}
-              itemId={item._id}
-            />
-          ))
+          weeklyList.items.map((item, i) => {
+            handleDynamicUrl(item, i);
+            return (
+              <Item
+                img={item.image}
+                price={item.price}
+                title={item.title}
+                rating={item.rating}
+                asin={item.asin}
+                key={item.asin}
+                itemId={item._id}
+              />
+            );
+          })
         )}
         <section className="list-info">
           <ul className="list-info__list">
-            <li className="list-info__item">
-              <p className="list-info__text">
-                <span className="bold">Scheduled for:</span> {scheduledDate}
-              </p>
+            <li className="list-info__item list-info__item--container">
+              <a
+                href={`https://www.amazon.com/gp/aws/cart/add.html?${amazonUrl}`}
+                target="_blank"
+              >
+                <button className="list-info__btn">Check out</button>
+              </a>
             </li>
             <li className="list-info__item">
               <p className="list-info__text">
