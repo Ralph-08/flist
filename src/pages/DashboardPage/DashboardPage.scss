@@ -15,10 +15,9 @@
   &__header {
     width: 100%;
     text-align: center;
-    padding: 0 1rem;
-    margin: 24px 0 1rem;
+    padding: 6rem 0 0;
     @include tablet {
-      padding: 0 2rem;
+      padding: 5rem 2rem 0;
     }
   }
 }
