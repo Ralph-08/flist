@@ -20,7 +20,6 @@ const WeeklyList = () => {
     !editModal ? setEditModal(true) : setEditModal(false);
   };
 
-  
   const getItems = async () => {
     try {
       const res = await axios.get("http://localhost:8080/lists");
@@ -35,14 +34,22 @@ const WeeklyList = () => {
   }, []);
 
   const clearAllListItems = async () => {
-    
-  }
+    try {
+      const res = await axios.delete(
+        `http://localhost:8080/lists/${weeklyList._id}`
+      );
+      getItems();
+    } catch (err) {
+      console.log("Error clearing items", err);
+    }
+  };
 
   const handleClearList = () => {
     !clearList ? setClearList(true) : setClearList(false);
   };
 
   const sendClearList = () => {
+    clearAllListItems();
     handleClearList();
     setPromptModal(true);
     setTimeout(() => setPromptModal(false), 5500);
@@ -119,14 +126,24 @@ const WeeklyList = () => {
         )}
         <section className="list-info">
           <ul className="list-info__list">
-            <li className="list-info__item list-info__item--container">
-              <a
-                onClick={handleClearList}
-                href={`https://www.amazon.com/gp/aws/cart/add.html?${amazonUrl}`}
-                target="_blank"
-              >
-                <button className="list-info__btn">Check out</button>
-              </a>
+            <li
+              className={`list-info__item ${
+                weeklyList?.items.length === 0
+                  ? "list-info__item--container"
+                  : ""
+              }`}
+            >
+              {weeklyList?.items.length === 0 ? (
+                <p className="list-info__empty-message">No items added</p>
+              ) : (
+                <a
+                  onClick={handleClearList}
+                  href={`https://www.amazon.com/gp/aws/cart/add.html?${amazonUrl}`}
+                  target="_blank"
+                >
+                  <button className="list-info__btn">Check out</button>
+                </a>
+              )}
             </li>
             <li className="list-info__item">
               <p className="list-info__text">

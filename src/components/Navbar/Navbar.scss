@@ -90,6 +90,7 @@
   top: 0;
   position: fixed;
   scroll-snap-type: none;
+  z-index: 1;
   @include desktop {
     justify-content: flex-start;
   }
