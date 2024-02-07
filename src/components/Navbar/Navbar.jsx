@@ -70,7 +70,7 @@ const Navbar = () => {
             </li>
             <li className="menu__item">
               <NavLink
-                to="/logout"
+                to="/"
                 className="menu__link menu__link--logout"
                 onClick={handleMenu}
               >
