@@ -6,14 +6,21 @@ import { useState, useEffect } from "react";
 import EditListModal from "../EditListModal/EditListModal";
 import axios from "axios";
 import { Link, redirect } from "react-router-dom";
+import ClearListModal from "../ClearListModal/ClearListModal";
 
 const WeeklyList = () => {
   const [editModal, setEditModal] = useState(false);
   const [scheduledDate, setScheduledDate] = useState(null);
   const [weeklyList, setWeeklyList] = useState(null);
+  const [clearList, setClearList] = useState(false);
 
   const handleEditDisplay = () => {
     !editModal ? setEditModal(true) : setEditModal(false);
+  };
+
+  const handleClearList = () => {
+    !clearList ? setClearList(true) : setClearList(false);
+    console.log("Clicked!");
   };
 
   const getItems = async () => {
@@ -101,6 +108,7 @@ const WeeklyList = () => {
           <ul className="list-info__list">
             <li className="list-info__item list-info__item--container">
               <a
+                onClick={handleClearList}
                 href={`https://www.amazon.com/gp/aws/cart/add.html?${amazonUrl}`}
                 target="_blank"
               >
@@ -125,6 +133,7 @@ const WeeklyList = () => {
           getItems={getItems}
         />
       )}
+      {clearList && <ClearListModal handleClearList={handleClearList} />}
     </section>
   );
 };
