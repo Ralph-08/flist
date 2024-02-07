@@ -5,24 +5,22 @@ import editIcon from "../../assets/icons/edit-pencil.svg";
 import { useState, useEffect } from "react";
 import EditListModal from "../EditListModal/EditListModal";
 import axios from "axios";
-import { Link, redirect } from "react-router-dom";
+import { Link } from "react-router-dom";
 import ClearListModal from "../ClearListModal/ClearListModal";
+import MessagePromptModal from "../MessagePromptModal/MessagePromptModal";
 
 const WeeklyList = () => {
   const [editModal, setEditModal] = useState(false);
   const [scheduledDate, setScheduledDate] = useState(null);
   const [weeklyList, setWeeklyList] = useState(null);
   const [clearList, setClearList] = useState(false);
+  const [promptModal, setPromptModal] = useState(false);
 
   const handleEditDisplay = () => {
     !editModal ? setEditModal(true) : setEditModal(false);
   };
 
-  const handleClearList = () => {
-    !clearList ? setClearList(true) : setClearList(false);
-    console.log("Clicked!");
-  };
-
+  
   const getItems = async () => {
     try {
       const res = await axios.get("http://localhost:8080/lists");
@@ -31,9 +29,24 @@ const WeeklyList = () => {
       console.log("Error getting items", err);
     }
   };
+
   useEffect(() => {
     getItems();
   }, []);
+
+  const clearAllListItems = async () => {
+    
+  }
+
+  const handleClearList = () => {
+    !clearList ? setClearList(true) : setClearList(false);
+  };
+
+  const sendClearList = () => {
+    handleClearList();
+    setPromptModal(true);
+    setTimeout(() => setPromptModal(false), 5500);
+  };
 
   let amazonUrl;
   let cartUrl = [];
@@ -133,7 +146,13 @@ const WeeklyList = () => {
           getItems={getItems}
         />
       )}
-      {clearList && <ClearListModal handleClearList={handleClearList} />}
+      {clearList && (
+        <ClearListModal
+          handleClearList={handleClearList}
+          sendClearList={sendClearList}
+        />
+      )}
+      {promptModal && <MessagePromptModal />}
     </section>
   );
 };
