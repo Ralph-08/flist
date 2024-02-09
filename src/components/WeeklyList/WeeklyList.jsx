@@ -8,6 +8,7 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import ClearListModal from "../ClearListModal/ClearListModal";
 import MessagePromptModal from "../MessagePromptModal/MessagePromptModal";
+import Loader from "../Loader/Loarder";
 
 const WeeklyList = () => {
   const [editModal, setEditModal] = useState(false);
@@ -30,8 +31,12 @@ const WeeklyList = () => {
   };
 
   useEffect(() => {
-    getItems();
+    setTimeout(() => {
+      getItems();
+    }, 1000);
   }, []);
+
+  const postToOrders = async () => {};
 
   const clearAllListItems = async () => {
     try {
@@ -50,6 +55,7 @@ const WeeklyList = () => {
 
   const sendClearList = () => {
     clearAllListItems();
+    postToOrders();
     handleClearList();
     setPromptModal(true);
     setTimeout(() => setPromptModal(false), 5500);
@@ -107,7 +113,7 @@ const WeeklyList = () => {
           </ul>
         </section>
         {!weeklyList ? (
-          <p>Loading..</p>
+          <Loader />
         ) : (
           weeklyList.items.map((item, i) => {
             handleDynamicUrl(item, i);
