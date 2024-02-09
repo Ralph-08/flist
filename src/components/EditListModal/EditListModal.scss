@@ -38,7 +38,7 @@
     row-gap: 1rem;
     flex-direction: column;
     justify-content: space-between;
-    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.277);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.277);
     max-width: 800px;
     animation: modal-pop-in 0.3s ease-in-out;
     @include tablet {

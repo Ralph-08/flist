@@ -5,12 +5,17 @@ import editIcon from "../../assets/icons/edit-pencil.svg";
 import { useState, useEffect } from "react";
 import EditListModal from "../EditListModal/EditListModal";
 import axios from "axios";
-import { Link, redirect } from "react-router-dom";
+import { Link } from "react-router-dom";
+import ClearListModal from "../ClearListModal/ClearListModal";
+import MessagePromptModal from "../MessagePromptModal/MessagePromptModal";
+import Loader from "../Loader/Loarder";
 
 const WeeklyList = () => {
   const [editModal, setEditModal] = useState(false);
   const [scheduledDate, setScheduledDate] = useState(null);
   const [weeklyList, setWeeklyList] = useState(null);
+  const [clearList, setClearList] = useState(false);
+  const [promptModal, setPromptModal] = useState(false);
 
   const handleEditDisplay = () => {
     !editModal ? setEditModal(true) : setEditModal(false);
@@ -24,9 +29,37 @@ const WeeklyList = () => {
       console.log("Error getting items", err);
     }
   };
+
   useEffect(() => {
-    getItems();
+    setTimeout(() => {
+      getItems();
+    }, 1000);
   }, []);
+
+  const postToOrders = async () => {};
+
+  const clearAllListItems = async () => {
+    try {
+      const res = await axios.delete(
+        `http://localhost:8080/lists/${weeklyList._id}`
+      );
+      getItems();
+    } catch (err) {
+      console.log("Error clearing items", err);
+    }
+  };
+
+  const handleClearList = () => {
+    !clearList ? setClearList(true) : setClearList(false);
+  };
+
+  const sendClearList = () => {
+    clearAllListItems();
+    postToOrders();
+    handleClearList();
+    setPromptModal(true);
+    setTimeout(() => setPromptModal(false), 5500);
+  };
 
   let amazonUrl;
   let cartUrl = [];
@@ -80,7 +113,7 @@ const WeeklyList = () => {
           </ul>
         </section>
         {!weeklyList ? (
-          <p>Loading..</p>
+          <Loader />
         ) : (
           weeklyList.items.map((item, i) => {
             handleDynamicUrl(item, i);
@@ -99,13 +132,24 @@ const WeeklyList = () => {
         )}
         <section className="list-info">
           <ul className="list-info__list">
-            <li className="list-info__item list-info__item--container">
-              <a
-                href={`https://www.amazon.com/gp/aws/cart/add.html?${amazonUrl}`}
-                target="_blank"
-              >
-                <button className="list-info__btn">Check out</button>
-              </a>
+            <li
+              className={`list-info__item ${
+                weeklyList?.items.length === 0
+                  ? "list-info__item--container"
+                  : ""
+              }`}
+            >
+              {weeklyList?.items.length === 0 ? (
+                <p className="list-info__empty-message">No items added</p>
+              ) : (
+                <a
+                  onClick={handleClearList}
+                  href={`https://www.amazon.com/gp/aws/cart/add.html?${amazonUrl}`}
+                  target="_blank"
+                >
+                  <button className="list-info__btn">Check out</button>
+                </a>
+              )}
             </li>
             <li className="list-info__item">
               <p className="list-info__text">
@@ -125,6 +169,13 @@ const WeeklyList = () => {
           getItems={getItems}
         />
       )}
+      {clearList && (
+        <ClearListModal
+          handleClearList={handleClearList}
+          sendClearList={sendClearList}
+        />
+      )}
+      {promptModal && <MessagePromptModal />}
     </section>
   );
 };
