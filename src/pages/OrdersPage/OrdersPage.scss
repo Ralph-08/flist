@@ -1,0 +1,27 @@
+@use "../../styles/partials/_variables.scss" as *;
+@use "../../styles/partials/_mixins.scss" as *;
+
+.orders {
+  padding: 7rem 1rem 1rem;
+  @include tablet {
+    padding: 7rem 2rem 2rem;
+  }
+  @include desktop {
+    padding: 7rem 0 2rem;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  &__header {
+    text-align: center;
+    padding-bottom: 2rem;
+    @include tablet {
+      padding: 0;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}

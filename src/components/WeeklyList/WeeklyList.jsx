@@ -36,7 +36,13 @@ const WeeklyList = () => {
     }, 1000);
   }, []);
 
-  const postToOrders = async () => {};
+  const postToOrders = async () => {
+    try {
+      const res = await axios.post("http://localhost:8080/orders", weeklyList);
+    } catch (err) {
+      console.log("Error posting order: ", err);
+    }
+  };
 
   const clearAllListItems = async () => {
     try {

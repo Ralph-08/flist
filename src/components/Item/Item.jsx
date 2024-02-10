@@ -54,7 +54,7 @@ export default function Item({
         <ul className="items__list">
           <li className="items__item">
             <h3 className="items__subheader">{title}</h3>
-            <p className="items__text">Ratings: {rating}/5</p>
+            {ratings_total && <p className="items__text">Ratings: {rating}/5</p>}
             {ratings_total && (
               <p className="items__rated">{ratings_total} Rated</p>
             )}
