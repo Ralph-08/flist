@@ -71,10 +71,11 @@ const WeeklyList = () => {
   let cartUrl = [];
 
   const handleDynamicUrl = (item, i) => {
+    const url = `ASIN.${i + 1}=${item.asin}&Quantity.${i + 1}=${item.quantity}`;
     if (weeklyList.items.length !== i + 1) {
-      cartUrl.push(`ASIN.${i + 1}=${item.asin}&Quantity.${i + 1}=${item.quantity}&`);
+      cartUrl.push(url + "&");
     } else {
-      cartUrl.push(`ASIN.${i + 1}=${item.asin}&Quantity.${i + 1}=${item.quantity}`);
+      cartUrl.push(url);
       amazonUrl = cartUrl.join("");
     }
   };
@@ -133,6 +134,7 @@ const WeeklyList = () => {
                 quantity={item.quantity}
                 key={item.asin}
                 itemId={item._id}
+                index={i}
               />
             );
           })

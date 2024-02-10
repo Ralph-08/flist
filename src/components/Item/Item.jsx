@@ -21,11 +21,11 @@ export default function Item({
   const [isAdded, setIsAdded] = useState(false);
   const [deleteView, setDeleteView] = useState(false);
 
-  const [itemQuantity, setItemQuantity] = useState(1);
+  const [itemQuantity, setItemQuantity] = useState(quantity ? quantity : 1);
 
   const incrementQuantity = () => {
     if (itemQuantity >= 5) {
-      return
+      return;
     }
     setItemQuantity(itemQuantity + 1);
   };
@@ -56,9 +56,7 @@ export default function Item({
 
   const handleDelete = () => {
     getItemIds(itemId);
-    if (!deleteView) {
-      setDeleteView(true);
-    }
+    setDeleteView(true);
   };
 
   return (
@@ -104,9 +102,12 @@ export default function Item({
             </button>
             <section className="items__qty-actions">
               {!isAdded && (
-                <button className={`items__qty-btn ${
-                  itemQuantity >= 5 ? "items__qty-btn--disabled" : ""
-                }`} onClick={incrementQuantity}>
+                <button
+                  className={`items__qty-btn ${
+                    itemQuantity >= 5 ? "items__qty-btn--disabled" : ""
+                  }`}
+                  onClick={incrementQuantity}
+                >
                   +
                 </button>
               )}
@@ -128,15 +129,36 @@ export default function Item({
           </>
         )}
         {trashcanIcon && (
-          <button
-            disabled={deleteView}
-            onClick={handleDelete}
-            className={`items__delete-btn ${
-              deleteView ? "items__delete-btn--disabled" : ""
-            }`}
-          >
-            <img className="items__delete-icon" src={trashcanIcon} />
-          </button>
+          <>
+            <button
+              disabled={deleteView}
+              onClick={handleDelete}
+              className={`items__delete-btn ${
+                deleteView ? "items__delete-btn--disabled" : ""
+              }`}
+            >
+              <img className="items__delete-icon" src={trashcanIcon} />
+            </button>
+            <button
+              className={`items__qty-btn ${
+                itemQuantity >= 5 ? "items__qty-btn--disabled" : ""
+              }`}
+              onClick={incrementQuantity}
+              disabled={deleteView}
+            >
+              +
+            </button>
+            <p className="items__qty-text">{itemQuantity}</p>
+            <button
+              className={`items__qty-btn ${
+                itemQuantity <= 1 ? "items__qty-btn--disabled" : ""
+              }`}
+              disabled={deleteView}
+              onClick={decreaseQuantity}
+            >
+              -
+            </button>
+          </>
         )}
       </section>
     </section>
