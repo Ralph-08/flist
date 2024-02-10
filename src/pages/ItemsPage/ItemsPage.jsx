@@ -4,6 +4,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
+import Loader from "../../components/Loader/Loarder";
 
 const ItemsPage = () => {
   const [listItems, setListItems] = useState(null);
@@ -20,7 +21,9 @@ const ItemsPage = () => {
   };
 
   useEffect(() => {
-    getItems();
+    setTimeout(() => {
+      getItems();
+    }, 1000);
   }, []);
 
   return (
@@ -42,7 +45,7 @@ const ItemsPage = () => {
       </section>
       <section className="items__card-container">
         {!listItems ? (
-          <h3 className="items__prompt-text">Loading...</h3>
+          <Loader />
         ) : (
           listItems.map((item) => {
             return (

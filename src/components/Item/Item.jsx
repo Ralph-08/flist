@@ -16,6 +16,7 @@ export default function Item({
   itemId,
   getItemIds,
   trashcanIcon,
+  quantity,
 }) {
   const [isAdded, setIsAdded] = useState(false);
   const [deleteView, setDeleteView] = useState(false);
@@ -23,6 +24,9 @@ export default function Item({
   const [itemQuantity, setItemQuantity] = useState(1);
 
   const incrementQuantity = () => {
+    if (itemQuantity >= 5) {
+      return
+    }
     setItemQuantity(itemQuantity + 1);
   };
 
@@ -39,6 +43,7 @@ export default function Item({
 
   const addItem = async (item) => {
     handleAddedStatus();
+    item.quantity = itemQuantity;
     try {
       const res = await axios.patch(
         `http://localhost:8080/lists/${listId}`,
@@ -80,7 +85,7 @@ export default function Item({
                 </a>
               </p>
             ) : (
-              <p className="items__text">Quantity: 1</p>
+              <p className="items__text">Quantity: {quantity ? quantity : 1}</p>
             )}
           </li>
         </ul>
@@ -99,7 +104,9 @@ export default function Item({
             </button>
             <section className="items__qty-actions">
               {!isAdded && (
-                <button className="items__qty-btn" onClick={incrementQuantity}>
+                <button className={`items__qty-btn ${
+                  itemQuantity >= 5 ? "items__qty-btn--disabled" : ""
+                }`} onClick={incrementQuantity}>
                   +
                 </button>
               )}
@@ -107,7 +114,13 @@ export default function Item({
                 {!isAdded ? itemQuantity : `Quantity: ${itemQuantity}`}
               </p>
               {!isAdded && (
-                <button className="items__qty-btn" onClick={decreaseQuantity}>
+                <button
+                  className={`items__qty-btn ${
+                    itemQuantity <= 1 ? "items__qty-btn--disabled" : ""
+                  }`}
+                  disabled={itemQuantity === 1}
+                  onClick={decreaseQuantity}
+                >
                   -
                 </button>
               )}
