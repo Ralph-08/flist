@@ -20,6 +20,19 @@ export default function Item({
   const [isAdded, setIsAdded] = useState(false);
   const [deleteView, setDeleteView] = useState(false);
 
+  const [itemQuantity, setItemQuantity] = useState(1);
+
+  const incrementQuantity = () => {
+    setItemQuantity(itemQuantity + 1);
+  };
+
+  const decreaseQuantity = () => {
+    if (itemQuantity <= 1) {
+      return;
+    }
+    setItemQuantity(itemQuantity - 1);
+  };
+
   const handleAddedStatus = () => {
     !isAdded ? setIsAdded(true) : setIsAdded(false);
   };
@@ -54,7 +67,9 @@ export default function Item({
         <ul className="items__list">
           <li className="items__item">
             <h3 className="items__subheader">{title}</h3>
-            {ratings_total && <p className="items__text">Ratings: {rating}/5</p>}
+            {ratings_total && (
+              <p className="items__text">Ratings: {rating}/5</p>
+            )}
             {ratings_total && (
               <p className="items__rated">{ratings_total} Rated</p>
             )}
@@ -73,14 +88,31 @@ export default function Item({
       <section className="items__list-right">
         <p className="item__price">{"$" + price}</p>
         {listId && (
-          <button
-            onClick={() => addItem(item)}
-            className={`items__add-btn ${
-              isAdded ? `items__add-btn--added` : ""
-            }`}
-          >
-            {!isAdded ? "Add +" : "Added"}
-          </button>
+          <>
+            <button
+              onClick={() => addItem(item)}
+              className={`items__add-btn ${
+                isAdded ? `items__add-btn--added` : ""
+              }`}
+            >
+              {!isAdded ? "Add +" : "Added"}
+            </button>
+            <section className="items__qty-actions">
+              {!isAdded && (
+                <button className="items__qty-btn" onClick={incrementQuantity}>
+                  +
+                </button>
+              )}
+              <p className="items__qty-text">
+                {!isAdded ? itemQuantity : `Quantity: ${itemQuantity}`}
+              </p>
+              {!isAdded && (
+                <button className="items__qty-btn" onClick={decreaseQuantity}>
+                  -
+                </button>
+              )}
+            </section>
+          </>
         )}
         {trashcanIcon && (
           <button
