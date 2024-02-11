@@ -83,6 +83,7 @@ const EditListModal = ({
                     itemId={item._id}
                     getItemIds={getItemIds}
                     trashcanIcon={trashcanIcon}
+                    quantity={item.quantity}
                   />
                 ))
               )}
