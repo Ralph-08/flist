@@ -17,6 +17,7 @@ const Order = ({ order }) => {
             img={item.image}
             title={item.title}
             price={item.price}
+            quantity={item.quantity}
             key={item._id}
           />
         ))}
