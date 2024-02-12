@@ -8,6 +8,7 @@ import ProfilePage from "./pages/ProfilePage/ProfilePage";
 import Navbar from "./components/Navbar/Navbar";
 import PageNotFound from "./pages/PageNotFound/PageNotFound";
 import LogInPage from "./pages/LogInPage/LogInPage";
+import SignUpPage from "./pages/SignUpPage/SignUpPage"
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Navbar />
       <Routes>
       <Route path="/" element={<LogInPage />} />
+      <Route path="/signup" element={<SignUpPage />} />
         <Route path="/dashboard" element={<DashboardPage />} />
         <Route path="/items" element={<ItemsPage />} />
         <Route path="/items/:listId" element={<ItemsPage />} />

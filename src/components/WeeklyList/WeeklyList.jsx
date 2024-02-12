@@ -63,7 +63,7 @@ const WeeklyList = () => {
     clearAllListItems();
     postToOrders();
     handleClearList();
-    setPromptModal(true);
+    setPromptModal("You list was added to your orders page");
     setTimeout(() => setPromptModal(false), 5500);
   };
 
@@ -184,7 +184,7 @@ const WeeklyList = () => {
           sendClearList={sendClearList}
         />
       )}
-      {promptModal && <MessagePromptModal />}
+      {promptModal && <MessagePromptModal text={promptModal}/>}
     </section>
   );
 };
