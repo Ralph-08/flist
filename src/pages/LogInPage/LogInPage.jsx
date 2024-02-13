@@ -1,95 +1,53 @@
 import "./LogInPage.scss";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import axios from "axios";
 
 const LogInPage = () => {
-  const [slideIn, setSlideIn] = useState(false);
+  const [error, setError] = useState(null);
 
-  const handleContainer = () => {
-    !slideIn ? setSlideIn(true) : setSlideIn(false);
-  };
+  const validateForm = () => {};
 
   return (
-    <>
-      <section className="login">
-        <section className="login__holder">
-          <section className="login__card">
-            <form className="login__form" action="">
-              <h2 className="login__header">Login</h2>
-              <section className="login__container">
-                <label className="login__label">Email:</label>
-                <input
-                  className="login__input"
-                  type="text"
-                  placeholder="email"
-                />
-              </section>
-              <section className="login__container">
-                <label className="login__label">Password:</label>
-                <input
-                  className="login__input"
-                  type="password"
-                  placeholder="password"
-                />
-              </section>
-              <Link to="/dashboard">
-                <button className="login__button">Login</button>
-              </Link>
-            </form>
+    <section className="signup">
+      <section className="signup__card">
+        <h2
+          className={`signup__header ${error ? "signup__header--animate" : ""}`}
+        >
+          Login
+        </h2>
+        {error && <p className="signup__error">{error}</p>}
+        <form className="signup__form" id="signup" onSubmit={validateForm}>
+          <section className="signup__container">
+            <label className="signup__label">Email:</label>
+            <input
+              className="signup__input"
+              type="text"
+              placeholder="email"
+              name="signup_email"
+            />
           </section>
-          <section className="login__card">
-            <form className="login__form" action="">
-              <h2 className="login__header">Create account</h2>
-              <section className="login__container">
-                <label className="login__label">Email:</label>
-                <input
-                  className="login__input"
-                  type="text"
-                  placeholder="email"
-                />
-              </section>
-              <section className="login__container">
-                <label className="login__label">Password:</label>
-                <input
-                  className="login__input"
-                  type="password"
-                  placeholder="password"
-                />
-              </section>
-              <section className="login__container">
-                <label className="login__label">Confirm Password:</label>
-                <input
-                  className="login__input"
-                  type="password"
-                  placeholder="confrim password"
-                />
-              </section>
-              <Link to="/dashboard">
-                <button className="login__button">Sign Up</button>
-              </Link>
-            </form>
+          <section className="signup__container">
+            <label className="signup__label">Password:</label>
+            <input
+              className="signup__input"
+              type="password"
+              placeholder="password"
+              name="signup_password"
+            />
           </section>
-          {!slideIn ? (
-            <div className="container container--slide-right">
-              <h1 className="container__header">Don't have an account?</h1>
-              <button onClick={handleContainer} className="container__button">
-                Sign Up
-              </button>
-            </div>
-          ) : (
-            <div className="container container--slide-left">
-              <h1 className="container__header">Already have an account?</h1>
-              <button
-                onClick={handleContainer}
-                className="container__button container__button--smaller"
-              >
-                Log in
-              </button>
-            </div>
-          )}
-        </section>
+          <button className="signup__button" type="submit">
+            Login
+          </button>
+        </form>
+        <p className="signup__text">
+          Don't have an account?{" "}
+          <Link to="/signup" className=" signup__text signup__link">
+            Create an account
+          </Link>
+        </p>
       </section>
-    </>
+    </section>
   );
 };
 
