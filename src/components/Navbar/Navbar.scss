@@ -126,6 +126,9 @@
 
     &--logout {
       color: $error;
+      border-style: none;
+      background-color: unset;
+      cursor: pointer;
     }
   }
   &__btn {

@@ -13,7 +13,7 @@ import SignUpPage from "./pages/SignUpPage/SignUpPage"
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
+      {/* <Navbar /> */}
       <Routes>
       <Route path="/" element={<LogInPage />} />
       <Route path="/signup" element={<SignUpPage />} />

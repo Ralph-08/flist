@@ -1,15 +1,33 @@
 import "./Navbar.scss";
 import menuIcon from "../../assets/icons/menu-button.svg";
-import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { NavLink, useNavigate } from "react-router-dom";
 import closeIcon from "../../assets/icons/close.png";
 import Logo from "../../assets/images/logo.png";
 
 const Navbar = () => {
   const [menuDisplay, setMenuDisplay] = useState(false);
+  const [failedAuth, setFailedAuth] = useState(false);
+
+  const navigate = useNavigate();
 
   const handleMenu = () => {
     !menuDisplay ? setMenuDisplay(true) : setMenuDisplay(false);
+  };
+
+  useEffect(() => {
+    const token = sessionStorage.getItem("token");
+    if (!token) {
+      navigate("/");
+      setFailedAuth(true);
+    } else {
+      setFailedAuth(false);
+    }
+  }, []);
+
+  const handleLogout = () => {
+    sessionStorage.removeItem("token");
+    navigate("/");
   };
 
   return (
@@ -25,12 +43,14 @@ const Navbar = () => {
             />
             <img src={Logo} className="nav__logo" />
           </section>
-          <img
-            onClick={handleMenu}
-            className="nav__menu nav__menu--mobile"
-            src={menuIcon}
-            alt="menu-icon"
-          />
+          {!failedAuth && (
+            <img
+              onClick={handleMenu}
+              className="nav__menu nav__menu--mobile"
+              src={menuIcon}
+              alt="menu-icon"
+            />
+          )}
         </nav>
       </section>
 
@@ -69,13 +89,12 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li className="menu__item">
-              <NavLink
-                to="/"
+              <button
                 className="menu__link menu__link--logout"
-                onClick={handleMenu}
+                onClick={handleLogout}
               >
                 Logout
-              </NavLink>
+              </button>
             </li>
           </ul>
         </section>

@@ -2,6 +2,7 @@ import "./LogInPage.scss";
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import axios from "axios";
+import Navbar from "../../components/Navbar/Navbar";
 
 const LogInPage = () => {
   const [error, setError] = useState(null);
@@ -33,6 +34,8 @@ const LogInPage = () => {
   };
 
   return (
+    <>
+    <Navbar />
     <section className="login">
       <section className="login__card">
         <h2
@@ -72,6 +75,8 @@ const LogInPage = () => {
         </p>
       </section>
     </section>
+    </>
+
   );
 };
 

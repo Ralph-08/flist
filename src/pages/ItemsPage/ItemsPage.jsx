@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import Loader from "../../components/Loader/Loarder";
+import Navbar from "../../components/Navbar/Navbar";
 
 const ItemsPage = () => {
   const [listItems, setListItems] = useState(null);
@@ -27,6 +28,8 @@ const ItemsPage = () => {
   }, []);
 
   return (
+    <>
+    <Navbar />
     <section className="items">
       <section className="items__top-list">
         <Link to="/dashboard" className="items__top-link">
@@ -66,6 +69,8 @@ const ItemsPage = () => {
         )}
       </section>
     </section>
+    </>
+
   );
 };
 

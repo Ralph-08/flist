@@ -3,6 +3,7 @@ import ScheduledList from "../../components/ScheduledList/ScheduledList";
 import WeeklyList from "../../components/WeeklyList/WeeklyList";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import Navbar from "../../components/Navbar/Navbar";
 
 const DashboardPage = () => {
   const [editModal, setEditModal] = useState(false);
@@ -27,7 +28,7 @@ const DashboardPage = () => {
 
     const token = sessionStorage.getItem("token");
 
-    if (!token) console.log("Not logged in")
+    // if (!token) console.log("Not")
 
     console.log(token);
 
@@ -43,6 +44,7 @@ const DashboardPage = () => {
 
   return (
     <>
+    <Navbar />
       <section className="dashboard">
         <h1 className="dashboard__header">Dashboard</h1>
         <WeeklyList handleEditModal={handleEditDisplay} />
