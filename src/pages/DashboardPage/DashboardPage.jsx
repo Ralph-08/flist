@@ -8,6 +8,8 @@ const DashboardPage = () => {
   const [editModal, setEditModal] = useState(false);
   const [scheduledLists, setScheduledLists] = useState(null);
 
+  const [failedAuth, setFailedAuth] = useState(false);
+
   const handleEditDisplay = () => {
     !editModal ? setEditModal(true) : setEditModal(false);
   };
@@ -22,6 +24,13 @@ const DashboardPage = () => {
   };
 
   useEffect(() => {
+
+    const token = sessionStorage.getItem("token");
+
+    if (!token) console.log("Not logged in")
+
+    console.log(token);
+
     getScheduledLists();
   }, []);
 
