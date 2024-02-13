@@ -5,7 +5,6 @@ import DashboardPage from "./pages/DashboardPage/DashboardPage";
 import ItemsPage from "./pages/ItemsPage/ItemsPage";
 import OrdersPage from "./pages/OrdersPage/OrdersPage";
 import ProfilePage from "./pages/ProfilePage/ProfilePage";
-import Navbar from "./components/Navbar/Navbar";
 import PageNotFound from "./pages/PageNotFound/PageNotFound";
 import LogInPage from "./pages/LogInPage/LogInPage";
 import SignUpPage from "./pages/SignUpPage/SignUpPage"
@@ -13,7 +12,6 @@ import SignUpPage from "./pages/SignUpPage/SignUpPage"
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
       <Routes>
       <Route path="/" element={<LogInPage />} />
       <Route path="/signup" element={<SignUpPage />} />

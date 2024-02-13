@@ -3,10 +3,17 @@ import ScheduledList from "../../components/ScheduledList/ScheduledList";
 import WeeklyList from "../../components/WeeklyList/WeeklyList";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import Navbar from "../../components/Navbar/Navbar";
+import { useNavigate } from "react-router-dom";
+import LoggedOutMessage from "../../components/LoggedOutMessage/LoggedOutMessage";
 
 const DashboardPage = () => {
   const [editModal, setEditModal] = useState(false);
   const [scheduledLists, setScheduledLists] = useState(null);
+
+  const navigate = useNavigate();
+
+  const [failedAuth, setFailedAuth] = useState(false);
 
   const handleEditDisplay = () => {
     !editModal ? setEditModal(true) : setEditModal(false);
@@ -22,6 +29,9 @@ const DashboardPage = () => {
   };
 
   useEffect(() => {
+    const token = sessionStorage.getItem("token");
+    if (!token) return setFailedAuth(true);
+
     getScheduledLists();
   }, []);
 
@@ -32,8 +42,16 @@ const DashboardPage = () => {
     console.log(id);
   };
 
+  if (failedAuth) {
+    setTimeout(() => {
+      navigate("/");
+    }, 2000);
+    return <LoggedOutMessage />;
+  }
+
   return (
     <>
+      <Navbar />
       <section className="dashboard">
         <h1 className="dashboard__header">Dashboard</h1>
         <WeeklyList handleEditModal={handleEditDisplay} />

@@ -3,6 +3,7 @@ import { useState } from "react";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import MessagePromptModal from "../../components/MessagePromptModal/MessagePromptModal";
+import Navbar from "../../components/Navbar/Navbar";
 
 const SignUpPage = () => {
   const [error, setError] = useState(null);
@@ -24,7 +25,7 @@ const SignUpPage = () => {
       setIsSginedUp("Succesfully created account!");
       setTimeout(() => {
         navigate("/");
-      }, 5000);
+      }, 2000);
     } catch (err) {
       setError("Something went wrong! Try again later");
     }
@@ -52,55 +53,60 @@ const SignUpPage = () => {
     });
   };
   return (
-    <section className="signup">
-      {isSignedUp && <MessagePromptModal text={isSignedUp} />}
-      <section className="signup__card">
-        <h2
-          className={`signup__header ${error ? "signup__header--animate" : ""}`}
-        >
-          Create account
-        </h2>
-        {error && <p className="signup__error">{error}</p>}
-        <form className="signup__form" id="signup" onSubmit={validateSignUp}>
-          <section className="signup__container">
-            <label className="signup__label">Email:</label>
-            <input
-              className="signup__input"
-              type="text"
-              placeholder="email"
-              name="signup_email"
-            />
-          </section>
-          <section className="signup__container">
-            <label className="signup__label">Password:</label>
-            <input
-              className="signup__input"
-              type="password"
-              placeholder="password"
-              name="signup_password"
-            />
-          </section>
-          <section className="signup__container">
-            <label className="signup__label">Confirm Password:</label>
-            <input
-              className="signup__input"
-              type="password"
-              placeholder="confrim password"
-              name="signup_confirm_password"
-            />
-          </section>
-          <button className="signup__button" type="submit">
-            Sign Up
-          </button>
-        </form>
-        <p className="signup__text">
-          Have an account?{" "}
-          <Link to="/" className=" signup__text signup__link">
-            Login
-          </Link>
-        </p>
+    <>
+      <Navbar />
+      <section className="signup">
+        {isSignedUp && <MessagePromptModal text={isSignedUp} />}
+        <section className="signup__card">
+          <h2
+            className={`signup__header ${
+              error ? "signup__header--animate" : ""
+            }`}
+          >
+            Create account
+          </h2>
+          {error && <p className="signup__error">{error}</p>}
+          <form className="signup__form" id="signup" onSubmit={validateSignUp}>
+            <section className="signup__container">
+              <label className="signup__label">Email:</label>
+              <input
+                className="signup__input"
+                type="text"
+                placeholder="email"
+                name="signup_email"
+              />
+            </section>
+            <section className="signup__container">
+              <label className="signup__label">Password:</label>
+              <input
+                className="signup__input"
+                type="password"
+                placeholder="password"
+                name="signup_password"
+              />
+            </section>
+            <section className="signup__container">
+              <label className="signup__label">Confirm Password:</label>
+              <input
+                className="signup__input"
+                type="password"
+                placeholder="confrim password"
+                name="signup_confirm_password"
+              />
+            </section>
+            <button className="signup__button" type="submit">
+              Sign Up
+            </button>
+          </form>
+          <p className="signup__text">
+            Have an account?{" "}
+            <Link to="/" className=" signup__text signup__link">
+              Login
+            </Link>
+          </p>
+        </section>
       </section>
-    </section>
+    </>
   );
 };
 

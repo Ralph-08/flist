@@ -2,9 +2,14 @@ import "./OrdersPage.scss";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import Order from "../../components/Order/Order";
+import Navbar from "../../components/Navbar/Navbar";
+import { useNavigate } from "react-router-dom";
+import LoggedOutMessage from "../../components/LoggedOutMessage/LoggedOutMessage";
 
 const OrdersPage = () => {
   const [ordersList, setOrdersList] = useState(null);
+  const [failedAuth, setFailedAuth] = useState(false);
+  const navigate = useNavigate();
 
   const getOrders = async () => {
     try {
@@ -16,17 +21,28 @@ const OrdersPage = () => {
   };
 
   useEffect(() => {
+    const token = sessionStorage.getItem("token");
+    if (!token) return setFailedAuth(true);
     getOrders();
   }, []);
 
+  if (failedAuth) {
+    setTimeout(() => {
+      navigate("/");
+    }, 2000);
+    return <LoggedOutMessage />;
+  }
   return (
-    <section className="orders">
-      <h1 className="orders__header">Orders</h1>
-      <section className="orders__container">
-        {ordersList &&
-          ordersList.map((order) => <Order order={order} key={order._id} />)}
+    <>
+      <Navbar />
+      <section className="orders">
+        <h1 className="orders__header">Orders</h1>
+        <section className="orders__container">
+          {ordersList &&
+            ordersList.map((order) => <Order order={order} key={order._id} />)}
+        </section>
       </section>
-    </section>
+    </>
   );
 };
 
