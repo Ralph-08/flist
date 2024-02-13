@@ -1,7 +1,7 @@
 import "./SignUpPage.scss";
 import { useState } from "react";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import MessagePromptModal from "../../components/MessagePromptModal/MessagePromptModal";
 
 const SignUpPage = () => {
@@ -93,6 +93,12 @@ const SignUpPage = () => {
             Sign Up
           </button>
         </form>
+        <p className="signup__text">
+          Have an account?{" "}
+          <Link to="/" className=" signup__text signup__link">
+            Login
+          </Link>
+        </p>
       </section>
     </section>
   );

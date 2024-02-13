@@ -101,4 +101,14 @@
     @include secondary-button;
     width: 83px;
   }
+
+  &__text {
+    padding: 1rem 0 0;
+    font-size: 0.8rem;
+  }
+
+  &__link {
+    text-decoration: underline;
+    color: blue;
+  }
 }
