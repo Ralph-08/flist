@@ -18,7 +18,6 @@ const Navbar = () => {
   useEffect(() => {
     const token = sessionStorage.getItem("token");
     if (!token) {
-      navigate("/");
       setFailedAuth(true);
     } else {
       setFailedAuth(false);
@@ -35,12 +34,14 @@ const Navbar = () => {
       <section className="nav__container">
         <nav className="nav">
           <section className="nav__top-left">
-            <img
-              onClick={handleMenu}
-              className="nav__menu nav__menu--desktop"
-              src={menuIcon}
-              alt="menu-icon"
-            />
+            {!failedAuth && (
+              <img
+                onClick={handleMenu}
+                className="nav__menu nav__menu--desktop"
+                src={menuIcon}
+                alt="menu-icon"
+              />
+            )}
             <img src={Logo} className="nav__logo" />
           </section>
           {!failedAuth && (
@@ -60,6 +61,7 @@ const Navbar = () => {
             <li className="menu__btn" onClick={handleMenu}>
               <img className="menu__close" src={closeIcon} alt="close-icon" />
             </li>
+
             <li className="menu__item">
               <NavLink
                 to="/dashboard"
