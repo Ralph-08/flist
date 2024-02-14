@@ -10,7 +10,7 @@ import ClearListModal from "../ClearListModal/ClearListModal";
 import MessagePromptModal from "../MessagePromptModal/MessagePromptModal";
 import Loader from "../Loader/Loarder";
 
-const WeeklyList = () => {
+const WeeklyList = ({ AuthToken }) => {
   const [editModal, setEditModal] = useState(false);
   const [scheduledDate, setScheduledDate] = useState(null);
   const [weeklyList, setWeeklyList] = useState(null);
@@ -23,7 +23,11 @@ const WeeklyList = () => {
 
   const getItems = async () => {
     try {
-      const res = await axios.get("http://localhost:8080/lists");
+      const res = await axios.get("http://localhost:8080/lists", {
+        headers: {
+          Authorization: "Bearer " + AuthToken,
+        },
+      });
       setWeeklyList(res.data.find((list) => list.weekly_list));
     } catch (err) {
       console.log("Error getting items", err);
@@ -184,7 +188,7 @@ const WeeklyList = () => {
           sendClearList={sendClearList}
         />
       )}
-      {promptModal && <MessagePromptModal text={promptModal}/>}
+      {promptModal && <MessagePromptModal text={promptModal} />}
     </section>
   );
 };
