@@ -13,7 +13,11 @@ const OrdersPage = () => {
 
   const getOrders = async () => {
     try {
-      const res = await axios.get("http://localhost:8080/orders");
+      const res = await axios.get("http://localhost:8080/orders", {
+        headers: {
+          Authorization: "Bearer " + sessionStorage.getItem("token"),
+        },
+      });
       setOrdersList(res.data);
     } catch (err) {
       console.log("Error getting orders: ", err);

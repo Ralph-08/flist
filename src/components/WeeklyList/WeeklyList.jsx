@@ -42,7 +42,12 @@ const WeeklyList = ({ AuthToken }) => {
 
   const postToOrders = async () => {
     try {
-      const res = await axios.post("http://localhost:8080/orders", weeklyList);
+      const res = await axios.post("http://localhost:8080/orders", {
+        data: {
+          token: "Bearer " + AuthToken,
+          list: weeklyList,
+        },
+      });
     } catch (err) {
       console.log("Error posting order: ", err);
     }
