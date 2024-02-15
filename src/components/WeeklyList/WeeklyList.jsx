@@ -2,7 +2,7 @@ import "./WeeklyList.scss";
 import Item from "../Item/Item";
 import addIcon from "../../assets/icons/add-svgrepo-com (1).svg";
 import editIcon from "../../assets/icons/edit-pencil.svg";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import EditListModal from "../EditListModal/EditListModal";
 import axios from "axios";
 import { Link } from "react-router-dom";
@@ -10,10 +10,9 @@ import ClearListModal from "../ClearListModal/ClearListModal";
 import MessagePromptModal from "../MessagePromptModal/MessagePromptModal";
 import Loader from "../Loader/Loarder";
 
-const WeeklyList = ({ AuthToken }) => {
+const WeeklyList = ({ AuthToken, list, getItems }) => {
   const [editModal, setEditModal] = useState(false);
   const [scheduledDate, setScheduledDate] = useState(null);
-  const [weeklyList, setWeeklyList] = useState(null);
   const [clearList, setClearList] = useState(false);
   const [promptModal, setPromptModal] = useState(false);
 
@@ -21,31 +20,12 @@ const WeeklyList = ({ AuthToken }) => {
     !editModal ? setEditModal(true) : setEditModal(false);
   };
 
-  const getItems = async () => {
-    try {
-      const res = await axios.get("http://localhost:8080/lists", {
-        headers: {
-          Authorization: "Bearer " + AuthToken,
-        },
-      });
-      setWeeklyList(res.data.find((list) => list.weekly_list));
-    } catch (err) {
-      console.log("Error getting items", err);
-    }
-  };
-
-  useEffect(() => {
-    setTimeout(() => {
-      getItems();
-    }, 1000);
-  }, []);
-
   const postToOrders = async () => {
     try {
       const res = await axios.post("http://localhost:8080/orders", {
         data: {
           token: "Bearer " + AuthToken,
-          list: weeklyList,
+          list: list,
         },
       });
     } catch (err) {
@@ -55,9 +35,7 @@ const WeeklyList = ({ AuthToken }) => {
 
   const clearAllListItems = async () => {
     try {
-      const res = await axios.delete(
-        `http://localhost:8080/lists/${weeklyList._id}`
-      );
+      const res = await axios.delete(`http://localhost:8080/lists/${list._id}`);
       getItems();
     } catch (err) {
       console.log("Error clearing items", err);
@@ -81,7 +59,7 @@ const WeeklyList = ({ AuthToken }) => {
 
   const handleDynamicUrl = (item, i) => {
     const url = `ASIN.${i + 1}=${item.asin}&Quantity.${i + 1}=${item.quantity}`;
-    if (weeklyList.items.length !== i + 1) {
+    if (list.items.length !== i + 1) {
       cartUrl.push(url + "&");
     } else {
       cartUrl.push(url);
@@ -96,8 +74,8 @@ const WeeklyList = ({ AuthToken }) => {
           <h2 className="weekly__subheader">Weekly List:</h2>
         </li>
         <li className="weekly__item">
-          {weeklyList?._id && (
-            <Link to={`/items/${weeklyList._id}`}>
+          {list && (
+            <Link to={`/items/${list._id}`}>
               <button className="weekly__button">
                 <img
                   className="weekly__add-icon"
@@ -128,10 +106,10 @@ const WeeklyList = ({ AuthToken }) => {
             </li>
           </ul>
         </section>
-        {!weeklyList ? (
+        {!list ? (
           <Loader />
         ) : (
-          weeklyList.items.map((item, i) => {
+          list.items.map((item, i) => {
             handleDynamicUrl(item, i);
             return (
               <Item
@@ -152,12 +130,10 @@ const WeeklyList = ({ AuthToken }) => {
           <ul className="list-info__list">
             <li
               className={`list-info__item ${
-                weeklyList?.items.length === 0
-                  ? "list-info__item--container"
-                  : ""
+                list?.items.length === 0 ? "list-info__item--container" : ""
               }`}
             >
-              {weeklyList?.items.length === 0 ? (
+              {list?.items.length === 0 ? (
                 <p className="list-info__empty-message">No items added</p>
               ) : (
                 <a
@@ -182,8 +158,8 @@ const WeeklyList = ({ AuthToken }) => {
           handleClose={handleEditDisplay}
           scheduledDate={scheduledDate}
           setScheduledDate={setScheduledDate}
-          itemsList={weeklyList.items}
-          listId={weeklyList._id}
+          itemsList={list.items}
+          listId={list._id}
           getItems={getItems}
         />
       )}

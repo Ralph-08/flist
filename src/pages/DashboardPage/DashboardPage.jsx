@@ -6,10 +6,12 @@ import axios from "axios";
 import Navbar from "../../components/Navbar/Navbar";
 import { useNavigate } from "react-router-dom";
 import LoggedOutMessage from "../../components/LoggedOutMessage/LoggedOutMessage";
+import Loader from "../../components/Loader/Loarder";
 
 const DashboardPage = () => {
   const [editModal, setEditModal] = useState(false);
-  const [scheduledLists, setScheduledLists] = useState(null);
+  const [weeklyList, setWeeklyList] = useState(null);
+  const [scheduledLists, setScheduledLists] = useState([]);
   const navigate = useNavigate();
   const AuthToken = sessionStorage.getItem("token");
 
@@ -24,6 +26,7 @@ const DashboardPage = () => {
           Authorization: "Bearer " + AuthToken,
         },
       });
+      setWeeklyList(res.data.find((list) => list.weekly_list === true));
       setScheduledLists(res.data.filter((list) => !list.weekly_list));
     } catch (err) {
       console.log("Error getting scheduled lists: ", err);
@@ -31,7 +34,9 @@ const DashboardPage = () => {
   };
 
   useEffect(() => {
-    getScheduledLists();
+    setTimeout(() => {
+      getScheduledLists();
+    }, 2000)
   }, []);
 
   let ItemIds = [];
@@ -48,12 +53,19 @@ const DashboardPage = () => {
     return <LoggedOutMessage />;
   }
 
+  if (!weeklyList) return <Loader />;
+
   return (
     <>
       <Navbar />
       <section className="dashboard">
         <h1 className="dashboard__header">Dashboard</h1>
-        <WeeklyList handleEditModal={handleEditDisplay} AuthToken={AuthToken} />
+        <WeeklyList
+          handleEditModal={handleEditDisplay}
+          AuthToken={AuthToken}
+          getItems={getScheduledLists}
+          list={weeklyList}
+        />
         {scheduledLists &&
           scheduledLists.map((list) => (
             <ScheduledList
