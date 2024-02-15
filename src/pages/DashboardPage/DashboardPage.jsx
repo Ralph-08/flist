@@ -10,10 +10,8 @@ import LoggedOutMessage from "../../components/LoggedOutMessage/LoggedOutMessage
 const DashboardPage = () => {
   const [editModal, setEditModal] = useState(false);
   const [scheduledLists, setScheduledLists] = useState(null);
-
   const navigate = useNavigate();
-
-  const [failedAuth, setFailedAuth] = useState(false);
+  const AuthToken = sessionStorage.getItem("token");
 
   const handleEditDisplay = () => {
     !editModal ? setEditModal(true) : setEditModal(false);
@@ -21,7 +19,11 @@ const DashboardPage = () => {
 
   const getScheduledLists = async () => {
     try {
-      const res = await axios.get("http://localhost:8080/lists");
+      const res = await axios.get("http://localhost:8080/lists", {
+        headers: {
+          Authorization: "Bearer " + AuthToken,
+        },
+      });
       setScheduledLists(res.data.filter((list) => !list.weekly_list));
     } catch (err) {
       console.log("Error getting scheduled lists: ", err);
@@ -29,9 +31,6 @@ const DashboardPage = () => {
   };
 
   useEffect(() => {
-    const token = sessionStorage.getItem("token");
-    if (!token) return setFailedAuth(true);
-
     getScheduledLists();
   }, []);
 
@@ -42,7 +41,7 @@ const DashboardPage = () => {
     console.log(id);
   };
 
-  if (failedAuth) {
+  if (!AuthToken) {
     setTimeout(() => {
       navigate("/");
     }, 2000);
@@ -54,7 +53,7 @@ const DashboardPage = () => {
       <Navbar />
       <section className="dashboard">
         <h1 className="dashboard__header">Dashboard</h1>
-        <WeeklyList handleEditModal={handleEditDisplay} />
+        <WeeklyList handleEditModal={handleEditDisplay} AuthToken={AuthToken} />
         {scheduledLists &&
           scheduledLists.map((list) => (
             <ScheduledList
