@@ -86,13 +86,21 @@ const WeeklyList = ({ AuthToken, list, getItems }) => {
               </button>
             </Link>
           )}
-          <button
-            onClick={handleEditDisplay}
-            className="weekly__button weekly__button--secondary"
-          >
-            <img className="weekly__add-icon" src={editIcon} alt="edit-icon" />
-            Edit
-          </button>
+          {list.items.length === 0 ? (
+            ""
+          ) : (
+            <button
+              onClick={handleEditDisplay}
+              className="weekly__button weekly__button--secondary"
+            >
+              <img
+                className="weekly__add-icon"
+                src={editIcon}
+                alt="edit-icon"
+              />
+              Edit
+            </button>
+          )}
         </li>
       </ul>
       <section className="weekly__card">

@@ -36,15 +36,24 @@ const OrdersPage = () => {
     }, 2000);
     return <LoggedOutMessage />;
   }
+
+  // console.log(ordersList.length);
+
   return (
     <>
       <Navbar />
       <section className="orders">
         <h1 className="orders__header">Orders</h1>
-        <section className="orders__container">
-          {ordersList &&
-            ordersList.map((order) => <Order order={order} key={order._id} />)}
-        </section>
+        {ordersList?.length === 0 ? (
+          <h2 className="orders__message">No past orders</h2>
+        ) : (
+          <section className="orders__container">
+            {ordersList &&
+              ordersList.map((order) => (
+                <Order order={order} key={order._id} />
+              ))}
+          </section>
+        )}
       </section>
     </>
   );

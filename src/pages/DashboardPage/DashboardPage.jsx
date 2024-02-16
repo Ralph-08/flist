@@ -10,8 +10,9 @@ import Loader from "../../components/Loader/Loarder";
 
 const DashboardPage = () => {
   const [editModal, setEditModal] = useState(false);
+  const [isDataFetched, setIsDataFetched] = useState(false);
   const [weeklyList, setWeeklyList] = useState(null);
-  const [scheduledLists, setScheduledLists] = useState([]);
+  const [scheduledLists, setScheduledLists] = useState(null);
   const navigate = useNavigate();
   const AuthToken = sessionStorage.getItem("token");
 
@@ -26,6 +27,7 @@ const DashboardPage = () => {
           Authorization: "Bearer " + AuthToken,
         },
       });
+      setIsDataFetched(true);
       setWeeklyList(res.data.find((list) => list.weekly_list === true));
       setScheduledLists(res.data.filter((list) => !list.weekly_list));
     } catch (err) {
@@ -36,8 +38,20 @@ const DashboardPage = () => {
   useEffect(() => {
     setTimeout(() => {
       getScheduledLists();
-    }, 2000)
+    }, 1000);
   }, []);
+
+  const handleCreateList = async (isWeeklyList) => {
+    try {
+      const res = await axios.post("http://localhost:8080/lists", {
+        token: "Bearer " + AuthToken,
+        weekly_list: isWeeklyList ? true : false,
+      });
+      getScheduledLists();
+    } catch (err) {
+      console.log("Error creating weekly list: ", err);
+    }
+  };
 
   let ItemIds = [];
 
@@ -53,29 +67,43 @@ const DashboardPage = () => {
     return <LoggedOutMessage />;
   }
 
-  if (!weeklyList) return <Loader />;
-
   return (
     <>
       <Navbar />
-      <section className="dashboard">
-        <h1 className="dashboard__header">Dashboard</h1>
-        <WeeklyList
-          handleEditModal={handleEditDisplay}
-          AuthToken={AuthToken}
-          getItems={getScheduledLists}
-          list={weeklyList}
-        />
-        {scheduledLists &&
-          scheduledLists.map((list) => (
-            <ScheduledList
-              items={list.items}
-              listId={list._id}
-              key={list._id}
+      {!isDataFetched ? (
+        <Loader />
+      ) : (
+        <section className="dashboard">
+          <h1 className="dashboard__header">Dashboard</h1>
+          {weeklyList ? (
+            <WeeklyList
+              handleEditModal={handleEditDisplay}
+              AuthToken={AuthToken}
               getItems={getScheduledLists}
+              list={weeklyList}
             />
-          ))}
-      </section>
+          ) : (
+            <section className="new-list__container">
+              <h2 className="new-list__header">No weekly list</h2>
+              <button
+                className="new-list__button"
+                onClick={() => handleCreateList(true)}
+              >
+                Create weekly List
+              </button>
+            </section>
+          )}
+          {scheduledLists &&
+            scheduledLists.map((list) => (
+              <ScheduledList
+                items={list.items}
+                listId={list._id}
+                key={list._id}
+                getItems={getScheduledLists}
+              />
+            ))}
+        </section>
+      )}
     </>
   );
 };
