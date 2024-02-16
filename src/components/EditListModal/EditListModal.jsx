@@ -15,20 +15,18 @@ const EditListModal = ({
   getItems,
 }) => {
   const [selectedDate, setSelectedDate] = useState(new Date());
-
   const dateObject = new Date(selectedDate);
   const timestamp = dateObject.getTime();
   const numberTimestamp = new Date(timestamp);
+
   const formattedDate = new Intl.DateTimeFormat("en-US", {
     year: "numeric",
     month: "short",
     day: "numeric",
   }).format(numberTimestamp);
-
   setScheduledDate(`${formattedDate}`);
 
   let ItemIds = [];
-
   const getItemIds = (id) => {
     ItemIds = [...ItemIds, id];
     console.log(id);
@@ -37,7 +35,7 @@ const EditListModal = ({
   const deleteItems = async () => {
     try {
       const res = await axios.put(
-        process.env.REACT_APP_URL + "/lists/" + listId,
+        process.env.REACT_APP_API_URL + "/lists/" + listId,
         ItemIds
       );
     } catch (err) {

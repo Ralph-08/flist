@@ -20,20 +20,15 @@ export default function Item({
 }) {
   const [isAdded, setIsAdded] = useState(false);
   const [deleteView, setDeleteView] = useState(false);
-
   const [itemQuantity, setItemQuantity] = useState(quantity ? quantity : 1);
 
   const incrementQuantity = () => {
-    if (itemQuantity >= 5) {
-      return;
-    }
+    if (itemQuantity >= 5) return;
     setItemQuantity(itemQuantity + 1);
   };
 
   const decreaseQuantity = () => {
-    if (itemQuantity <= 1) {
-      return;
-    }
+    if (itemQuantity <= 1) return;
     setItemQuantity(itemQuantity - 1);
   };
 
@@ -46,7 +41,7 @@ export default function Item({
     item.quantity = itemQuantity;
     try {
       const res = await axios.patch(
-        process.env.REACT_APP_URL + "/lists/" + listId,
+        process.env.REACT_APP_API_URL + "/lists/" + listId,
         item
       );
     } catch (err) {
@@ -93,6 +88,7 @@ export default function Item({
         {listId && (
           <>
             <button
+              disabled={isAdded}
               onClick={() => addItem(item)}
               className={`items__add-btn ${
                 isAdded ? `items__add-btn--added` : ""
