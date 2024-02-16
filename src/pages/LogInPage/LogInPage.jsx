@@ -7,7 +7,6 @@ import Navbar from "../../components/Navbar/Navbar";
 const LogInPage = () => {
   const [error, setError] = useState(null);
   const navigate = useNavigate();
-
   useEffect(() => {
     if (sessionStorage.getItem("token")) navigate("/dashboard");
   }, []);
@@ -15,7 +14,7 @@ const LogInPage = () => {
   const postLogin = async (userLogin) => {
     try {
       const res = await axios.post(
-        "http://localhost:8080/users/login",
+        process.env.REACT_APP_API_URL + "/users/login",
         userLogin
       );
       if (!res.data) {

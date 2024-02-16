@@ -37,7 +37,7 @@ const EditListModal = ({
   const deleteItems = async () => {
     try {
       const res = await axios.put(
-        `http://localhost:8080/lists/${listId}`,
+        process.env.REACT_APP_URL + "/lists/" + listId,
         ItemIds
       );
     } catch (err) {

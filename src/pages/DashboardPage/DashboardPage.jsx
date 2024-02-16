@@ -14,6 +14,7 @@ const DashboardPage = () => {
   const [weeklyList, setWeeklyList] = useState(null);
   const [scheduledLists, setScheduledLists] = useState(null);
   const navigate = useNavigate();
+  const API_URL = process.env.REACT_APP_API_URL;
   const AuthToken = sessionStorage.getItem("token");
 
   const handleEditDisplay = () => {
@@ -22,7 +23,7 @@ const DashboardPage = () => {
 
   const getScheduledLists = async () => {
     try {
-      const res = await axios.get("http://localhost:8080/lists", {
+      const res = await axios.get(API_URL + "/lists", {
         headers: {
           Authorization: "Bearer " + AuthToken,
         },
@@ -43,7 +44,7 @@ const DashboardPage = () => {
 
   const handleCreateList = async (isWeeklyList) => {
     try {
-      const res = await axios.post("http://localhost:8080/lists", {
+      const res = await axios.post(API_URL + "/lists", {
         token: "Bearer " + AuthToken,
         weekly_list: isWeeklyList ? true : false,
       });

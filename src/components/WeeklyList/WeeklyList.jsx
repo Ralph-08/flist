@@ -15,6 +15,7 @@ const WeeklyList = ({ AuthToken, list, getItems }) => {
   const [scheduledDate, setScheduledDate] = useState(null);
   const [clearList, setClearList] = useState(false);
   const [promptModal, setPromptModal] = useState(false);
+  const API_URL = process.env.REACT_APP_API_URL;
 
   const handleEditDisplay = () => {
     !editModal ? setEditModal(true) : setEditModal(false);
@@ -22,7 +23,7 @@ const WeeklyList = ({ AuthToken, list, getItems }) => {
 
   const postToOrders = async () => {
     try {
-      const res = await axios.post("http://localhost:8080/orders", {
+      const res = await axios.post(API_URL + "/orders", {
         data: {
           token: "Bearer " + AuthToken,
           list: list,
@@ -35,7 +36,9 @@ const WeeklyList = ({ AuthToken, list, getItems }) => {
 
   const clearAllListItems = async () => {
     try {
-      const res = await axios.delete(`http://localhost:8080/lists/${list._id}`);
+      const res = await axios.delete(
+        API_URL + "/lists/" + list._id
+      );
       getItems();
     } catch (err) {
       console.log("Error clearing items", err);

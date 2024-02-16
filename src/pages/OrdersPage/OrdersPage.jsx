@@ -13,7 +13,7 @@ const OrdersPage = () => {
 
   const getOrders = async () => {
     try {
-      const res = await axios.get("http://localhost:8080/orders", {
+      const res = await axios.get(process.env.REACT_APP_API_URL + "/orders", {
         headers: {
           Authorization: "Bearer " + sessionStorage.getItem("token"),
         },
@@ -36,8 +36,6 @@ const OrdersPage = () => {
     }, 2000);
     return <LoggedOutMessage />;
   }
-
-  // console.log(ordersList.length);
 
   return (
     <>

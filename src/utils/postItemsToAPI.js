@@ -1,6 +1,6 @@
 const postTest = async (item) => {
   try {
-    const res = await axios.post("http://localhost:8080", item);
+    const res = await axios.post(process.env.REACT_APP_API_URL, item);
     console.log(res);
   } catch (err) {
     console.log("Error posting data: ", err);

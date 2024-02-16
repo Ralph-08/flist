@@ -16,7 +16,7 @@ const ItemsPage = () => {
 
   const getItems = async () => {
     try {
-      const res = await axios.get("http://localhost:8080/items");
+      const res = await axios.get(process.env.REACT_APP_API_URL + "/items");
       setListItems(res.data);
     } catch (err) {
       console.log("Error getting items: ", err);

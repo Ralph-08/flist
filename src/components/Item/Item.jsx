@@ -46,7 +46,7 @@ export default function Item({
     item.quantity = itemQuantity;
     try {
       const res = await axios.patch(
-        `http://localhost:8080/lists/${listId}`,
+        process.env.REACT_APP_URL + "/lists/" + listId,
         item
       );
     } catch (err) {
