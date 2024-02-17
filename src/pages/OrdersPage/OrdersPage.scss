@@ -20,6 +20,15 @@
     }
   }
 
+  &__message {
+    color: darkgray;
+    text-align: center;
+    padding-top: 4rem;
+    @include tablet {
+      padding-top: 6rem;
+    }
+  }
+
   &__container {
     display: flex;
     flex-direction: column-reverse;

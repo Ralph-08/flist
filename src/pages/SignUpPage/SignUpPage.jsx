@@ -14,7 +14,7 @@ const SignUpPage = () => {
   const postSignUp = async (userObj) => {
     try {
       const res = await axios.post(
-        "http://localhost:8080/users/signup",
+        process.env.REACT_APP_API_URL + "/users/signup",
         userObj
       );
       document.getElementById("signup").reset();

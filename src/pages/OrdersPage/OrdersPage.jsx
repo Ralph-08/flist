@@ -13,7 +13,11 @@ const OrdersPage = () => {
 
   const getOrders = async () => {
     try {
-      const res = await axios.get("http://localhost:8080/orders");
+      const res = await axios.get(process.env.REACT_APP_API_URL + "/orders", {
+        headers: {
+          Authorization: "Bearer " + sessionStorage.getItem("token"),
+        },
+      });
       setOrdersList(res.data);
     } catch (err) {
       console.log("Error getting orders: ", err);
@@ -32,15 +36,22 @@ const OrdersPage = () => {
     }, 2000);
     return <LoggedOutMessage />;
   }
+
   return (
     <>
       <Navbar />
       <section className="orders">
         <h1 className="orders__header">Orders</h1>
-        <section className="orders__container">
-          {ordersList &&
-            ordersList.map((order) => <Order order={order} key={order._id} />)}
-        </section>
+        {ordersList?.length === 0 ? (
+          <h2 className="orders__message">No past orders</h2>
+        ) : (
+          <section className="orders__container">
+            {ordersList &&
+              ordersList.map((order) => (
+                <Order order={order} key={order._id} />
+              ))}
+          </section>
+        )}
       </section>
     </>
   );

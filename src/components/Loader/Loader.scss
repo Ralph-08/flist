@@ -11,9 +11,13 @@
 }
 
 .loader {
-  padding: 2rem;
+  padding: 4rem 2rem;
+  height: 100%;
+  position: absolute;
+  width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
 
   &__rotate {
     width: 2rem;
