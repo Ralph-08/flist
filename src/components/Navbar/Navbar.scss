@@ -25,14 +25,12 @@
   padding: 1rem;
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
   @include tablet {
     padding: 0.5rem 2rem;
     align-items: center;
-  }
-  @include desktop {
-    padding: 0.5rem 0;
-    max-width: 1280px;
-    margin: 0 auto;
   }
 
   &__container {
@@ -93,6 +91,7 @@
   top: 0;
   position: fixed;
   scroll-snap-type: none;
+  z-index: 1;
   @include desktop {
     justify-content: flex-start;
   }
@@ -127,6 +126,9 @@
 
     &--logout {
       color: $error;
+      border-style: none;
+      background-color: unset;
+      cursor: pointer;
     }
   }
   &__btn {

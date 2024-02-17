@@ -95,4 +95,17 @@
   .bold {
     font-weight: 800;
   }
+
+  &__item {
+    &--container {
+      width: 100%;
+      padding: 2rem;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__btn {
+    @include secondary-button;
+  }
 }
