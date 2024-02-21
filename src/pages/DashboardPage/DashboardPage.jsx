@@ -54,13 +54,6 @@ const DashboardPage = () => {
     }
   };
 
-  let ItemIds = [];
-
-  const getItemIds = (id) => {
-    ItemIds = [...ItemIds, id];
-    console.log(id);
-  };
-
   if (!AuthToken) {
     setTimeout(() => {
       navigate("/");
